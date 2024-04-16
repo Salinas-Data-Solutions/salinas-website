@@ -3,6 +3,6 @@ paths:
   uploads: assets/uploads
   static: ''
   collections: ''
-  data: '/_data'
+  data: _data
   layouts:
 timezone: Etc/UTC
