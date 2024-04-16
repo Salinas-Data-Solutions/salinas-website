@@ -1,0 +1,8 @@
+source: src
+paths:
+  uploads: assets/uploads
+  static: ''
+  collections: ''
+  data: ''
+  layouts:
+timezone: Etc/UTC
