@@ -11,6 +11,9 @@ module.exports = {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        'black-custom': 'var(--aw-color-black-custom)',
+        grey: 'var(--aw-color-grey)',
+        'grey-dark': 'var(--aw-color-grey-dark)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],

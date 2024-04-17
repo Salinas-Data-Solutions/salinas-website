@@ -9,6 +9,9 @@
   .bg-dark {
     background-color: var(--aw-color-bg-page-dark);
   }
+  .bg-black-custom {
+    background-color: var(--aw-color-black-custom);
+  }
   .bg-light {
     background-color: var(--aw-color-bg-page);
   }
