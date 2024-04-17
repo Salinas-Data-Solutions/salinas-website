@@ -25,16 +25,18 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative sm:py-16 container mx-auto">
-  <!-- <div class="absolute bottom-0 right-0 overflow-hidden">
+<section class="relative sm:py-16">
+  <div class="absolute bottom-0 right-0 overflow-hidden -z-10 opacity-50">
     <Image
-      class="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
-      src={image}
+      class="w-full h-full origin-bottom-right transform lg:w-auto lg:mx-auto lg:object-cover"
+      src={image.src}
       alt=""
     />
-  </div> -->
+  </div>
 
-  <div class="grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:grid-cols-[60%_1fr] gap-24 py-32 px-10 md:px-0">
+  <div
+    class="z-90 container mx-auto grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:grid-cols-[60%_1fr] gap-24 py-32 px-10 md:px-0"
+  >
     <div class="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0">
       <h1 class="text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-5xl lg:leading-tight font-pj">
         Sed ut persp iciatis unde omnis
