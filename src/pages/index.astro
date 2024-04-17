@@ -276,7 +276,7 @@ const metadata = {
   </section>
   <section class="text-white bg-black-custom py-32">
     <div class="max-w-lg lg:max-w-none flex items-center flex-col">
-      <p class="text-base font-semibold text-grey uppercase">LOREM IPSUM</p>
+      <p class="text-grey uppercase">LOREM IPSUM</p>
       <h2 class="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl">Application Description</h2>
     </div>
     <ul class="container px-5 pt-24 mx-auto flex flex-wrap">
@@ -404,8 +404,103 @@ const metadata = {
       </li>
     </ul>
   </section>
+  <!-- <section class="py-12 bg-page sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid items-center grid-cols-1 gap-8 md:grid-cols-3">
+        <div>
+          <img
+            class="w-full md:hidden"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png"
+            alt=""
+          />
+          <img
+            class="hidden w-full lg:translate-y-12 md:block"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png"
+            alt=""
+          />
+        </div>
+
+        <div class="text-center">
+          <p class="text-grey uppercase">LOREM IPSUM</p>
+
+          <h2 class="mt-20 text-3xl sm:text-4xl xl:text-5xl">We build on</h2>
+          <p class="mt-6">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia. Quis
+            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+          </p>
+        </div>
+
+        <div>
+          <img
+            class="w-full md:hidden"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png"
+            alt=""
+          />
+          <img
+            class="hidden w-full lg:translate-y-12 md:block"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="py-12 bg-page sm:py-16 lg:py-20 overflow-hidden">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid items-center grid-cols-1 gap-8 md:grid-cols-3">
+        <div>
+          <img
+            class="parallax-img w-full md:hidden"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png"
+            data-speed="0.27"
+            alt=""
+          />
+          <img
+            class="parallax-img hidden w-full lg:translate-y-12 md:block"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png"
+            data-speed="0.27"
+            alt=""
+          />
+        </div>
+
+        <div class="text-center">
+          <p class="text-gray-500 uppercase">LOREM IPSUM</p>
+          <h2 class="mt-20 text-3xl sm:text-4xl xl:text-5xl">We build on</h2>
+          <p class="mt-6">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia. Quis
+            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+          </p>
+        </div>
+
+        <div>
+          <img
+            class="w-full md:hidden"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png"
+            alt=""
+          />
+          <img
+            class="parallax-img hidden w-full lg:translate-y-12 md:block"
+            data-speed="0.27"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
+<script>
+  document.addEventListener('scroll', function () {
+    const parallaxImages: HTMLImageElement[] = Array.from(document.querySelectorAll('.parallax-img'));
+    parallaxImages.forEach((img) => {
+      const speed = img.getAttribute('data-speed') || '0.28';
+      const offset = window.scrollY * parseFloat(speed) - window.innerHeight;
+      img.style.transform = `translateY(${offset}px)`;
+    });
+  });
+</script>
 <!-- 
 
 
