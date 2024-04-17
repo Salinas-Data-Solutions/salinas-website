@@ -1,0 +1,21 @@
+---
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+import type { CallToAction, Widget } from '~/types';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
+
+interface Props extends Widget {
+  title?: string;
+  class?: string;
+  subtitle?: string;
+  tagline?: string;
+  callToAction?: CallToAction;
+  actions?: string | CallToAction[];
+}
+
+const { title = await Astro.slots.render('title'), class: className = '' } = Astro.props;
+---
+
+<div class:list={`uppercase bg-primary text-black w-fit px-10 py-2 rounded-full ${className}`}>
+  {title}
+</div>
