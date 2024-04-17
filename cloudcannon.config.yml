@@ -1,4 +1,3 @@
-source: src
 paths:
   uploads: assets/uploads
   static: ''
