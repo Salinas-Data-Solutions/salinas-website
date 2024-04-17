@@ -20,6 +20,9 @@ module.exports = {
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        '5xl': '54px',
+      },
     },
   },
   plugins: [typographyPlugin],
