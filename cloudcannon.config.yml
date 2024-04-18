@@ -14,6 +14,8 @@ collections_config:
   pages:
     path: src/pages
     output: true
+    _enabled_editors:
+      - visual
 pages:
   path: src/pages
 collection_groups:
