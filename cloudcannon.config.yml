@@ -6,6 +6,11 @@ paths:
   data: data
   layouts:
 timezone: Etc/UTC
+collections_config:
+  data:
+    path: data
+    disable_add: true
+    disable_add_folder: true
 pages:
   path: src/pages
 collection_groups:
