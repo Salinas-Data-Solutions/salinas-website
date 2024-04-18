@@ -1,6 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import PageLayout from '~/layouts/PageLayout.astro';
+import { getCollection, CollectionEntry } from 'astro:content';
+
+export interface Props {
+  page: CollectionEntry<'pages'>;
+}
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages', ({ data }) => !data.hidden);
