@@ -1,7 +1,8 @@
 paths:
+  data: data
+  static: public
   uploads: assets/uploads
   static: ''
   collections: ''
-  data: _data
   layouts:
 timezone: Etc/UTC
