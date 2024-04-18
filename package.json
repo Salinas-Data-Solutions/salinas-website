@@ -14,7 +14,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "bookshop": "npx @bookshop/generate --bookshop src/components"
+
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.5",
@@ -36,6 +38,9 @@
     "@astrojs/mdx": "^2.3.0",
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "5.1.0",
+    "@bookshop/astro-engine": "3.9.0",
+    "@bookshop/browser": "3.9.0",
+    "@bookshop/generate": "3.9.0",
     "@eslint/js": "^9.0.0",
     "@iconify-json/flat-color-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.110",

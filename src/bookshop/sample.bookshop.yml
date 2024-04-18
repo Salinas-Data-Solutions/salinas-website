@@ -1,0 +1,6 @@
+blueprint:
+  text: "Hello World!"
+  color: "#034AD8"
+  image:
+    image_url: "/image.png"
+    image_alt: "My alternate text"
