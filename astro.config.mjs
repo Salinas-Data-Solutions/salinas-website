@@ -10,6 +10,7 @@ import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from '@playform/compress';
 import bookshop from '@bookshop/astro-bookshop';
+import react from '@astrojs/react';
 
 import astrowind from './vendor/integration';
 
@@ -30,9 +31,11 @@ export default defineConfig({
 
   integrations: [
     bookshop(),
+    react(),
     tailwind({
       applyBaseStyles: false,
     }),
+
     sitemap(),
     mdx(),
     icon({
