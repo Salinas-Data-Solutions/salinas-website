@@ -1,6 +1,6 @@
 ---
-import PageLayout from '~/layouts/PageLayout.astro';
 import { getCollection, CollectionEntry } from 'astro:content';
+import HomePage from '~/layouts/HomePage.astro';
 
 export interface Props {
   page: CollectionEntry<'pages'>;
@@ -21,4 +21,4 @@ if (!page.data.content_blocks) {
 }
 ---
 
-<PageLayout frontmatter={page.data} />
+<HomePage frontmatter={page.data} />
