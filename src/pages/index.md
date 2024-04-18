@@ -7,4 +7,9 @@ services_component:
   button:
     text: "Try This Free"
     link: "/signup"
+
+content_blocks:
+    _bookshop_name: home/services
+    title: Test
+
 ---
