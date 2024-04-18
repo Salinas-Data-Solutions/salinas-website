@@ -10,7 +10,10 @@ collections_config:
   data:
     path: data
     disable_add: true
-    disable_add_folder: true
+    disable_add_folder: true'
+  pages:
+    path: src/pages
+    output: true
 pages:
   path: src/pages
 collection_groups:
