@@ -16,7 +16,6 @@
     "format": "prettier -w .",
     "lint:eslint": "eslint .",
     "bookshop": "npx @bookshop/generate --bookshop src/components"
-
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.5",
