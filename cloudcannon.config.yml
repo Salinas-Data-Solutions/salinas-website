@@ -6,3 +6,14 @@ paths:
   data: data
   layouts:
 timezone: Etc/UTC
+pages:
+  path: src/pages
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+  - heading: Site Settings
+    collections:
+      - data
+      - site_navigation
+      - theme_palette
