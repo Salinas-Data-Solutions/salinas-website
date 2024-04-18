@@ -12,6 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Button from '~/components/ui/Button.astro';
+import { Image } from 'astro:assets';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -137,8 +138,9 @@ const metadata = {
         </div>
 
         <div class="lg:col-span-3">
-          <img
-            class="w-full"
+          <Image
+            inferSize={true}
+            class="w-full editable"
             src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/8/feature-8.png"
             alt=""
           />
@@ -228,8 +230,9 @@ const metadata = {
           </h3>
           <p class="mt-4 leading-7">Tellus pharetra sit convallis vel, fermentum dignissim cras in..</p>
 
-          <img
-            class="object-cover w-full mx-auto mt-10 rounded-xl md:mx-0"
+          <Image
+            inferSize={true}
+            class="editable object-cover w-full mx-auto mt-10 rounded-xl md:mx-0"
             src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
             alt=""
           />
@@ -245,8 +248,9 @@ const metadata = {
           </h3>
           <p class="mt-4 leading-7">Tellus pharetra sit convallis vel, fermentum dignissim cras in..</p>
 
-          <img
-            class="object-cover w-full mx-auto mt-10 rounded-xl md:mx-0"
+          <Image
+            inferSize={true}
+            class="editable object-cover w-full mx-auto mt-10 rounded-xl md:mx-0"
             src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature2.png"
             alt=""
           />
@@ -262,8 +266,9 @@ const metadata = {
           </h3>
           <p class="mt-4 leading-7">Tellus pharetra sit convallis vel, fermentum dignissim cras in..</p>
 
-          <img
-            class="object-cover w-full mx-auto mt-10 md:mx-0 rounded-xl"
+          <Image
+            inferSize={true}
+            class="editable object-cover w-full mx-auto mt-10 md:mx-0 rounded-xl"
             src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature3.png"
             alt=""
           />
