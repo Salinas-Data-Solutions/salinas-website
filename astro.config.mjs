@@ -9,25 +9,27 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from '@playform/compress';
+import bookshop from '@bookshop/astro-bookshop';
 
 import astrowind from './vendor/integration';
 
-import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter.mjs';
+import {
+  readingTimeRemarkPlugin,
+  responsiveTablesRehypePlugin,
+  lazyImagesRehypePlugin,
+} from './src/utils/frontmatter.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const hasExternalScripts = false;
 const whenExternalScripts = (items = []) =>
-  hasExternalScripts
-    ? Array.isArray(items)
-      ? items.map((item) => item())
-      : [items()]
-    : [];
+  hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
   output: 'static',
 
   integrations: [
+    bookshop(),
     tailwind({
       applyBaseStyles: false,
     }),
@@ -70,13 +72,13 @@ export default defineConfig({
     }),
 
     astrowind({
-      config: "./src/config.yaml"
+      config: './src/config.yaml',
     }),
   ],
 
   image: {
     service: squooshImageService(),
-    domains: ["cdn.pixabay.com"],
+    domains: ['cdn.pixabay.com'],
   },
 
   markdown: {
