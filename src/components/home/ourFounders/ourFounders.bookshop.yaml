@@ -18,6 +18,3 @@ blueprint:
     - name: "Sebastian Eumann"
       image: "path-to-sebastian-image.png"
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at imperdiet. Aliquam sed quam blandit volutpat element."
-    - name: "Sajad Surname"
-      image: "path-to-sajad-image.png"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at imperdiet. Aliquam sed quam blandit volutpat element."

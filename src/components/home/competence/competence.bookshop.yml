@@ -14,6 +14,7 @@ spec:
 blueprint:
   title: "Competence Description"
   subTitle: "Why Choose Us"
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   items:
     - title: "Innovative Solutions"
       image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
@@ -21,6 +22,9 @@ blueprint:
     - title: "Experienced Professionals"
       image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
       description: "Our team consists of highly skilled professionals with extensive industry experience."
+    - title: "Customer-Centric Approach"
+      image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
+      description: "We prioritize your needs and satisfaction above everything else."
     - title: "Customer-Centric Approach"
       image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
       description: "We prioritize your needs and satisfaction above everything else."

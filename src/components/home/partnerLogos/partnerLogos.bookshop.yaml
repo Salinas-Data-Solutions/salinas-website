@@ -24,3 +24,5 @@ blueprint:
       image: "path-to-gizmodo-logo.png"
     - name: "Forbes"
       image: "path-to-forbes-logo.png"
+    - name: "Forbes"
+      image: "path-to-forbes-logo.png"

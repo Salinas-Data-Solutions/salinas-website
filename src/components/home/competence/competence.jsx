@@ -2,13 +2,16 @@ import React from "react";
 
 export default function CompetenceSection( block ) {
   return (
-    <section className="py-12 bg-black-custom sm:py-16 lg:py-20 xl:py-24">
+    <section className="py-20 bg-black-custom lg:py-32">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
           <div className="flex flex-col justify-between lg:col-span-5 xl:pr-24">
             <div className="max-w-lg lg:max-w-none">
-              <p className="text-base font-semibold text-grey uppercase">{block.subTitle}</p>
-              <h2 className="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl">{block.title}</h2>
+              <p className=" text-grey uppercase">{block.subTitle}</p>
+              <h2 className="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl !leading-normal">{block.title}</h2>
+              <p className="mt-6">
+                {block.description}
+              </p>
             </div>
           </div>
 

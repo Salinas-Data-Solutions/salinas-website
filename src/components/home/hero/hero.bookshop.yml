@@ -12,8 +12,12 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  subTitle: Lorem Ipsum
   title: "Sed ut perspiciatis unde omnis"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu."
   buttonText: "Call to Action"
+  buttonHref: "#"
+  secondButtonText: "Call to Action"
+  secondButtonHref: "#"
   image: "~/assets/images/hero-image.webp"
   background_image: "path-to-background-image.png"

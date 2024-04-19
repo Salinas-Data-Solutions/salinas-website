@@ -14,6 +14,8 @@ spec:
 blueprint:
   title: "Reference Applications"
   subTitle: "Lorem Ipsum"
+  buttonText: "Call To Action" 
+  buttonHref: "#"
   items:
     - title: "Tellus pharetra sit convallis vel"
       description: "Tellus pharetra sit convallis vel, fermentum dignissim cras in."

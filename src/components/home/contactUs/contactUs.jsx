@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '~/components/ui/Button.jsx';
+
 
 const ContactUs = ( block ) => {
   return (
@@ -29,7 +31,7 @@ const ContactUs = ( block ) => {
               </div>
             </div>
             <div className="p-2 w-full flex justify-center">
-              <button type="submit" variant="primary" className="mt-10 uppercase bg-primary !text-black px-12 border-none">{block.buttonText}</button>
+              <Button type="submit" variant="primary" className="mt-10 uppercase bg-primary !text-black px-12 border-none">{block.buttonText}</Button>
             </div>
           </div>
         </form>

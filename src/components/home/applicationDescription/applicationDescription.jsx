@@ -1,11 +1,12 @@
 import React from 'react';
+import Button from '~/components/ui/Button.jsx';
 
 const ApplicationDescription = ( block ) => {
   return (
-    <section className="text-white bg-black-custom py-32">
+    <section className="py-20 text-white bg-black-custom lg:py-32 flex flex-col items-center">
       <div className="max-w-lg lg:max-w-none flex items-center flex-col">
         <p className="text-grey uppercase">{block.subTitle}</p>
-        <h2 className="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl">{block.title}</h2>
+        <h2 className="text-center mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl">{block.title}</h2>
       </div>
       <ul className="container px-5 pt-24 mx-auto flex flex-wrap">
         {block.items.map((item, index) => (
@@ -38,6 +39,9 @@ const ApplicationDescription = ( block ) => {
           </li>
         ))}
       </ul>
+      <Button href={block.buttonHref} className="mt-10 uppercase bg-primary !text-black px-12 border-none">
+        {block.buttonText}
+      </Button>
   </section>
   );
 };

@@ -14,6 +14,8 @@ spec:
 blueprint:
   title: "We build on"
   subTitle: "LOREM IPSUM"
+  buttonText: "Call To Action" 
+  buttonHref: "#"
   text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
   leftLogos: "https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png"
   rightLogos: "https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png"

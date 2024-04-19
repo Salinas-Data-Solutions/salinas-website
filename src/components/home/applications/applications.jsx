@@ -1,9 +1,11 @@
 import React from 'react';
+import Button from '~/components/ui/Button.jsx';
+
 
 const Applications = (block) => {
   return (
-    <section className="py-12 bg-page sm:py-16 lg:py-32">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <section className="bg-page py-20 lg:py-32">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col items-center">
         <div className="max-w-3xl mx-auto text-center">
           <p className="uppercase text-grey">{block.subTitle}</p>
           <h2 className="mt-4 text-3xl sm:text-4xl xl:text-5xl">{block.title}</h2>
@@ -22,6 +24,9 @@ const Applications = (block) => {
             </li>
           ))}
         </ul>
+        <Button href={block.buttonHref} className="mt-24 uppercase bg-primary !text-black px-12 border-none">
+            {block.buttonText}
+        </Button>
       </div>
     </section>
   );

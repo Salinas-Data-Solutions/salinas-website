@@ -14,6 +14,8 @@ spec:
 blueprint:
   title: "Email Marketing is the Future for Growing Your Business Revenues"
   subTitle: "Discover Our Platform"
+  buttonText: "Call To Action" 
+  buttonHref: "#"
   items:
     - title: "Tincidunt pulvinar"
       description: "Ut enim ad minima veniam, quis nostrum autem vel eum iure reprehenderit exercitem."
