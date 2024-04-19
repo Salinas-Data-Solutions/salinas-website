@@ -12,12 +12,13 @@ collections_config:
     disable_add: true
     disable_add_folder: true'
   pages:
-    path: src/pages
+    path: src/content/pages
+    url: "/[slug]/"
     output: true
+    icon: wysiwyg
+    disable_add_folder: true
     _enabled_editors:
       - visual
-pages:
-  path: src/pages
 collection_groups:
   - heading: Pages
     collections:
