@@ -64,7 +64,7 @@ content_blocks:
         image: 'https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature3.png'
         extended_description: 'Mattis a, tincidunt pulvinar sodales. Quis tellus vel eget in nulla odio. Tellus pharetra sit convallis vel, fermentum dignissim cras in.'
         content_blocks:
-  - _bookshop_name: home/application-description
+  - _bookshop_name: home/applicationDescription
     title: Application Description
     subTitle: Lorem Ipsum
     items:
@@ -80,7 +80,7 @@ content_blocks:
       - icon: 'icon-path-2.svg'
         title: 'Quia dolor sit amet'
         description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adip'
-  - _bookshop_name: home/build-on
+  - _bookshop_name: home/buildOn
     title: We build on
     subTitle: LOREM IPSUM
     text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.'
@@ -88,14 +88,14 @@ content_blocks:
     rightLogos: 'https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png'
     topLogos: 'https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png'
     bottomLogos: 'https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png'
-  - _bookshop_name: home/about-us
+  - _bookshop_name: home/aboutUs
     title: About Us and References
     subTitle: About Us
     callToActionText: Call to Action
     image: 'https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png'
     description: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus.”'
     author: 'Grandon Jones'
-  - _bookshop_name: home/our-founders
+  - _bookshop_name: home/ourFounders
     title: Our Founders
     subTitle: Lorem Ipsum
     founders:
@@ -105,7 +105,7 @@ content_blocks:
       - name: 'Sajad Surname'
         image: 'path-to-sajad-image.png'
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at imperdiet. Aliquam sed quam blandit volutpat element.'
-  - _bookshop_name: home/partner-logos
+  - _bookshop_name: home/partnerLogos
     heading: 'Companies we have successfully worked for'
     logos:
       - name: 'Washington'
@@ -118,7 +118,7 @@ content_blocks:
         image: 'path-to-gizmodo-logo.png'
       - name: 'Forbes'
         image: 'path-to-forbes-logo.png'
-  - _bookshop_name: home/contact-us
+  - _bookshop_name: home/contactUs
     title: "Contact Us"
     subTitle: "Lorem Ipsum"
     buttonText: "Call To Action"

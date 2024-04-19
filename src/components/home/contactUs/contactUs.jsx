@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from '~/components/ui/Button.astro';
 
-const ContactForm = ( block ) => {
+const ContactUs = ( block ) => {
   return (
     <section className="relative">
       <div className="container px-5 py-24 mx-auto">
@@ -39,4 +38,4 @@ const ContactForm = ( block ) => {
   );
 };
 
-export default ContactForm;
+export default ContactUs;
