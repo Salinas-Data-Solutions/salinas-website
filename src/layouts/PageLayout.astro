@@ -1,31 +1,22 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import Header from '~/components/widgets/Header.astro';
-import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
+import Page from '~/shared/astro/page';
+import Layout from './Layout.astro';
 
-import { headerData, footerData } from '@/data/navigation.json';
+type Props = {
+  frontmatter: {
+    title: string;
+    content_blocks: Array<Record<string, any>>;
+    seo?: any;
+  };
+};
 
-import type { MetaData } from '~/types';
-
-export interface Props {
-  metadata?: MetaData;
-}
-
-const { metadata } = Astro.props;
+// if (!Astro.props.frontmatter) {
+//   throw new Error('Page frontmatter must be defined');
+// }
+console.log(Astro.props.frontmatter, 'test');
+const props = Astro.props.frontmatter;
 ---
 
-<Layout metadata={metadata}>
-  <!-- <slot name="announcement">
-    <Announcement />
-  </slot> -->
-  <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
-  </slot>
-  <main>
-    <slot />
-  </main>
-  <slot name="footer">
-    <Footer {...footerData} />
-  </slot>
+<Layout {...props}>
+  <Page bookshop:live contentBlocks={props?.content_blocks} />
 </Layout>

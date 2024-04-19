@@ -19,7 +19,6 @@ import TechIcon from '~/assets/icons/tech.svg';
 import BloombergIcon from '~/assets/icons/bloomberg.svg';
 import GizmodoIcon from '~/assets/icons/gizmodo.svg';
 import ForbesIcon from '~/assets/icons/forbes.svg';
-import Services from '~/components/home/services/Services.astro';
 import { getCollection } from 'astro:content';
 
 const metadata = {
@@ -45,7 +44,6 @@ const { frontmatter } = Astro.props;
     ]}
     image={{ src: '~/assets/images/hero-bg.webp', alt: 'AstroWind Hero Image' }}
   />
-  <Services bookshop:live {...frontmatter.services_component} />
 
   <section class="py-12 bg-black-custom sm:py-16 lg:py-20 xl:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">

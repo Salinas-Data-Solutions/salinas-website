@@ -1,68 +1,4 @@
-import { z, defineCollection } from 'astro:content';
-
-const metadataDefinition = () =>
-  z
-    .object({
-      title: z.string().optional(),
-      ignoreTitleTemplate: z.boolean().optional(),
-
-      canonical: z.string().url().optional(),
-
-      robots: z
-        .object({
-          index: z.boolean().optional(),
-          follow: z.boolean().optional(),
-        })
-        .optional(),
-
-      description: z.string().optional(),
-
-      openGraph: z
-        .object({
-          url: z.string().optional(),
-          siteName: z.string().optional(),
-          images: z
-            .array(
-              z.object({
-                url: z.string(),
-                width: z.number().optional(),
-                height: z.number().optional(),
-              })
-            )
-            .optional(),
-          locale: z.string().optional(),
-          type: z.string().optional(),
-        })
-        .optional(),
-
-      twitter: z
-        .object({
-          handle: z.string().optional(),
-          site: z.string().optional(),
-          cardType: z.string().optional(),
-        })
-        .optional(),
-    })
-    .optional();
-
-const postCollection = defineCollection({
-  schema: z.object({
-    publishDate: z.date().optional(),
-    updateDate: z.date().optional(),
-    draft: z.boolean().optional(),
-
-    title: z.string(),
-    excerpt: z.string().optional(),
-    image: z.string().optional(),
-
-    category: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    author: z.string().optional(),
-
-    metadata: metadataDefinition(),
-  }),
-});
-
+import { defineCollection, z } from "astro:content";
 
 const seoSchema = z
   .object({
@@ -76,6 +12,24 @@ const seoSchema = z
   })
   .optional();
 
+const blogCollection = defineCollection({
+  schema: z.object({
+    date: z.date(),
+    title: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    thumb_image: z.object({
+      image: z.string(),
+      image_alt: z.string(),
+    }),
+    featured_image: z.object({
+      image: z.string(),
+      image_alt: z.string(),
+    }),
+    seo: seoSchema,
+    draft: z.boolean()
+  }),
+});
 
 const pageSchema = z.object({
   _schema: z.any().optional(),
@@ -101,9 +55,7 @@ const pagesCollection = defineCollection({
   schema: z.union([paginatedCollectionSchema, pageSchema]),
 });
 
-
-
 export const collections = {
+  blog: blogCollection,
   pages: pagesCollection,
-  post: postCollection,
 };
