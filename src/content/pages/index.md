@@ -9,16 +9,16 @@ content_blocks:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in
       enim luctus. Rutrum arcu.
     buttonText: Call to Action
-    buttonHref: "#"
-    secondButtonText: "Call to Action"
-    secondButtonHref: "#"
+    buttonHref: '#'
+    secondButtonText: Call to Action
+    secondButtonHref: '#'
     image: hero-image.webp
     background_image: path-to-background-image.png
   - _bookshop_name: home/services
     title: Our Services
     subTitle: What We Offer
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+    buttonText: Call To Action
+    buttonHref: '#'
     items:
       - title: test
         description: test213123123
@@ -37,7 +37,7 @@ content_blocks:
   - _bookshop_name: home/competence
     title: Competence Description
     subTitle: Why Choose Us
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\_"
     items:
       - title: Innovative Solutions
         description: >
@@ -53,12 +53,11 @@ content_blocks:
       - title: Customer-Centric Approach
         description: |
           We prioritize your needs and satisfaction above everything else.
-          
   - _bookshop_name: home/applications
     title: Reference Applications
     subTitle: Lorem Ipsum
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+    buttonText: Call To Action
+    buttonHref: '#'
     items:
       - title: 'Tellus pharetra sit '
         description: Tellus pharetra sit convallis vel, fermentum dignissim cras in.
@@ -86,8 +85,8 @@ content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Application Description
     subTitle: Lorem Ipsum
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+    buttonText: Call To Action
+    buttonHref: '#'
     items:
       - icon: icon-path-1.svg
         title: Quia dolor sit amet
@@ -112,8 +111,8 @@ content_blocks:
   - _bookshop_name: home/buildOn
     title: We build on
     subTitle: LOREM IPSUM
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+    buttonText: Call To Action
+    buttonHref: '#'
     text: >-
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
@@ -131,7 +130,7 @@ content_blocks:
     title: About Us and References
     subTitle: About Us
     buttonText: Call to Action
-    buttonHref: "#"
+    buttonHref: '#'
     image: >-
       https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png
     description: >-
@@ -142,11 +141,11 @@ content_blocks:
   - _bookshop_name: home/ourFounders
     title: Our Founders
     subTitle: Lorem Ipsum
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+    buttonText: Call To Action
+    buttonHref: '#'
     founders:
       - name: Sebastian Eumann
-        image: path-to-sebastian-image.png
+        image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales
           id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at
