@@ -8,7 +8,7 @@ content_blocks:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in
       enim luctus. Rutrum arcu.
     buttonText: Call to Action
-    image: /src/assets/uploads/nf8o4rbivnrqnk4lbens.webp
+    image: hero-image.webp
     background_image: path-to-background-image.png
   - _bookshop_name: home/services
     title: Our Servicess
