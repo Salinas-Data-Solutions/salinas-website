@@ -1,0 +1,26 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Partner Logos
+  description: "Display logos of companies to showcase successful partnerships or clients."
+  icon: "network_check"
+  tags:
+    - partners
+    - logos
+    - clients
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: "Companies we have successfully worked for"
+  logos:
+    - name: "Washington"
+      image: "path-to-washington-logo.png"
+    - name: "Tech"
+      image: "path-to-tech-logo.png"
+    - name: "Bloomberg"
+      image: "path-to-bloomberg-logo.png"
+    - name: "Gizmodo"
+      image: "path-to-gizmodo-logo.png"
+    - name: "Forbes"
+      image: "path-to-forbes-logo.png"

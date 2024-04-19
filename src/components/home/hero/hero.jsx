@@ -1,43 +1,39 @@
-import React from "react";
-import MarkdownIt from "markdown-it";
-const md = new MarkdownIt({ html: true });
+import React from 'react';
 
-export default function HomeHero(block) {
+const HeroSection = ( block ) => {
   return (
-    <section className="hero-two">
-      <div className="hero-two-shape"></div>
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="hero-two-content">
-              <h1 className="mb-4">{block.title}</h1>
-              <div
-                className="mb-7 w-xxl-80"
-                dangerouslySetInnerHTML={{
-                  __html: md.render(block.description),
-                }}
-              />
-              <div className="">
-                {block.button && (
-                  <a
-                    href={block.button.link}
-                    className="btn btn-primary btn-lg"
-                  >
-                    {" "}
-                    {block.button.text}{" "}
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="hero-two-banner">
-              <img src={block.image} alt={block.image_alt} />
-              <div className="hero-two-banner-shape"></div>
-            </div>
-          </div>
+    <section className="relative sm:py-16">
+      <div className="absolute bottom-0 right-0 overflow-hidden -z-10 opacity-50">
+        <img
+          className="w-full h-full origin-bottom-right transform lg:w-auto lg:mx-auto lg:object-cover"
+          src={block.background_image}
+          alt=""
+        />
+      </div>
+      <div
+        className="z-90 container mx-auto grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:grid-cols-[60%_1fr] gap-24 py-32 px-10 md:px-0"
+      >
+        <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0">
+          <h1 className="text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-5xl lg:leading-tight font-pj">
+            {block.title}
+          </h1>
+          <p className="mt-2 text-lg sm:mt-6 font-inter">
+            {block.description}
+          </p>
+          <button className="mt-10 uppercase bg-primary !text-black px-12">
+            {block.buttonText}
+          </button>
+        </div>
+        <div className="xl:col-span-1 justify-self-center lg:justify-self-end">
+          <img
+            className="w-full h-auto origin-bottom-right transform lg:w-auto lg:object-cover"
+            src={block.image}
+            alt=""
+          />
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

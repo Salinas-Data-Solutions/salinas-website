@@ -16,6 +16,7 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
+import Header from '~/components/widgets/Header.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -41,6 +42,7 @@ const { language, textDirection } = I18N;
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
+    <Header isSticky={true} />
     <slot />
 
     <BasicScripts />

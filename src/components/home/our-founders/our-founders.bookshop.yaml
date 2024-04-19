@@ -1,0 +1,23 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Our Founders
+  description: "Introduce the founders of your organization with images and descriptions."
+  icon: "group"
+  tags:
+    - team
+    - founders
+    - leadership
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: "Our Founders"
+  subTitle: "Lorem Ipsum"
+  founders:
+    - name: "Sebastian Eumann"
+      image: "path-to-sebastian-image.png"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at imperdiet. Aliquam sed quam blandit volutpat element."
+    - name: "Sajad Surname"
+      image: "path-to-sajad-image.png"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at imperdiet. Aliquam sed quam blandit volutpat element."
