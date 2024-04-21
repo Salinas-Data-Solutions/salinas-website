@@ -13,7 +13,7 @@ content_blocks:
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
-    background_image: path-to-background-image.png
+    background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
     title: Tailored AI Solutions
     subTitle: Accelerating Your Business With AI
