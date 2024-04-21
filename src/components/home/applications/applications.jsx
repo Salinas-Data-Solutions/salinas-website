@@ -8,7 +8,7 @@ const Applications = (block) => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col items-center">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
-          <h2 className="mt-4 text-3xl sm:text-4xl xl:text-5xl">{block.title}</h2>
+          <h2 className="mt-4 text-3xl sm:text-4xl xl:text-5xl !leading-relaxed">{block.title}</h2>
         </div>
 
         <ul className="grid grid-cols-1 mt-10 text-center md:mt-20 md:max-w-full sm:max-w-sm sm:mx-auto gap-y-10 md:grid-cols-3 md:gap-x-6 lg:gap-x-16 md:text-left">

@@ -17,7 +17,7 @@ const BuildOn = (block) => {
           </div>
           <div className="text-center">
             <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
-            <h2 className="mt-20 text-3xl sm:text-4xl xl:text-5xl">{block.title}</h2>
+            <h2 className="mt-20 text-3xl sm:text-4xl xl:text-5xl !leading-relaxed">{block.title}</h2>
             <p className="mt-6">{block.text}</p>
             <Button href={block.buttonHref} className="mt-10 uppercase bg-primary !text-black px-12 border-none">
               {block.buttonText}
