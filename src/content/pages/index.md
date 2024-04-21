@@ -3,56 +3,61 @@ title: Home
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Lorem Ipsum
-    title: Sed ut perspiciatis unde omnis
+    subTitle: Intelligent Solutions For Your Business
+    title: Let’s Make Data Your Biggest Asset
     description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in
-      enim luctus. Rutrum arcu.
-    buttonText: Call to Action
+      We transform your data into your strategic advantage by building
+      intelligent applications from prototype to production.
+    buttonText: Request a demo
     buttonHref: '#'
-    secondButtonText: Call to Action
+    secondButtonText: Learn more
     secondButtonHref: '#'
-    image: hero-image.webp
+    image:
     background_image: path-to-background-image.png
   - _bookshop_name: home/services
-    title: Our Services
-    subTitle: What We Offer
-    buttonText: Call To Action
+    title: Tailored AI Solutions
+    subTitle: Accelerating Your Business With AI
+    buttonText: Request a demo
     buttonHref: '#'
     items:
-      - title: test
-        description: test213123123
-      - title: Automation & Integration
-        description: >
-          Streamline your marketing efforts with our powerful automation tools
-          and integrations.
-      - title: Analytics & Reporting
-        description: >
-          Gain insights into your campaign's performance with detailed analytics
-          and reporting tools.
-      - title: Consultation & Strategy
-        description: >
-          Get expert advice and strategic planning assistance to maximize the
-          effectiveness of your email campaigns.
+      - title: Building AI Applications
+        description: >-
+          With our experienced team of AI/ML developers and Data Scientists, we
+          build Machine Learning and Generative AI applications from prototype
+          up to production readiness.
+      - title: Integrating Data Infrastructures
+        description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
+      - title: Maintaining AI Solutions
+        description: >-
+          With our capabilities to monitor and maintain AI/ML solutions in
+          production we establish MLOps and LLMOps practices so that AI
+          applications keep their promises and performance in production.
+      - title: AI & Data Strategy
+        description: >-
+          With our extensive experience in AI & Data projects, we help you to
+          align your development initiatives with your business needs so that
+          your solutions will create user benefit and value.
   - _bookshop_name: home/competence
-    title: Competence Description
-    subTitle: Why Choose Us
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\_"
+    title: Expert AI Solutions for Your Business Success
+    subTitle: Our Expertise in AI
+    description: >-
+      Our expertise in AI helps you to transform the efficiency of your business
+      operations. At SALINAS Data Solutions, we specialize in developing and
+      integrating cutting-edge AI applications, enhancing data infrastructures,
+      and providing ongoing maintenance and strategic insights. Our tailored
+      solutions are designed to align with your unique business needs, ensuring
+      you achieve measurable outcomes and maintain a competitive edge. Let us
+      guide you through the complexities of AI technology to unlock new
+      opportunities for efficiency and growth.
     items:
-      - title: Innovative Solutions
-        description: >
-          We offer creative and practical solutions tailored to meet your unique
-          needs.
-      - title: Experienced Professionals
-        description: >
-          Our team consists of highly skilled professionals with extensive
-          industry experience.
-      - title: Customer-Centric Approach
-        description: |
-          We prioritize your needs and satisfaction above everything else.
-      - title: Customer-Centric Approach
-        description: |
-          We prioritize your needs and satisfaction above everything else.
+      - title:
+        description: Strong AI engineering and data competence
+      - title:
+        description: Experienced full stack developer team
+      - title:
+        description: Cloud Computing and DevOps expertise
+      - title:
+        description: Strategic knowledge on AI and business empathy
   - _bookshop_name: home/applications
     title: Reference Applications
     subTitle: Lorem Ipsum
