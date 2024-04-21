@@ -4,7 +4,7 @@ layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
     subTitle: Intelligent Solutions For Your Business
-    title: Let’s Make Data Your Biggest Asset
+    title: Let’s Make Data Your Biggest Asse
     description: >-
       We transform your data into your strategic advantage by building
       intelligent applications from prototype to production.

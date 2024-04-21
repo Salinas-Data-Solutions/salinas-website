@@ -73,10 +73,12 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
-      <select onchange="window.location.href = this.value;">
-        <option value="/en/">English</option>
-        <option value="/de/">Deutsch</option>
-      </select>
+      <ul>
+        <li>
+          <a href="/en/">English</a>
+          <a href="/de/">Deutsch</a>
+        </li>
+      </ul>
 
       <div class="flex items-center md:hidden">
         <ToggleMenu />
