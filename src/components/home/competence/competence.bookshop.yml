@@ -15,6 +15,7 @@ blueprint:
   title: "Competence Description"
   subTitle: "Why Choose Us"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+  image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"
   items:
     - title: "Innovative Solutions"
       image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png"

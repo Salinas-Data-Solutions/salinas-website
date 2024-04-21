@@ -1,0 +1,25 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Promotional Section
+  description: "Highlights product features and encourages action with a vibrant CTA button."
+  icon: "highlight"
+  tags:
+    - promotion
+    - features
+    - cta
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: "Create any landing page with Rareblocks"
+  description: We have compiled our knowledge on the successful planning and implementation of AI solutions in an ebook that will help you to learn about.
+  features:
+    - title: "150+ UI Blocks"
+      description: "Wide selection of UI blocks to customize your pages."
+    - title: "Fully Responsive"
+      description: "Ensures your site looks great on any device."
+    - title: "Just Copy & Paste"
+      description: "Easy integration with simple copy and paste."
+  buttonText: "Call To Action" 
+  buttonHref: "#"

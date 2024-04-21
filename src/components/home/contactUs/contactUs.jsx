@@ -7,7 +7,7 @@ const ContactUs = ( block ) => {
     <section className="relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-grey uppercase mb-10">{block.subTitle}</p>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-grey uppercase mb-10 tracking-widest">{block.subTitle}</p>
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">{block.title}</h1>
         </div>
         <form method="post" className="max-w-4xl mx-auto">

@@ -2,12 +2,12 @@ import React from "react";
 
 export default function CompetenceSection( block ) {
   return (
-    <section className="py-20 bg-black-custom lg:py-32">
+    <section className="py-20 bg-black-custom lg:pt-32">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
           <div className="flex flex-col justify-between lg:col-span-5 xl:pr-24">
             <div className="max-w-lg lg:max-w-none">
-              <p className=" text-grey uppercase">{block.subTitle}</p>
+              <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
               <h2 className="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl !leading-normal">{block.title}</h2>
               <p className="mt-6">
                 {block.description}
@@ -18,7 +18,7 @@ export default function CompetenceSection( block ) {
           <div className="lg:col-span-3">
             <img
               className="w-full"
-              src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/8/feature-8.png"
+              src={block.image}
               alt=""
             />
           </div>
@@ -42,7 +42,7 @@ export default function CompetenceSection( block ) {
                 ></path>
               </svg>
               <p className="ml-3 text-white">
-                <span className="font-bold">{item.title}:</span> {item.description}
+                {item.title && <span className="font-bold">{item.title}:</span>} {item.description}
               </p>
             </li>
           ))}

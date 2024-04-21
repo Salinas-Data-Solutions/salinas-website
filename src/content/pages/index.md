@@ -40,6 +40,7 @@ content_blocks:
   - _bookshop_name: home/competence
     title: Expert AI Solutions for Your Business Success
     subTitle: Our Expertise in AI
+    image: /
     description: >-
       Our expertise in AI helps you to transform the efficiency of your business
       operations. At SALINAS Data Solutions, we specialize in developing and
@@ -58,11 +59,22 @@ content_blocks:
         description: Cloud Computing and DevOps expertise
       - title:
         description: Strategic knowledge on AI and business empathy
+  - _bookshop_name: home/implementationGuide
+    title: "Download Our AI Implementation Guide!"
+    description: We have compiled our knowledge on the successful planning and implementation of AI solutions in an ebook that will help you to learn about.
+    features:
+      - title: "AI capabilities and the most promising use cases"
+      - title: "Requirements and necessary resources for AI development and implementation"
+      - title: "Risks and challenges of AI and how to mitigate them"
+    buttonText: "Call To Action" 
+    buttonHref: "#"
   - _bookshop_name: home/applications
     title: What We Have Worked On
     subTitle: AI Application Examples
     buttonText: Request a free demo!
     buttonHref: '#'
+    bottomBlockTitle: "Are you curious about what AI can do for you?"
+    bottomBlockDescription: "We will prepare a free demo session based on your business needs and requirements. Request a demo session today and we will build a free Generative AI prototype for you!"
     items:
       - title: Engineering Workflow Assistant
         description: >-
@@ -100,7 +112,7 @@ content_blocks:
           generation. It is compatible with various data tools (Excel, PowerBI,
           Tableau) and backend services/databases, enhancing accessibility and
           utility for decision-makers.
-        content_blocks:
+        content_blocks:   
   - _bookshop_name: home/applicationDescription
     title: Application Description
     subTitle: Lorem Ipsum

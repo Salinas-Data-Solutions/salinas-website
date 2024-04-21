@@ -6,8 +6,8 @@ const OurFounders = (block) => {
     <section className="py-20 bg-page lg:py-32">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-4xl">
         <div className="mx-auto text-center">
-          <p className="text-sm tracking-widest uppercase">
-            <span className="text-grey">{block.subTitle}</span>
+          <p className="text-grey uppercase tracking-widest">
+            {block.subTitle}
           </p>
           <h2 className="mt-6 text-3xl text-white sm:text-4xl lg:text-5xl">{block.title}</h2>
         </div>

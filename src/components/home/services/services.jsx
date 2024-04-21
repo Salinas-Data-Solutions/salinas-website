@@ -6,7 +6,7 @@ export default function Services(block) {
     <section className="py-20 bg-page lg:py-32 flex flex-col items-center">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 ">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-grey-dark uppercase">{block.subTitle}</p>
+          <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
           <h2 className="mt-6 text-3xl tracking-tight lg:mt-8 sm:text-4xl lg:text-5xl">{block.title}</h2>
         </div>
 
@@ -29,7 +29,7 @@ export default function Services(block) {
                     ></path>
                   </svg>
                   <p className="ml-3 text-base">
-                    <span className="font-bold">{item.title}: </span> {item.description}
+                    {item.title !== "" && <span className="font-bold">{item.title}: </span>} {item.description}
                   </p>
                 </div>
               </div>

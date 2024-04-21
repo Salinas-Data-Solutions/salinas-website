@@ -15,7 +15,7 @@ const AboutUs = (block ) => {
           </div>
           <div className="lg:col-span-4 xl:pr-24">
             <div className="max-w-lg lg:max-w-none">
-              <p className="text-base uppercase">{block.subTitle}</p>
+              <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
               <h2 className="mt-6 text-3xl sm:text-4xl lg:mt-8 lg:text-5xl lg:pr-8 !leading-relaxed">
                 {block.title}
               </h2>

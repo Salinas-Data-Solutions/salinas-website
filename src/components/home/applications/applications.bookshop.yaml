@@ -29,3 +29,6 @@ blueprint:
       description: "Tellus pharetra sit convallis vel, fermentum dignissim cras in."
       image: "https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature3.png"
       extended_description: "Mattis a, tincidunt pulvinar sodales. Quis tellus vel eget in nulla odio. Tellus pharetra sit convallis vel, fermentum dignissim cras in."
+  bottomBlockTitle: "Are you curious about what AI can do for you?"
+  bottomBlockDescription: "We will prepare a free demo session based on your business needs and requirements. Request a demo session today and we will build a free Generative AI prototype for you!"
+ 

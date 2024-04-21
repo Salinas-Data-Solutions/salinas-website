@@ -5,9 +5,9 @@ import Button from "~/components/ui/Button.jsx";
 const HeroSection = ( block ) => {
   return (
     <section className="relative sm:py-16">
-      <div className="absolute bottom-0 right-0 overflow-hidden -z-10 opacity-50">
+      <div className="absolute h-[100%] lg:h-unset bottom-0 overflow-hidden -z-10 opacity-50">
         <img
-          className="w-full h-full origin-bottom-right transform lg:w-auto lg:mx-auto lg:object-cover"
+          className=" object-cover  h-[100%] lg:h-auto lg:w-[100%] origin-bottom-right  lg:mx-auto lg:object-cover"
           src={block.background_image}
           alt=""
         />
@@ -16,9 +16,9 @@ const HeroSection = ( block ) => {
         className="z-90 container mx-auto grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:grid-cols-[60%_1fr] gap-24 py-20 lg:py-32 px-10 md:px-0"
       >
         <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0">
-          <p className="text-grey uppercase">{block.subTitle}</p>
+          <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
 
-          <h1 className="mt-10 text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-5xl lg:leading-tight font-pj">
+          <h1 className="mt-10 text-4xl leading-relaxed sm:text-5xl  lg:text-5xl ">
             {block.title}
           </h1>
           <p className="mt-2 text-lg sm:mt-6 font-inter">

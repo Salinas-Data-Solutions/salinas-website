@@ -14,7 +14,8 @@ spec:
 blueprint:
   title: "About Us and References"
   subTitle: "About Us"
-  callToActionText: "Call to Action"
+  buttonText: "Call To Action" 
+  buttonHref: "#"
   image: "https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png"
   description: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus.”"
   author: "Grandon Jones"
