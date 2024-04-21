@@ -18,7 +18,7 @@ const HeroSection = ( block ) => {
         <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0">
           <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
 
-          <h1 className="mt-10 text-4xl leading-relaxed sm:text-5xl  lg:text-5xl ">
+          <h1 className="mt-10 text-4xl leading-relaxed sm:text-5xl  lg:text-5xl "  data-i18n="hero_title">
             {block.title}
           </h1>
           <p className="mt-2 text-lg sm:mt-6 font-inter">

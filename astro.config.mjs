@@ -28,7 +28,10 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de'],
+  },
   integrations: [
     bookshop(),
     react(),
