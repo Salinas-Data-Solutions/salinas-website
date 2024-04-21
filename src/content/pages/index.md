@@ -59,33 +59,47 @@ content_blocks:
       - title:
         description: Strategic knowledge on AI and business empathy
   - _bookshop_name: home/applications
-    title: Reference Applications
-    subTitle: Lorem Ipsum
-    buttonText: Call To Action
+    title: What We Have Worked On
+    subTitle: AI Application Examples
+    buttonText: Request a free demo!
     buttonHref: '#'
     items:
-      - title: 'Tellus pharetra sit '
-        description: Tellus pharetra sit convallis vel, fermentum dignissim cras in.
-        image: >-
-          https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature.png
+      - title: Engineering Workflow Assistant
+        description: >-
+          A chat based application that knows everything about engineering and
+          configuring specific technical solutions.
+        image: /d880347d4b1fb00c9ed5321db845098d.webp
         extended_description: >-
-          Consectetur adipis cing elit. Mattis a, tincidunt pulvinar sodales.
-          Quis tellus vel eget in nulla odio. Tellus pharetra sit convallis vel,
-          fermentum dignissim cras in.
-      - title: Tellus pharetra sit convallis vel
-        description: Tellus pharetra sit convallis vel, fermentum dignissim cras in.
-        image: >-
-          https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature2.png
+          This engineering assistant provides expert advice to engineers based
+          on extensive content that comes from thousands of documents and
+          manuals along with diagrams, images and even videos. The application
+          is built with a Retrieval Augmented Generation (RAG) architecture that
+          enables Large Language models (LLMs) to provide accurate, context
+          based advice.
+      - title: Customer  Service CoPilot
+        description: >-
+          A digital assistant that helps customer service and sales teams to
+          interact with customers across different languages and cultures while
+          staying technically accurate.
+        image: /dfbca86b002e888c1bfbae55e2a7b20a.webp
         extended_description: >-
-          Lorem ipsum dolor sit amet, consectetur adipis cing elit. Mattis a,
-          tincidunt pulvinar sodales. Quis tellus vel eget in nulla odio.
-      - title: Tellus pharetra sit convallis vel
-        description: Tellus pharetra sit convallis vel, fermentum dignissim cras in.
-        image: >-
-          https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/3/feature3.png
+          This digital assistant integrates seamlessly with communication
+          platforms, offering expert knowledge on technical product and service
+          information. With its LLM features, It offers advanced translation
+          abilities and adjusts to cultural contexts, ensuring clear and
+          accurate interactions across global markets.
+      - title: Data Entry and  Analysis Automation
+        description: >-
+          A backend automation system that helps data analysts and decision
+          makers to have the information available at their fingertips in the
+          exact format that is needed at any time.
+        image: /276fc6b25ab7d717cd6a6875b1ad99b5.webp
         extended_description: >-
-          Mattis a, tincidunt pulvinar sodales. Quis tellus vel eget in nulla
-          odio. Tellus pharetra sit convallis vel, fermentum dignissim cras in.
+          This system optimizes data workflows through robust data pipelines and
+          ETL processes, supporting automated data analysis and insight
+          generation. It is compatible with various data tools (Excel, PowerBI,
+          Tableau) and backend services/databases, enhancing accessibility and
+          utility for decision-makers.
         content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Application Description
