@@ -40,7 +40,7 @@ content_blocks:
   - _bookshop_name: home/competence
     title: Expert AI Solutions for Your Business Success
     subTitle: Our Expertise in AI
-    image: /
+    image: /image-4.webp
     description: >-
       Our expertise in AI helps you to transform the efficiency of your business
       operations. At SALINAS Data Solutions, we specialize in developing and
@@ -60,21 +60,29 @@ content_blocks:
       - title:
         description: Strategic knowledge on AI and business empathy
   - _bookshop_name: home/implementationGuide
-    title: "Download Our AI Implementation Guide!"
-    description: We have compiled our knowledge on the successful planning and implementation of AI solutions in an ebook that will help you to learn about.
+    title: Download Our AI Implementation Guide!
+    description: >-
+      We have compiled our knowledge on the successful planning and
+      implementation of AI solutions in an ebook that will help you to learn
+      about.
     features:
-      - title: "AI capabilities and the most promising use cases"
-      - title: "Requirements and necessary resources for AI development and implementation"
-      - title: "Risks and challenges of AI and how to mitigate them"
-    buttonText: "Call To Action" 
-    buttonHref: "#"
+      - title: AI capabilities and the most promising use cases
+      - title: >-
+          Requirements and necessary resources for AI development and
+          implementation
+      - title: Risks and challenges of AI and how to mitigate them
+    buttonText: Call To Action
+    buttonHref: '#'
   - _bookshop_name: home/applications
     title: What We Have Worked On
     subTitle: AI Application Examples
     buttonText: Request a free demo!
     buttonHref: '#'
-    bottomBlockTitle: "Are you curious about what AI can do for you?"
-    bottomBlockDescription: "We will prepare a free demo session based on your business needs and requirements. Request a demo session today and we will build a free Generative AI prototype for you!"
+    bottomBlockTitle: Are you curious about what AI can do for you?
+    bottomBlockDescription: >-
+      We will prepare a free demo session based on your business needs and
+      requirements. Request a demo session today and we will build a free
+      Generative AI prototype for you!
     items:
       - title: Engineering Workflow Assistant
         description: >-
@@ -112,33 +120,50 @@ content_blocks:
           generation. It is compatible with various data tools (Excel, PowerBI,
           Tableau) and backend services/databases, enhancing accessibility and
           utility for decision-makers.
-        content_blocks:   
+        content_blocks:
   - _bookshop_name: home/applicationDescription
-    title: Application Description
-    subTitle: Lorem Ipsum
+    title: Your Path To Successful Implementation
+    subTitle: How we work
     buttonText: Call To Action
     buttonHref: '#'
     items:
       - icon: icon-path-1.svg
-        title: Quia dolor sit amet
+        title: Use Case Ideation
         description: >-
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed qui.
+          We work together on answering the following questions: “How might we
+          become more efficient with AI?” & “What kind of routines should be
+          automated?”.
       - icon: icon-path-2.svg
-        title: Quia dolor sit amet
+        title: Assessment
         description: >-
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adip
+          We identify your resources, data, and knowledge potential, teams and
+          stakeholders and define a joint product or service vision with a clear
+          “definition of done”.
       - icon: icon-path-2.svg
-        title: Quia dolor sit amet
+        title: Planning
         description: >-
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adip
+          We define a target solution architecture with relevant features and
+          optimized costs for development and operation together with an
+          implementation roadmap and potential alternative scenarios.
       - icon: icon-path-2.svg
-        title: Quia dolor sit amet
+        title: Application / Solution Development
         description: >-
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adip
+          Based upon the use case, assessed product vision and defined
+          architecture and features we build the application / solution from
+          proof of concept (PoC) to MVP and test it with users and stakeholders.
+      - icon: ''
+        title: Deployment to Production
+        description: >-
+          After successful trial and validated user acceptance, we deploy the
+          application into a production environment and if necessary, prepare
+          the data infrastructure and pipelines for the productive use of the AI
+          application.
+      - icon: ''
+        title: Monitoring and Maintenance
+        description: >
+          We are prepared continuous integration and improvement of the solution
+          (CI/CD) and establish feedback loops so that the AI solution keeps up
+          the performance and delivers continuous value.
   - _bookshop_name: home/buildOn
     title: We build on
     subTitle: LOREM IPSUM
@@ -170,34 +195,37 @@ content_blocks:
       viverra tempus.”
     author: Grandon Jones
   - _bookshop_name: home/ourFounders
-    title: Our Founders
-    subTitle: Lorem Ipsum
-    buttonText: Call To Action
+    title: Your Personal Contact
+    subTitle: Our Founders
+    buttonText: Download the AI Implementation Guide
     buttonHref: '#'
     founders:
-      - name: Sebastian Eumann
+      - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sodales
-          id bibendum quis aliquam, quisque rhoncus. Dolor iaculis a vitae, at
-          imperdiet. Aliquam sed quam blandit volutpat element.
+          As an experienced AI Solution Engineer and Project Leader, Sebastian
+          brings a wealth of expertise in delivering advanced AI solutions. With
+          his deep industry knowledge Sebastian and his skilled team help your
+          business to succeed with AI. Sebastian has many years of innovation
+          experience across all major industrial domains such as Energy,
+          Automotive, Manufacturing and Aerospace.
   - _bookshop_name: home/partnerLogos
     heading: Companies we have successfully worked for
     logos:
-      - name: Washington
-        image: path-to-washington-logo.png
-      - name: Tech
-        image: path-to-tech-logo.png
-      - name: Bloomberg
-        image: path-to-bloomberg-logo.png
-      - name: Gizmodo
-        image: path-to-gizmodo-logo.png
-      - name: Forbes
-        image: path-to-forbes-logo.png
+      - name: Bosch
+        image: /image-24.webp
+      - name: Continental
+        image: /image-25.webp
+      - name: Mtu
+        image: /image-27.webp
+      - name: Simens
+        image: /image-29.webp
+      - name: Senec
+        image: /image-28.webp
       - name: Forbes
         image: path-to-forbes-logo.png
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum
-    buttonText: Call To Action
+    buttonText: Send
 ---
