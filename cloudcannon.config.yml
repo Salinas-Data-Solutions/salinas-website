@@ -7,6 +7,10 @@ paths:
   layouts:
 timezone: Etc/UTC
 collections_config:
+  locales: 
+    path: _locales
+    disable_add: true
+    disable_add_folder: true
   data:
     path: data
     disable_add: true
