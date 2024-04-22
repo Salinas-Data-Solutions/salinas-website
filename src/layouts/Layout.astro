@@ -17,6 +17,7 @@ import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
 import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -45,6 +46,7 @@ const { language, textDirection } = I18N;
     <Header isSticky={true} />
     <slot />
 
+    <Footer />
     <BasicScripts />
 
     <style is:global>

@@ -3,7 +3,7 @@ import Button from '~/components/ui/Button.jsx';
 
 const OurFounders = (block) => {
   return (
-    <section className="py-20 bg-page lg:py-32">
+    <section className="py-20 bg-black-custom lg:py-32">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-4xl">
         <div className="mx-auto text-center">
           <p className="text-grey uppercase tracking-widest">

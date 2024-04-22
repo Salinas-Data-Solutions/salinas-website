@@ -45,14 +45,12 @@ const {
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
-
-console.log(Astro.redirect, 'current');
 ---
 
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    ' bg-page top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0  ',
+    ' !bg-page top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0  ',
   ]}
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
   {...id ? { id } : {}}

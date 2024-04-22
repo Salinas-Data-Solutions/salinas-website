@@ -25,7 +25,7 @@ const Applications = (block) => {
           ))}
         </ul>
 
-        <div className='mt-12 flex items-center gap-20 bg-black-custom py-10 px-20 rounded-2xl'>
+        <div className='mt-12 flex flex-col md:flex-row items-center gap-10 text-center md:text-left md:gap-20 bg-black-custom py-10 px-20 rounded-2xl'>
           <div>
 
           <h3 className='font-bold mb-2' >{block.bottomBlockTitle}</h3>

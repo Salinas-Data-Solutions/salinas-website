@@ -182,18 +182,6 @@ content_blocks:
       https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png
     bottomLogos: >-
       https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png
-  - _bookshop_name: home/aboutUs
-    title: About Us and References
-    subTitle: About Us
-    buttonText: Call to Action
-    buttonHref: '#'
-    image: >-
-      https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png
-    description: >-
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
-      est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum
-      viverra tempus.”
-    author: Grandon Jones
   - _bookshop_name: home/ourFounders
     title: Your Personal Contact
     subTitle: Our Founders
