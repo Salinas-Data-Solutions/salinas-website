@@ -44,6 +44,9 @@ const {
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
+
+console.log(Astro.redirect, 'current');
 ---
 
 <header
@@ -73,13 +76,21 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
-      <ul>
-        <li>
-          <a href="/en/">English</a>
-          <a href="/de/">Deutsch</a>
-        </li>
-      </ul>
 
+      <!-- <select
+        class="md:block bg-transparent text-default dark:text-white dark:bg-dark border-none appearance-none"
+        onchange="(e) => console.log('test' )"
+      >
+        <option value="en" selected={Astro.currentLocale === 'en' ? 'selected' : undefined}>
+          {' '}
+          English{' '}
+        </option>
+        <option value="de" selected={Astro.currentLocale === 'de' ? 'selected' : undefined}>
+          {' '}
+          Deutsch{' '}
+        </option>
+      </select> -->
+      <LanguageSwitcher client:load currentLocale={Astro.currentLocale || ''} redirect={(e) => Astro.redirect(e)} />
       <div class="flex items-center md:hidden">
         <ToggleMenu />
       </div>
