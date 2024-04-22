@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: SalinasData
+  site: 'https://main-wood.cloudvent.net'
   base: '/'
   trailingSlash: false
 
