@@ -32,3 +32,6 @@ collection_groups:
       - data
       - site_navigation
       - theme_palette
+  - heading: Locales
+    collections:
+      - locales
