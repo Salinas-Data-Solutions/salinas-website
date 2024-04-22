@@ -214,16 +214,16 @@ content_blocks:
     logos:
       - name: Bosch
         image: /image-24.webp
+      - name: Endless
+        image: /asset-10-1x-1.webp
       - name: Continental
         image: /image-25.webp
       - name: Mtu
-        image: /image-27.webp
+        image: /image-27-copy-2.webp
       - name: Simens
-        image: /image-29.webp
+        image: /image-29-copy-2.webp
       - name: Senec
         image: /image-28.webp
-      - name: Forbes
-        image: path-to-forbes-logo.png
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum
