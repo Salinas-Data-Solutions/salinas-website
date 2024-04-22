@@ -88,7 +88,7 @@ content_blocks:
         description: >-
           A chat based application that knows everything about engineering and
           configuring specific technical solutions.
-        image: /d880347d4b1fb00c9ed5321db845098d.webp
+        image: /318f2e6a2cee512aa5d360f38573d6e8.webp
         extended_description: >-
           This engineering assistant provides expert advice to engineers based
           on extensive content that comes from thousands of documents and
@@ -101,7 +101,7 @@ content_blocks:
           A digital assistant that helps customer service and sales teams to
           interact with customers across different languages and cultures while
           staying technically accurate.
-        image: /dfbca86b002e888c1bfbae55e2a7b20a.webp
+        image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
         extended_description: >-
           This digital assistant integrates seamlessly with communication
           platforms, offering expert knowledge on technical product and service
@@ -113,7 +113,7 @@ content_blocks:
           A backend automation system that helps data analysts and decision
           makers to have the information available at their fingertips in the
           exact format that is needed at any time.
-        image: /276fc6b25ab7d717cd6a6875b1ad99b5.webp
+        image: /7ed59cbf2339e4ec523b96185248cdcd.webp
         extended_description: >-
           This system optimizes data workflows through robust data pipelines and
           ETL processes, supporting automated data analysis and insight
