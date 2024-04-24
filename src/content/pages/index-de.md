@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Home Page Deutsch
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero

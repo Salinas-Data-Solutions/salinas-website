@@ -7,7 +7,7 @@ export default function Services(block) {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 ">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
-          <h2 className="mt-6 text-3xl tracking-tight lg:mt-8 sm:text-4xl lg:text-5xl !leading-relaxed">{block.title}</h2>
+          <h2 className="mt-6 text-3xl tracking-tight lg:mt-8 sm:text-4xl lg:text-5xl !leading-relaxed" >{block.title}</h2>
         </div>
 
         <ul className="grid max-w-5xl grid-cols-1 gap-5 mx-auto mt-12 sm:mt-16 md:grid-cols-2 sm:gap-6">

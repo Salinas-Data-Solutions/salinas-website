@@ -1,1 +1,33 @@
-{"hero_title":"Willkommen bei der"}
+{
+  "hero": {
+    "hero_title": "Willkommen bei der",
+    "hero_subtitle": "Kostenlosen Online-Plattform für die Verwaltung von Vereinen und Organisationen",
+    "hero_description": "Mit Vereinsplaner können Sie Ihre Mitglieder verwalten, Veranstaltungen planen und durchführen, Finanzen verwalten und vieles mehr. Alles in einer einzigen Anwendung.",
+    "hero_button": "Jetzt starten",
+    "hero_second_button": "Mehr erfahren"
+  },
+  "services": {
+    "services_title": "Unsere Dienstleistungen",
+    "services_description": "Vereinsplaner bietet eine Vielzahl von Dienstleistungen, die Ihnen helfen, Ihren Verein oder Ihre Organisation zu verwalten. Von der Mitgliederverwaltung bis zur Finanzverwaltung, wir haben alles, was Sie brauchen.",
+    "services_list": [
+      {
+        "services_list_1_title": "Mitgliederverwaltung",
+        "services_list_1_description": "Verwalten Sie Ihre Mitglieder und halten Sie sie auf dem Laufenden."
+      },
+      {
+        "services_list_2_title": "Veranstaltungsplanung",
+        "services_list_2_description": "Planen und organisieren Sie Veranstaltungen für Ihren Verein oder Ihre Organisation."
+      },
+      {
+        "services_list_3_title": "Finanzverwaltung",
+        "services_list_3_description": "Verwalten Sie die Finanzen Ihres Vereins oder Ihrer Organisation mit Leichtigkeit."
+      },
+      {
+        "services_list_4_title": "Kommunikationstools",
+        "services_list_4_description": "Bleiben Sie mit Ihren Mitgliedern in Kontakt und informieren Sie sie über Neuigkeiten und Veranstaltungen."
+      }
+      
+    ],
+    "services_list_button": "Jetzt starten"
+  }
+}
