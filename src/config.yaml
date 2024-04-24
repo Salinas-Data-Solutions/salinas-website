@@ -10,7 +10,6 @@ site:
 metadata:
   title:
     default: Salinas Data Solutions
-    template: '%s — AstroWind'
   description: "We develop smart solutions that enhance efficiency across your business workflows."
   robots:
     index: true
