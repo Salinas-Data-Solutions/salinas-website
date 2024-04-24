@@ -19,17 +19,7 @@ const ApplicationDescription = ( block ) => {
             ></div>
             <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
               <div className="flex-shrink-0 w-24 h-24 bg-page text-white rounded-full inline-flex items-center justify-center">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-12 h-12"
-                  viewBox="0 0 24 24"
-                >
-                  {/* Icon here can dynamically change */}
-                </svg>
+                <img src={item.image} alt={item.title} />
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font mb-1 text-xl">{item.title}</h2>

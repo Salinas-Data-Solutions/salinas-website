@@ -127,38 +127,38 @@ content_blocks:
     buttonText: Call To Action
     buttonHref: '#'
     items:
-      - icon: icon-path-1.svg
+      - image: /light-bulb.svg
         title: Use Case Ideation
         description: >-
           We work together on answering the following questions: “How might we
           become more efficient with AI?” & “What kind of routines should be
           automated?”.
-      - icon: icon-path-2.svg
+      - image: icon-path-2.svg
         title: Assessment
         description: >-
           We identify your resources, data, and knowledge potential, teams and
           stakeholders and define a joint product or service vision with a clear
           “definition of done”.
-      - icon: icon-path-2.svg
+      - image: icon-path-2.svg
         title: Planning
         description: >-
           We define a target solution architecture with relevant features and
           optimized costs for development and operation together with an
           implementation roadmap and potential alternative scenarios.
-      - icon: icon-path-2.svg
+      - image: icon-path-2.svg
         title: Application / Solution Development
         description: >-
           Based upon the use case, assessed product vision and defined
           architecture and features we build the application / solution from
           proof of concept (PoC) to MVP and test it with users and stakeholders.
-      - icon: ''
+      - image: ''
         title: Deployment to Production
         description: >-
           After successful trial and validated user acceptance, we deploy the
           application into a production environment and if necessary, prepare
           the data infrastructure and pipelines for the productive use of the AI
           application.
-      - icon: ''
+      - image: ''
         title: Monitoring and Maintenance
         description: >
           We are prepared continuous integration and improvement of the solution
