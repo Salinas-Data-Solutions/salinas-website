@@ -71,7 +71,7 @@ content_blocks:
           Requirements and necessary resources for AI development and
           implementation
       - title: Risks and challenges of AI and how to mitigate them
-    buttonText: Call To Action
+    buttonText: Download the AI Implementation Guide
     buttonHref: '#'
   - _bookshop_name: home/applications
     title: What We Have Worked On
@@ -166,8 +166,8 @@ content_blocks:
           the performance and delivers continuous value.
   - _bookshop_name: home/buildOn
     title: We build on
-    subTitle: LOREM IPSUM
-    buttonText: Call To Action
+    subTitle: Our Tech Stack
+    buttonText: Request a demo
     buttonHref: '#'
     text: >-
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,

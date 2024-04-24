@@ -3,13 +3,13 @@ import Button from '~/components/ui/Button.jsx';
 
 const BuildOn = (block) => {
   return (
-    <section className="py-20 bg-page lg:py-32 overflow-hidden">
+    <section className="py-20 bg-page lg:py-24 overflow-hidden">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <img className="parallax-img w-full md:hidden" src={block.topLogos} data-speed="0.27" alt="" />
+            <img className="parallax-img w-full md:hidden scale-50" src={block.topLogos} data-speed="0.27" alt="" />
             <img
-              className="parallax-img hidden w-full lg:translate-y-12 md:block"
+              className="parallax-img hidden w-full  md:block scale-75"
               src={block.leftLogos}
               data-speed="0.27"
               alt=""
@@ -24,9 +24,9 @@ const BuildOn = (block) => {
             </Button>
           </div>
           <div>
-            <img className="w-full md:hidden" src={block.bottomLogos} alt="" />
+            <img className="w-full md:hidden scale-50" src={block.bottomLogos} alt="" />
             <img
-              className="parallax-img hidden w-full lg:translate-y-12 md:block"
+              className="parallax-img hidden w-full  md:block scale-75"
               data-speed="0.27"
               src={block.rightLogos}
               alt=""
