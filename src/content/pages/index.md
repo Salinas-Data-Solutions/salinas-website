@@ -133,32 +133,32 @@ content_blocks:
           We work together on answering the following questions: “How might we
           become more efficient with AI?” & “What kind of routines should be
           automated?”.
-      - image: icon-path-2.svg
+      - image: /vector.svg
         title: Assessment
         description: >-
           We identify your resources, data, and knowledge potential, teams and
           stakeholders and define a joint product or service vision with a clear
           “definition of done”.
-      - image: icon-path-2.svg
+      - image: /target-line-icon.svg
         title: Planning
         description: >-
           We define a target solution architecture with relevant features and
           optimized costs for development and operation together with an
           implementation roadmap and potential alternative scenarios.
-      - image: icon-path-2.svg
+      - image: /extension-icon-1.svg
         title: Application / Solution Development
         description: >-
           Based upon the use case, assessed product vision and defined
           architecture and features we build the application / solution from
           proof of concept (PoC) to MVP and test it with users and stakeholders.
-      - image: ''
+      - image: /rocket-launch-line-icon.svg
         title: Deployment to Production
         description: >-
           After successful trial and validated user acceptance, we deploy the
           application into a production environment and if necessary, prepare
           the data infrastructure and pipelines for the productive use of the AI
           application.
-      - image: ''
+      - image: /work-process-outline-icon.svg
         title: Monitoring and Maintenance
         description: >
           We are prepared continuous integration and improvement of the solution
