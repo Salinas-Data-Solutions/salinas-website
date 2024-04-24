@@ -174,14 +174,10 @@ content_blocks:
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
       reprehenderit qui in ea voluptate velit esse quam nihil molestiae
       consequatur.
-    leftLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png
-    rightLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png
-    topLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png
-    bottomLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png
+    leftLogos: /desktop-left.webp
+    rightLogos: /desktop-right.webp
+    topLogos: /mobile-top.webp
+    bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/ourFounders
     title: Your Personal Contact
     subTitle: Our Founders
