@@ -180,9 +180,9 @@ content_blocks:
     bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/ourFounders
     title: Your Personal Contact
-    subTitle: Our Founders
-    buttonText: Download the AI Implementation Guide
-    buttonHref: '#'
+    subTitle:
+    buttonText: Request a Demo
+    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9
     founders:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
