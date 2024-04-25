@@ -138,39 +138,39 @@ content_blocks:
     buttonText: Demo anfragen
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
-      - icon: icon-path-1.svg
+      - image: /light-bulb.svg
         title: Use Case Ideation
         description: >
           Wir arbeiten gemeinsam an der Beantwortung der folgenden Fragen: „Wie
           können wir mit KI effizienter werden?“ & „Welche Routinen sollten
           automatisiert werden?“.
-      - icon: icon-path-2.svg
+      - image: /vector.svg
         title: Assessment
         description: >
           Wir ermitteln Ihr Ressourcen-, Daten- und Wissenspotenzial, Ihre Teams
           und Beteiligten und definieren eine gemeinsame Produkt- oder
           Dienstleistungsvision mit einer klaren „Definition of done“.
-      - icon: icon-path-2.svg
+      - image: /target-line-icon.svg
         title: Planung
         description: >
           Wir definieren eine angestrebte Lösungsarchitektur mit relevanten
           Merkmalen und optimierten Kosten für Entwicklung und Betrieb zusammen
           mit einem Implementierungsfahrplan und möglichen Alternativszenarien.
-      - icon: icon-path-2.svg
+      - image: /extension-icon-1.svg
         title: Lösungsentwicklung
         description: >
           Auf der Grundlage des Anwendungsfalls, der bewerteten Produktvision
           und der definierten Architektur und Funktionen entwickeln wir die
           Anwendung/Lösung vom Proof of Concept (PoC) zum MVP und testen sie mit
           Benutzern und Interessengruppen.
-      - icon: ''
+      - image: /rocket-launch-line-icon.svg
         title: Deployment
         description: >
           Nach erfolgreicher Erprobung und validierter Benutzerakzeptanz setzen
           wir die Anwendung in einer Produktionsumgebung ein und bereiten bei
           Bedarf die Dateninfrastruktur und Pipelines für den produktiven
           Einsatz der KI-Anwendung vor
-      - icon: ''
+      - image: /work-process-outline-icon.svg
         title: Überwachung und Wartung
         description: >-
           Wir bereiten die kontinuierliche Integration und Verbesserung der
@@ -187,26 +187,10 @@ content_blocks:
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
       reprehenderit qui in ea voluptate velit esse quam nihil molestiae
       consequatur.
-    leftLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png
-    rightLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png
-    topLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png
-    bottomLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png
-  - _bookshop_name: home/aboutUs
-    title: About Us and References
-    subTitle: About Us
-    buttonText: Call to Action
-    buttonHref: '#'
-    image: >-
-      https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png
-    description: >-
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
-      est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum
-      viverra tempus.”
-    author: Grandon Jones
+    leftLogos: /desktop-left.webp
+    rightLogos: /desktop-right.webp
+    topLogos: /mobile-top.webp
+    bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/ourFounders
     title: Ihr Ansprechpartner
     subTitle:
@@ -230,14 +214,8 @@ content_blocks:
         image: /image-24.webp
       - name: Continental
         image: /image-25.webp
-      - name: Mtu
-        image: /image-27.webp
       - name: Simens
         image: /image-29.webp
-      - name: Senec
-        image: /image-28.webp
-      - name: Forbes
-        image: path-to-forbes-logo.png
   - _bookshop_name: home/contactUs
     title: Kontaktieren Sie uns
     subTitle:
