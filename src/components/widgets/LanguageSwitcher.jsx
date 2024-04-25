@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LanguageIcon from '../../assets/icons/language.svg';
 
-const LanguageSwitcher = ({ currentLocale, redirect }) => {
+const LanguageSwitcher = ({ currentLocale }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedFlag, setSelectedFlag] = useState(currentLocale === 'en' ? '/us-flag.webp' : '/de-flag.webp');
 
@@ -14,7 +14,7 @@ const LanguageSwitcher = ({ currentLocale, redirect }) => {
     setSelectedFlag(flag);
     setIsOpen(false);
     window.location.pathname = '/' + lang + '/';
-    redirect('/' + lang + '/');
+    // redirect('/' + lang + '/');
   }
 
   return (

@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 const page = Astro.props.page;
-console.log('page', page.data);
+// console.log('page', page.data);
 if (!page.data.content_blocks) {
   throw new Error(`Tried to output page with unsupported schema: ${page.data._schema}`);
 }
