@@ -66,7 +66,7 @@ content_blocks:
       - title:
         description: Strategische Expertise zu Daten, KI sowie Empathie für Ihr Business
   - _bookshop_name: home/implementationGuide
-    title: Lesen Sie unseren KI-Leitfaden!
+    title: Laden Sie sich unsere KI-Leitfaden!
     description: >
       Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
       von KI-Lösungen in einem ebook zusammengefasst und möchten gerne, dass Sie
