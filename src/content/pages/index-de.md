@@ -15,16 +15,16 @@ content_blocks:
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
-    title: Tailored AI Solutions
-    subTitle: Accelerating Your Business With AI
-    buttonText: Request a demo
-    buttonHref: '#'
+    title: Passgenaue Intelligente Lösungen
+    subTitle: Beschleunigen Sie Ihre Geschäftsprozesse
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
-      - title: Building AI Applications
-        description: >-
-          With our experienced team of AI/ML developers and Data Scientists, we
-          build Machine Learning and Generative AI applications from prototype
-          up to production readiness.
+      - title: Entwicklung von KI-Lösungen
+        description: >
+          Mit unserem erfahrenen Team von KI-Experten entwickeln wir
+          intelligente Anwendungen und Automatisierungslösungen vom Prototyp bis
+          zur Produktionsreife.
       - title: Integrating Data Infrastructures
         description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
       - title: Maintaining AI Solutions
