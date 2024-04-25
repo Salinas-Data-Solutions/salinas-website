@@ -3,13 +3,13 @@ title: Home Page Deutsch
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Your Business
-    title: Let’s Make Data Your Biggest Asse
+    subTitle: INTELLIGENTE LÖSUNGEN FÜR IHR UNTERNEHMEN
+    title: Wir machen aus Ihren Daten Intelligenz!
     description: >-
-      We transform your data into your strategic advantage by building
-      intelligent applications from prototype to production.
-    buttonText: Request a demo
-    buttonHref: '#'
+      Wir entwickeln für Sie Lösungen, mit denen Sie Zeit und Kosten in Ihren
+      Prozessen sparen und so einen strategischen Vorteil gewinnen.
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
