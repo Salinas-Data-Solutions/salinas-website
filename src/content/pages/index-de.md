@@ -70,114 +70,113 @@ content_blocks:
     description: >
       Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
       von KI-Lösungen in einem ebook zusammengefasst und möchten gerne, dass Sie
-      damit erfahren
-
-      - was die vielversprechendsten Anwendungsfälle für KI-Lösungen sind
-
-      - welche Anforderungen und Ressourcen für die KI-Implementierung notwendig
-      sind
-
-      - welche Risiken und Herausforderungen zum Einsatz von KI bestehen und wie
-      man diesen begegnet
+      damit erfahren:
     features:
-      - title: AI capabilities and the most promising use cases
+      - title: Was die vielversprechendsten Anwendungsfälle für KI-Lösungen sind
       - title: >-
-          Requirements and necessary resources for AI development and
-          implementation
-      - title: Risks and challenges of AI and how to mitigate them
+          Welche Anforderungen und Ressourcen für die KI-Implementierung
+          notwendig sind
+      - title: >-
+          Welche Risiken und Herausforderungen zum Einsatz von KI bestehen und
+          wie man diesen begegnet
     buttonText: Zum Download
     buttonHref: https://subscribepage.io/uqaWYN
   - _bookshop_name: home/applications
-    title: What We Have Worked On
-    subTitle: AI Application Examples
-    buttonText: Request a free demo!
-    buttonHref: '#'
-    bottomBlockTitle: Are you curious about what AI can do for you?
-    bottomBlockDescription: >-
-      We will prepare a free demo session based on your business needs and
-      requirements. Request a demo session today and we will build a free
-      Generative AI prototype for you!
+    title: Woran wir arbeiten
+    subTitle: Beispiele von unseren KI Anwendungen
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
+    bottomBlockTitle: Fragen Sie sich, was Künstliche Intelligenz für Sie tun kann?
+    bottomBlockDescription: >
+      Wir bereiten eine kostenlose KI-Demo vor, die auf Ihren geschäftlichen
+      Bedürfnisse und Anforderungen zugeschnitten ist. Fragen Sie jetzt eine
+      Demo an und wir erstellen einen KI-Prototyp für Ihren Geschäftsprozess!
     items:
-      - title: Engineering Workflow Assistant
+      - title: Engineering Workflow Assistent
         description: >-
-          A chat based application that knows everything about engineering and
-          configuring specific technical solutions.
+          Eine Chat-basierte Anwendung, die alles über das Engineering und die
+          Konfiguration von spezifischen technischen Lösungen weiß.
         image: /d880347d4b1fb00c9ed5321db845098d.webp
         extended_description: >-
-          This engineering assistant provides expert advice to engineers based
-          on extensive content that comes from thousands of documents and
-          manuals along with diagrams, images and even videos. The application
-          is built with a Retrieval Augmented Generation (RAG) architecture that
-          enables Large Language models (LLMs) to provide accurate, context
-          based advice.
+          Dieser technische Assistent bietet Ingenieuren fachkundige
+          Unterstützung auf der Grundlage umfangreicher und komplexer
+          technischer Inhalte, die aus tausenden von Dokumenten und Handbüchern
+          zusammen mit Diagrammen, Bildern und sogar Videos stammen. Die
+          Anwendung basiert auf einer Retrieval Augmented Generation
+          (RAG)-Architektur, die es Large Language Models (LLMs) ermöglicht,
+          genaue, kontextbasierte Ratschläge zu geben.
       - title: Customer  Service CoPilot
-        description: >-
-          A digital assistant that helps customer service and sales teams to
-          interact with customers across different languages and cultures while
-          staying technically accurate.
+        description: >
+          Ein digitaler Assistent, der Kundendienst- und Vertriebsteams bei der
+          Interaktion mit Kunden in verschiedenen Sprachen und Kulturen
+          unterstützt und dabei technisch korrekt bleibt.
         image: /dfbca86b002e888c1bfbae55e2a7b20a.webp
-        extended_description: >-
-          This digital assistant integrates seamlessly with communication
-          platforms, offering expert knowledge on technical product and service
-          information. With its LLM features, It offers advanced translation
-          abilities and adjusts to cultural contexts, ensuring clear and
-          accurate interactions across global markets.
-      - title: Data Entry and  Analysis Automation
+        extended_description: >
+          Dieser digitale Assistent lässt sich nahtlos in
+          Kommunikationsplattformen integrieren und bietet Expertenwissen zu
+          technischen Produkt- und Serviceinformationen. Mit seinen
+          LLM-Funktionen bietet er fortschrittliche Übersetzungsfähigkeiten und
+          passt sich an kulturelle Kontexte an, um klare und präzise
+          Interaktionen auf globalen Märkten zu gewährleisten.
+      - title: AutomatisierteDateneingabe und -analyse
         description: >-
-          A backend automation system that helps data analysts and decision
-          makers to have the information available at their fingertips in the
-          exact format that is needed at any time.
+          Ein Backend-Automatisierungssystem, das Datenanalysten und
+          Entscheidungsträgern dabei hilft, die Informationen jederzeit in genau
+          dem Format zur Verfügung zu haben, das sie benötigen.
         image: /276fc6b25ab7d717cd6a6875b1ad99b5.webp
-        extended_description: >-
-          This system optimizes data workflows through robust data pipelines and
-          ETL processes, supporting automated data analysis and insight
-          generation. It is compatible with various data tools (Excel, PowerBI,
-          Tableau) and backend services/databases, enhancing accessibility and
-          utility for decision-makers.
+        extended_description: >
+          Dieses System optimiert Daten-Workflows durch robuste Daten-Pipelines
+          und ETL-Prozesse und unterstützt die automatisierte Datenanalyse und
+          die Gewinnung von Erkenntnissen. Es ist mit verschiedenen Datentools
+          (Excel, PowerBI, Tableau) und Backend-Diensten/Datenbanken kompatibel
+          und verbessert so die Zugänglichkeit und den Nutzen für
+          Entscheidungsträger.
         content_blocks:
   - _bookshop_name: home/applicationDescription
-    title: Your Path To Successful Implementation
-    subTitle: How we work
-    buttonText: Call To Action
-    buttonHref: '#'
+    title: Ihr Weg zur erfolgreichen Umsetzung
+    subTitle: Wie wir arbeiten
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
       - icon: icon-path-1.svg
         title: Use Case Ideation
-        description: >-
-          We work together on answering the following questions: “How might we
-          become more efficient with AI?” & “What kind of routines should be
-          automated?”.
+        description: >
+          Wir arbeiten gemeinsam an der Beantwortung der folgenden Fragen: „Wie
+          können wir mit KI effizienter werden?“ & „Welche Routinen sollten
+          automatisiert werden?“.
       - icon: icon-path-2.svg
         title: Assessment
-        description: >-
-          We identify your resources, data, and knowledge potential, teams and
-          stakeholders and define a joint product or service vision with a clear
-          “definition of done”.
-      - icon: icon-path-2.svg
-        title: Planning
-        description: >-
-          We define a target solution architecture with relevant features and
-          optimized costs for development and operation together with an
-          implementation roadmap and potential alternative scenarios.
-      - icon: icon-path-2.svg
-        title: Application / Solution Development
-        description: >-
-          Based upon the use case, assessed product vision and defined
-          architecture and features we build the application / solution from
-          proof of concept (PoC) to MVP and test it with users and stakeholders.
-      - icon: ''
-        title: Deployment to Production
-        description: >-
-          After successful trial and validated user acceptance, we deploy the
-          application into a production environment and if necessary, prepare
-          the data infrastructure and pipelines for the productive use of the AI
-          application.
-      - icon: ''
-        title: Monitoring and Maintenance
         description: >
-          We are prepared continuous integration and improvement of the solution
-          (CI/CD) and establish feedback loops so that the AI solution keeps up
-          the performance and delivers continuous value.
+          Wir ermitteln Ihr Ressourcen-, Daten- und Wissenspotenzial, Ihre Teams
+          und Beteiligten und definieren eine gemeinsame Produkt- oder
+          Dienstleistungsvision mit einer klaren „Definition of done“.
+      - icon: icon-path-2.svg
+        title: Planung
+        description: >
+          Wir definieren eine angestrebte Lösungsarchitektur mit relevanten
+          Merkmalen und optimierten Kosten für Entwicklung und Betrieb zusammen
+          mit einem Implementierungsfahrplan und möglichen Alternativszenarien.
+      - icon: icon-path-2.svg
+        title: Lösungsentwicklung
+        description: >
+          Auf der Grundlage des Anwendungsfalls, der bewerteten Produktvision
+          und der definierten Architektur und Funktionen entwickeln wir die
+          Anwendung/Lösung vom Proof of Concept (PoC) zum MVP und testen sie mit
+          Benutzern und Interessengruppen.
+      - icon: ''
+        title: Deployment
+        description: >
+          Nach erfolgreicher Erprobung und validierter Benutzerakzeptanz setzen
+          wir die Anwendung in einer Produktionsumgebung ein und bereiten bei
+          Bedarf die Dateninfrastruktur und Pipelines für den produktiven
+          Einsatz der KI-Anwendung vor
+      - icon: ''
+        title: Überwachung und Wartung
+        description: >-
+          Wir bereiten die kontinuierliche Integration und Verbesserung der
+          Lösung (CI/CD) vor und etablieren Feedback-Schleifen, damit die
+          KI-Lösung die Leistung aufrechterhält und einen kontinuierlichen
+          Mehrwert liefert.
   - _bookshop_name: home/buildOn
     title: We build on
     subTitle: LOREM IPSUM
