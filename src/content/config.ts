@@ -35,7 +35,7 @@ const pageSchema = z.object({
   _schema: z.any().optional(),
   hidden: z.boolean().optional().default(false),
   title: z.string(),
-  content_blocks: z.array(z.any()),
+  content_blocks: z.array(z.any()).optional(),
   page_size: z.undefined(),
   description: z.undefined(),
   seo: seoSchema,

@@ -1,38 +1,44 @@
 ---
 import { getCollection } from 'astro:content';
 import PageLayout from '~/layouts/PageLayout.astro';
+import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 
-export interface Props {
-  page: CollectionEntry<'pages'>;
-}
+// export async function getStaticPaths() {
+//   const pages = await getCollection('pages', (props) => {
+//     // console.log(props);
+//     return !props.data.hidden && props.slug.endsWith('-de');
+//   });
+//   return pages.map((page) => {
+//     // Extracting the slug and trimming 'index-de' and '-de' as needed for root and other pages.
+//     const slug = page.slug.replace(/index-de$/, '').replace(/-de$/, '');
 
-export async function getStaticPaths(props) {
-  // console.log(props.paginate, 'proppsss');
-  const pages = await getCollection('pages', ({ data }) => !data.hidden);
+//     console.log(slug, page.slug);
+//     // We should keep the '-de' for the German pages in the URL
+//     return { params: { slug: slug || page.slug }, props: { page } };
+//   });
+// }
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (props) => !props.data.hidden && props.slug.endsWith('-de'));
   return pages.map((page) => {
-    const slug = page.slug.replace(/index$/, '');
+    // Remove 'index-de' from slugs that serve as default pages for German locale.
+    // For other pages, replace '-de' suffix to expose cleaner URLs if necessary.
+    const slug = page.slug.replace(/index-de$/, '').replace(/-de$/, '');
+
+    // If after replacing 'index-de' the slug is empty, we treat it as the root of the German locale.
     if (slug.length === 0) return { params: { slug: undefined }, props: { page } };
-    return { params: { slug }, props: { page } };
+    if (slug !== 'index') return { params: { slug: slug }, props: { page } };
+    return { params: { slug: slug + '-de' }, props: { page } }; // Append '-de' to make URLs clearly German.
   });
 }
-
-const correctPage = async (slug) => {
-  const pages = await getCollection('pages', ({ data }) => !data.hidden);
-  const page = pages.find((page) => {
-    // console.log(slug, 'Astroslug');
-    // console.log(page.slug, 'pageSlug');
-    return page.slug || `index-${Astro.currentLocale}` === `${slug}-${Astro.currentLocale}`;
-  });
-  return page;
-};
-
-const foundPage = await correctPage(Astro.params.slug);
-// console.log(foundPage, 'foundPage');
-
 const page = Astro.props.page;
-if (!page.data.content_blocks) {
-  throw new Error(`Tried to output page with unsupported schema: ${page.data._schema}`);
-}
+console.log(page, 'page');
 ---
 
-<PageLayout frontmatter={foundPage.data} />
+{page?.data.content_blocks && <PageLayout frontmatter={page.data} />}
+{
+  !page?.data.content_blocks && (
+    <>
+      <MarkdownLayout frontmatter={{ title: page.data.title, markdown: page.body }} />
+    </>
+  )
+}

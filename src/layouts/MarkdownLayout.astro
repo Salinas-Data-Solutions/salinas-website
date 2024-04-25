@@ -1,12 +1,15 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import type { markHTMLString } from 'astro/runtime/server/escape.js';
+import Content from '~/components/widgets/Content.astro';
+import Layout from '~/layouts/Layout.astro';
 
 import type { MetaData } from '~/types';
-
+import { marked } from 'marked';
 export interface Props {
   frontmatter: {
-    title?: string
-  }
+    title?: string;
+    markdown: string;
+  };
 }
 
 const { frontmatter } = Astro.props;
@@ -14,6 +17,8 @@ const { frontmatter } = Astro.props;
 const metadata: MetaData = {
   title: frontmatter?.title,
 };
+
+const content = marked.parse(frontmatter.markdown);
 ---
 
 <Layout metadata={metadata}>
@@ -22,7 +27,7 @@ const metadata: MetaData = {
     <div
       class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
-      <slot />
+      <div set:html={content} />
     </div>
   </section>
 </Layout>

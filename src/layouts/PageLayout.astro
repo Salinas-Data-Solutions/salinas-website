@@ -6,7 +6,7 @@ import Header from '~/components/widgets/Header.astro';
 type Props = {
   frontmatter: {
     title: string;
-    content_blocks: Array<Record<string, any>>;
+    content_blocks?: Array<Record<string, any>>;
     seo?: any;
   };
 };

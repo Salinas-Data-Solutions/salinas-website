@@ -13,9 +13,12 @@ const LanguageSwitcher = ({ currentLocale }) => {
   function switchLanguage(lang, flag) {
     setSelectedFlag(flag);
     setIsOpen(false);
-    window.location.pathname = '/' + lang + '/';
+  console.log(window.location.pathname.split('/')[2])
+
+    window.location.pathname = '/' + lang + `/${window.location.pathname.split('/')[2] || ''}`;
     // redirect('/' + lang + '/');
   }
+
 
   return (
     <div className="relative">
@@ -56,34 +59,3 @@ const LanguageSwitcher = ({ currentLocale }) => {
 };
 
 export default LanguageSwitcher;
-
-// import React from 'react';
-
-// const LanguageSwitcher = (props) => {
-//     // console.log(props)
-//     const { currentLocale, redirect } = props;
-//   function switchLanguage(lang) {
-//     // console.log('test')
-//     // // Assuming you want to navigate to the root of the selected language:
-//     window.location.pathname = '/' + lang + '/';
-
-//     // redirect('/' + lang + '/');
-//   }
-
-//   return (
-//     <select
-//       className="md:block bg-transparent border-none appearance-none w-12 h-12 bg-no-repeat bg-center bg-contain cursor-pointer"
-//       onChange={(e) => switchLanguage(e.target.value)}
-//       style={{ backgroundImage: `url(${currentLocale === 'en' ? '/us-flag.webp' : '/de-flag.webp'})` }}
-//     >
-//       <option value="en" selected={currentLocale === 'en'}>
-//         <div style={{ height: '100%', width: '100%', backgroundImage: 'url(/us-flag.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-//       </option>
-//       <option value="de" selected={currentLocale === 'de'}>
-//         <div style={{ height: '100%', width: '100%', backgroundImage: 'url(/de-flag.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-//       </option>
-//     </select>
-//   );
-// };
-
-// export default LanguageSwitcher;

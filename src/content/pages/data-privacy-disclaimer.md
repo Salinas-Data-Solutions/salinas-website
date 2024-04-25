@@ -1,6 +1,7 @@
 ---
-title: 'Terms and Conditions'
+title: 'Data Privacy English'
 layout: '~/layouts/MarkdownLayout.astro'
+
 ---
 
 _Last updated_: January 06, 2023
