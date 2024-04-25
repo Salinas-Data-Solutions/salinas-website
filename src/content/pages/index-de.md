@@ -25,18 +25,22 @@ content_blocks:
           Mit unserem erfahrenen Team von KI-Experten entwickeln wir
           intelligente Anwendungen und Automatisierungslösungen vom Prototyp bis
           zur Produktionsreife.
-      - title: Integrating Data Infrastructures
-        description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
-      - title: Maintaining AI Solutions
+      - title: Integration von Dateninfrastrukturen
         description: >-
-          With our capabilities to monitor and maintain AI/ML solutions in
-          production we establish MLOps and LLMOps practices so that AI
-          applications keep their promises and performance in production.
-      - title: AI & Data Strategy
+          Mit unserer Cloud- und DevOps Expertise helfen wir Ihnen,
+          Dateninfrastrukturen zu integrieren, welche die Leistungsfähigkeit
+          Ihrer Lösungen gewährleisten.
+      - title: KI Lösungen im Betrieb halten
         description: >-
-          With our extensive experience in AI & Data projects, we help you to
-          align your development initiatives with your business needs so that
-          your solutions will create user benefit and value.
+          Wir warten und Überwachen KI Lösungen im Betrieb, so dass diese sicher
+          und zuverlässig die Ergebnisse liefern. Dabei wenden wir auf unsere
+          MLOps Erfahrung.
+      - title: KI- und Datenstrategie
+        description: >-
+          Mit unserer umfassenden Erfahrung in KI- und Datenprojekten helfen wir
+          Ihnen, Ihre Entwicklungsinitiativen mit Ihren Geschäftsanforderungen
+          in Einklang zu bringen, damit Ihre Lösungen einen Nutzen für die
+          Anwender schaffen.
   - _bookshop_name: home/competence
     title: Expert AI Solutions for Your Business Success
     subTitle: Our Expertise in AI
