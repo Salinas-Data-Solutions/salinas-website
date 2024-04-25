@@ -66,7 +66,7 @@ content_blocks:
       - title:
         description: Strategische Expertise zu Daten, KI sowie Empathie für Ihr Business
   - _bookshop_name: home/implementationGuide
-    title: Laden Sie sich unsere KI-Leitfaden!
+    title: Laden Sie sich unseren umfassenden KI-Leitfaden!
     description: >
       Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
       von KI-Lösungen in einem ebook zusammengefasst und möchten gerne, dass Sie
@@ -178,10 +178,10 @@ content_blocks:
           KI-Lösung die Leistung aufrechterhält und einen kontinuierlichen
           Mehrwert liefert.
   - _bookshop_name: home/buildOn
-    title: We build on
-    subTitle: LOREM IPSUM
-    buttonText: Call To Action
-    buttonHref: '#'
+    title: Wir bauen auf
+    subTitle: Unser Tech Stack
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     text: >-
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
@@ -208,22 +208,23 @@ content_blocks:
       viverra tempus.”
     author: Grandon Jones
   - _bookshop_name: home/ourFounders
-    title: Your Personal Contact
-    subTitle: Our Founders
-    buttonText: Download the AI Implementation Guide
-    buttonHref: '#'
+    title: Ihr Ansprechpartner
+    subTitle:
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     founders:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
-        description: >-
-          As an experienced AI Solution Engineer and Project Leader, Sebastian
-          brings a wealth of expertise in delivering advanced AI solutions. With
-          his deep industry knowledge Sebastian and his skilled team help your
-          business to succeed with AI. Sebastian has many years of innovation
-          experience across all major industrial domains such as Energy,
-          Automotive, Manufacturing and Aerospace.
+        description: >
+          Als erfahrener KI-Experte und Projektleiter bringt Sebastian eine
+          Fülle von Fachkenntnissen bei der Bereitstellung fortschrittlicher
+          KI-Lösungen mit. Mit seinem fundierten Branchenwissen helfen Sebastian
+          und sein qualifiziertes Team Ihrem Unternehmen, mit KI erfolgreich zu
+          sein. Sebastian verfügt über langjährige Innovationserfahrung in allen
+          wichtigen Industriezweigen wie Energie, Automobil, Fertigung und Luft-
+          und Raumfahrt. 
   - _bookshop_name: home/partnerLogos
-    heading: Companies we have successfully worked for
+    heading: Mit diesen Unternehmen haben wir gearbeitet
     logos:
       - name: Bosch
         image: /image-24.webp
@@ -238,7 +239,7 @@ content_blocks:
       - name: Forbes
         image: path-to-forbes-logo.png
   - _bookshop_name: home/contactUs
-    title: Contact Us
-    subTitle: Lorem Ipsum
-    buttonText: Send
+    title: Kontaktieren Sie uns
+    subTitle:
+    buttonText: Absenden
 ---
