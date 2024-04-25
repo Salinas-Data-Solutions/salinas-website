@@ -42,33 +42,42 @@ content_blocks:
           in Einklang zu bringen, damit Ihre Lösungen einen Nutzen für die
           Anwender schaffen.
   - _bookshop_name: home/competence
-    title: Expert AI Solutions for Your Business Success
-    subTitle: Our Expertise in AI
+    title: Kompetente Lösungen für Ihren Geschäftserfolg
+    subTitle: Unsere KI-Kompetenz
     image: /image-4.webp
-    description: >-
-      Our expertise in AI helps you to transform the efficiency of your business
-      operations. At SALINAS Data Solutions, we specialize in developing and
-      integrating cutting-edge AI applications, enhancing data infrastructures,
-      and providing ongoing maintenance and strategic insights. Our tailored
-      solutions are designed to align with your unique business needs, ensuring
-      you achieve measurable outcomes and maintain a competitive edge. Let us
-      guide you through the complexities of AI technology to unlock new
-      opportunities for efficiency and growth.
+    description: >
+      Unser Know-how im Bereich Künstliche Intelligenz hilft Ihnen, die
+      Effizienz Ihrer Geschäftsabläufe zu steigern. Wir von SALINAS Data
+      Solutions sind spezialisiert auf die Entwicklung und Integration
+      modernster KI-Anwendungen, die Verbesserung von Dateninfrastrukturen sowie
+      die laufende Wartung und strategische Erkenntnisse. Unsere
+      maßgeschneiderten Lösungen sind so konzipiert, dass sie sich an Ihren
+      individuellen Geschäftsanforderungen orientieren und sicherstellen, dass
+      Sie messbare Ergebnisse erzielen und einen Wettbewerbsvorteil erhalten.
+      Lassen Sie sich von uns durch die Komplexität der KI-Technologie führen,
+      um neue Möglichkeiten für Effizienz und Wachstum zu erschließen.
     items:
       - title:
-        description: Strong AI engineering and data competence
+        description: Entwicklungskompetenz für KI-Lösungen und Dateninfrastrukturen
       - title:
-        description: Experienced full stack developer team
+        description: Erfahrenes Entwicklerteam von Fullstack- und Cloud-Entwicklern
       - title:
-        description: Cloud Computing and DevOps expertise
+        description: Erfahrung in Cloud Architekturen und DevOps
       - title:
-        description: Strategic knowledge on AI and business empathy
+        description: Strategische Expertise zu Daten, KI sowie Empathie für Ihr Business
   - _bookshop_name: home/implementationGuide
-    title: Download Our AI Implementation Guide!
-    description: >-
-      We have compiled our knowledge on the successful planning and
-      implementation of AI solutions in an ebook that will help you to learn
-      about.
+    title: Lesen Sie unseren KI-Leitfaden!
+    description: >
+      Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
+      von KI-Lösungen in einem ebook zusammengefasst, das Ihnen helfen wird,
+      mehr zu erfahren über
+
+      - KI-Fähigkeiten und die vielversprechendsten Anwendungsfälle
+
+      - Anforderungen und notwendige Ressourcen für die KI-Entwicklung und
+      -Implementierung
+
+      - Risiken und Herausforderungen von KI und wie man sie entschärfen kann
     features:
       - title: AI capabilities and the most promising use cases
       - title: >-
