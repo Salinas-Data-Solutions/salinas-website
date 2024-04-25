@@ -69,23 +69,24 @@ content_blocks:
     title: Lesen Sie unseren KI-Leitfaden!
     description: >
       Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
-      von KI-Lösungen in einem ebook zusammengefasst, das Ihnen helfen wird,
-      mehr zu erfahren über
+      von KI-Lösungen in einem ebook zusammengefasst und möchten gerne, dass Sie
+      damit erfahren
 
-      - KI-Fähigkeiten und die vielversprechendsten Anwendungsfälle
+      - was die vielversprechendsten Anwendungsfälle für KI-Lösungen sind
 
-      - Anforderungen und notwendige Ressourcen für die KI-Entwicklung und
-      -Implementierung
+      - welche Anforderungen und Ressourcen für die KI-Implementierung notwendig
+      sind
 
-      - Risiken und Herausforderungen von KI und wie man sie entschärfen kann
+      - welche Risiken und Herausforderungen zum Einsatz von KI bestehen und wie
+      man diesen begegnet
     features:
       - title: AI capabilities and the most promising use cases
       - title: >-
           Requirements and necessary resources for AI development and
           implementation
       - title: Risks and challenges of AI and how to mitigate them
-    buttonText: Call To Action
-    buttonHref: '#'
+    buttonText: Zum Download
+    buttonHref: https://subscribepage.io/uqaWYN
   - _bookshop_name: home/applications
     title: What We Have Worked On
     subTitle: AI Application Examples
