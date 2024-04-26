@@ -4,10 +4,10 @@ import Button from "~/components/ui/Button.jsx";
 
 const HeroSection = ( block ) => {
   return (
-    <section className="relative sm:py-16">
-      <div className="absolute h-[100%] lg:h-unset bottom-0 overflow-hidden -z-10 opacity-50">
+    <section className="relative sm:py-16 flex justify-center items-center">
+      <div className="absolute inset-0 overflow-hidden -z-10 opacity-50 flex justify-center items-center">
         <img
-          className=" object-cover  h-[100%] lg:h-auto lg:w-[100%] origin-bottom-right  lg:mx-auto lg:object-cover"
+          className="object-cover bg-center h-full w-full lg:h-auto lg:w-auto max-w-none origin-bottom-right"
           src={block.background_image}
           alt=""
         />
