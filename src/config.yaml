@@ -17,7 +17,7 @@ metadata:
   openGraph:
     site_name: Salinas Data Solutions
     images:
-      - url: '~/assets/images/default.png'
+      - url: '/salinas-data-og-image.webp'
         width: 1200
         height: 628
     type: website
