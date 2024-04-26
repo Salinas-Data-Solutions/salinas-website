@@ -3,229 +3,221 @@ title: Home Page Deutsch
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Your Business
-    title: Let’s Make Data Your Biggest Asse
+    subTitle: INTELLIGENTE LÖSUNGEN FÜR IHR UNTERNEHMEN
+    title: Wir machen aus Ihren Daten Intelligenz!
     description: >-
-      We transform your data into your strategic advantage by building
-      intelligent applications from prototype to production.
-    buttonText: Request a demo
-    buttonHref: '#'
+      Wir entwickeln für Sie Lösungen, mit denen Sie Zeit und Kosten in Ihren
+      Prozessen sparen und so einen strategischen Vorteil gewinnen.
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
-    title: Tailored AI Solutions
-    subTitle: Accelerating Your Business With AI
-    buttonText: Request a demo
-    buttonHref: '#'
+    title: Passgenaue Intelligente Lösungen
+    subTitle: Beschleunigen Sie Ihre Geschäftsprozesse
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
-      - title: Building AI Applications
+      - title: Entwicklung von KI-Lösungen
+        description: >
+          Mit unserem erfahrenen Team von KI-Experten entwickeln wir
+          intelligente Anwendungen und Automatisierungslösungen vom Prototyp bis
+          zur Produktionsreife.
+      - title: Integration von Dateninfrastrukturen
         description: >-
-          With our experienced team of AI/ML developers and Data Scientists, we
-          build Machine Learning and Generative AI applications from prototype
-          up to production readiness.
-      - title: Integrating Data Infrastructures
-        description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
-      - title: Maintaining AI Solutions
+          Mit unserer Cloud- und DevOps Expertise helfen wir Ihnen,
+          Dateninfrastrukturen zu integrieren, welche die Leistungsfähigkeit
+          Ihrer Lösungen gewährleisten.
+      - title: KI Lösungen im Betrieb halten
         description: >-
-          With our capabilities to monitor and maintain AI/ML solutions in
-          production we establish MLOps and LLMOps practices so that AI
-          applications keep their promises and performance in production.
-      - title: AI & Data Strategy
+          Wir warten und Überwachen KI Lösungen im Betrieb, so dass diese sicher
+          und zuverlässig die Ergebnisse liefern. Dabei wenden wir auf unsere
+          MLOps Erfahrung.
+      - title: KI- und Datenstrategie
         description: >-
-          With our extensive experience in AI & Data projects, we help you to
-          align your development initiatives with your business needs so that
-          your solutions will create user benefit and value.
+          Mit unserer umfassenden Erfahrung in KI- und Datenprojekten helfen wir
+          Ihnen, Ihre Entwicklungsinitiativen mit Ihren Geschäftsanforderungen
+          in Einklang zu bringen, damit Ihre Lösungen einen Nutzen für die
+          Anwender schaffen.
   - _bookshop_name: home/competence
-    title: Expert AI Solutions for Your Business Success
-    subTitle: Our Expertise in AI
+    title: Kompetente Lösungen für Ihren Geschäftserfolg
+    subTitle: Unsere KI-Kompetenz
     image: /image-4.webp
-    description: >-
-      Our expertise in AI helps you to transform the efficiency of your business
-      operations. At SALINAS Data Solutions, we specialize in developing and
-      integrating cutting-edge AI applications, enhancing data infrastructures,
-      and providing ongoing maintenance and strategic insights. Our tailored
-      solutions are designed to align with your unique business needs, ensuring
-      you achieve measurable outcomes and maintain a competitive edge. Let us
-      guide you through the complexities of AI technology to unlock new
-      opportunities for efficiency and growth.
+    description: >
+      Unser Know-how im Bereich Künstliche Intelligenz hilft Ihnen, die
+      Effizienz Ihrer Geschäftsabläufe zu steigern. Wir von SALINAS Data
+      Solutions sind spezialisiert auf die Entwicklung und Integration
+      modernster KI-Anwendungen, die Verbesserung von Dateninfrastrukturen sowie
+      die laufende Wartung und strategische Erkenntnisse. Unsere
+      maßgeschneiderten Lösungen sind so konzipiert, dass sie sich an Ihren
+      individuellen Geschäftsanforderungen orientieren und sicherstellen, dass
+      Sie messbare Ergebnisse erzielen und einen Wettbewerbsvorteil erhalten.
+      Lassen Sie sich von uns durch die Komplexität der KI-Technologie führen,
+      um neue Möglichkeiten für Effizienz und Wachstum zu erschließen.
     items:
       - title:
-        description: Strong AI engineering and data competence
+        description: Entwicklungskompetenz für KI-Lösungen und Dateninfrastrukturen
       - title:
-        description: Experienced full stack developer team
+        description: Erfahrenes Entwicklerteam von Fullstack- und Cloud-Entwicklern
       - title:
-        description: Cloud Computing and DevOps expertise
+        description: Erfahrung in Cloud Architekturen und DevOps
       - title:
-        description: Strategic knowledge on AI and business empathy
+        description: Strategische Expertise zu Daten, KI sowie Empathie für Ihr Business
   - _bookshop_name: home/implementationGuide
-    title: Download Our AI Implementation Guide!
-    description: >-
-      We have compiled our knowledge on the successful planning and
-      implementation of AI solutions in an ebook that will help you to learn
-      about.
+    title: Laden Sie sich unseren umfassenden KI-Leitfaden!
+    description: >
+      Wir haben unser Wissen über die erfolgreiche Planung und Implementierung
+      von KI-Lösungen in einem ebook zusammengefasst und möchten gerne, dass Sie
+      damit erfahren:
     features:
-      - title: AI capabilities and the most promising use cases
+      - title: Was die vielversprechendsten Anwendungsfälle für KI-Lösungen sind
       - title: >-
-          Requirements and necessary resources for AI development and
-          implementation
-      - title: Risks and challenges of AI and how to mitigate them
-    buttonText: Call To Action
-    buttonHref: '#'
+          Welche Anforderungen und Ressourcen für die KI-Implementierung
+          notwendig sind
+      - title: >-
+          Welche Risiken und Herausforderungen zum Einsatz von KI bestehen und
+          wie man diesen begegnet
+    buttonText: Zum Download
+    buttonHref: https://subscribepage.io/uqaWYN
   - _bookshop_name: home/applications
-    title: What We Have Worked On
-    subTitle: AI Application Examples
-    buttonText: Request a free demo!
-    buttonHref: '#'
-    bottomBlockTitle: Are you curious about what AI can do for you?
-    bottomBlockDescription: >-
-      We will prepare a free demo session based on your business needs and
-      requirements. Request a demo session today and we will build a free
-      Generative AI prototype for you!
+    title: Woran wir arbeiten
+    subTitle: Beispiele von unseren KI Anwendungen
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
+    bottomBlockTitle: Fragen Sie sich, was Künstliche Intelligenz für Sie tun kann?
+    bottomBlockDescription: >
+      Wir bereiten eine kostenlose KI-Demo vor, die auf Ihren geschäftlichen
+      Bedürfnisse und Anforderungen zugeschnitten ist. Fragen Sie jetzt eine
+      Demo an und wir erstellen einen KI-Prototyp für Ihren Geschäftsprozess!
     items:
-      - title: Engineering Workflow Assistant
+      - title: Engineering Workflow Assistent
         description: >-
-          A chat based application that knows everything about engineering and
-          configuring specific technical solutions.
-        image: /d880347d4b1fb00c9ed5321db845098d.webp
+          Eine Chat-basierte Anwendung, die alles über das Engineering und die
+          Konfiguration von spezifischen technischen Lösungen weiß.
+        image: /318f2e6a2cee512aa5d360f38573d6e8.webp
         extended_description: >-
-          This engineering assistant provides expert advice to engineers based
-          on extensive content that comes from thousands of documents and
-          manuals along with diagrams, images and even videos. The application
-          is built with a Retrieval Augmented Generation (RAG) architecture that
-          enables Large Language models (LLMs) to provide accurate, context
-          based advice.
+          Dieser technische Assistent bietet Ingenieuren fachkundige
+          Unterstützung auf der Grundlage umfangreicher und komplexer
+          technischer Inhalte, die aus tausenden von Dokumenten und Handbüchern
+          zusammen mit Diagrammen, Bildern und sogar Videos stammen. Die
+          Anwendung basiert auf einer Retrieval Augmented Generation
+          (RAG)-Architektur, die es Large Language Models (LLMs) ermöglicht,
+          genaue, kontextbasierte Ratschläge zu geben.
       - title: Customer  Service CoPilot
+        description: >
+          Ein digitaler Assistent, der Kundendienst- und Vertriebsteams bei der
+          Interaktion mit Kunden in verschiedenen Sprachen und Kulturen
+          unterstützt und dabei technisch korrekt bleibt.
+        image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
+        extended_description: >
+          Dieser digitale Assistent lässt sich nahtlos in
+          Kommunikationsplattformen integrieren und bietet Expertenwissen zu
+          technischen Produkt- und Serviceinformationen. Mit seinen
+          LLM-Funktionen bietet er fortschrittliche Übersetzungsfähigkeiten und
+          passt sich an kulturelle Kontexte an, um klare und präzise
+          Interaktionen auf globalen Märkten zu gewährleisten.
+      - title: AutomatisierteDateneingabe und -analyse
         description: >-
-          A digital assistant that helps customer service and sales teams to
-          interact with customers across different languages and cultures while
-          staying technically accurate.
-        image: /dfbca86b002e888c1bfbae55e2a7b20a.webp
-        extended_description: >-
-          This digital assistant integrates seamlessly with communication
-          platforms, offering expert knowledge on technical product and service
-          information. With its LLM features, It offers advanced translation
-          abilities and adjusts to cultural contexts, ensuring clear and
-          accurate interactions across global markets.
-      - title: Data Entry and  Analysis Automation
-        description: >-
-          A backend automation system that helps data analysts and decision
-          makers to have the information available at their fingertips in the
-          exact format that is needed at any time.
-        image: /276fc6b25ab7d717cd6a6875b1ad99b5.webp
-        extended_description: >-
-          This system optimizes data workflows through robust data pipelines and
-          ETL processes, supporting automated data analysis and insight
-          generation. It is compatible with various data tools (Excel, PowerBI,
-          Tableau) and backend services/databases, enhancing accessibility and
-          utility for decision-makers.
+          Ein Backend-Automatisierungssystem, das Datenanalysten und
+          Entscheidungsträgern dabei hilft, die Informationen jederzeit in genau
+          dem Format zur Verfügung zu haben, das sie benötigen.
+        image: /7ed59cbf2339e4ec523b96185248cdcd.webp
+        extended_description: >
+          Dieses System optimiert Daten-Workflows durch robuste Daten-Pipelines
+          und ETL-Prozesse und unterstützt die automatisierte Datenanalyse und
+          die Gewinnung von Erkenntnissen. Es ist mit verschiedenen Datentools
+          (Excel, PowerBI, Tableau) und Backend-Diensten/Datenbanken kompatibel
+          und verbessert so die Zugänglichkeit und den Nutzen für
+          Entscheidungsträger.
         content_blocks:
   - _bookshop_name: home/applicationDescription
-    title: Your Path To Successful Implementation
-    subTitle: How we work
-    buttonText: Call To Action
-    buttonHref: '#'
+    title: Ihr Weg zur erfolgreichen Umsetzung
+    subTitle: Wie wir arbeiten
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
-      - icon: icon-path-1.svg
+      - image: /light-bulb.svg
         title: Use Case Ideation
-        description: >-
-          We work together on answering the following questions: “How might we
-          become more efficient with AI?” & “What kind of routines should be
-          automated?”.
-      - icon: icon-path-2.svg
-        title: Assessment
-        description: >-
-          We identify your resources, data, and knowledge potential, teams and
-          stakeholders and define a joint product or service vision with a clear
-          “definition of done”.
-      - icon: icon-path-2.svg
-        title: Planning
-        description: >-
-          We define a target solution architecture with relevant features and
-          optimized costs for development and operation together with an
-          implementation roadmap and potential alternative scenarios.
-      - icon: icon-path-2.svg
-        title: Application / Solution Development
-        description: >-
-          Based upon the use case, assessed product vision and defined
-          architecture and features we build the application / solution from
-          proof of concept (PoC) to MVP and test it with users and stakeholders.
-      - icon: ''
-        title: Deployment to Production
-        description: >-
-          After successful trial and validated user acceptance, we deploy the
-          application into a production environment and if necessary, prepare
-          the data infrastructure and pipelines for the productive use of the AI
-          application.
-      - icon: ''
-        title: Monitoring and Maintenance
         description: >
-          We are prepared continuous integration and improvement of the solution
-          (CI/CD) and establish feedback loops so that the AI solution keeps up
-          the performance and delivers continuous value.
+          Wir arbeiten gemeinsam an der Beantwortung der folgenden Fragen: „Wie
+          können wir mit KI effizienter werden?“ & „Welche Routinen sollten
+          automatisiert werden?“.
+      - image: /vector.svg
+        title: Assessment
+        description: >
+          Wir ermitteln Ihr Ressourcen-, Daten- und Wissenspotenzial, Ihre Teams
+          und Beteiligten und definieren eine gemeinsame Produkt- oder
+          Dienstleistungsvision mit einer klaren „Definition of done“.
+      - image: /target-line-icon.svg
+        title: Planung
+        description: >
+          Wir definieren eine angestrebte Lösungsarchitektur mit relevanten
+          Merkmalen und optimierten Kosten für Entwicklung und Betrieb zusammen
+          mit einem Implementierungsfahrplan und möglichen Alternativszenarien.
+      - image: /extension-icon-1.svg
+        title: Lösungsentwicklung
+        description: >
+          Auf der Grundlage des Anwendungsfalls, der bewerteten Produktvision
+          und der definierten Architektur und Funktionen entwickeln wir die
+          Anwendung/Lösung vom Proof of Concept (PoC) zum MVP und testen sie mit
+          Benutzern und Interessengruppen.
+      - image: /rocket-launch-line-icon.svg
+        title: Deployment
+        description: >
+          Nach erfolgreicher Erprobung und validierter Benutzerakzeptanz setzen
+          wir die Anwendung in einer Produktionsumgebung ein und bereiten bei
+          Bedarf die Dateninfrastruktur und Pipelines für den produktiven
+          Einsatz der KI-Anwendung vor
+      - image: /work-process-outline-icon.svg
+        title: Überwachung und Wartung
+        description: >-
+          Wir bereiten die kontinuierliche Integration und Verbesserung der
+          Lösung (CI/CD) vor und etablieren Feedback-Schleifen, damit die
+          KI-Lösung die Leistung aufrechterhält und einen kontinuierlichen
+          Mehrwert liefert.
   - _bookshop_name: home/buildOn
-    title: We build on
-    subTitle: LOREM IPSUM
-    buttonText: Call To Action
-    buttonHref: '#'
+    title: Wir bauen auf
+    subTitle: Unser Tech Stack
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     text: >-
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
       reprehenderit qui in ea voluptate velit esse quam nihil molestiae
       consequatur.
-    leftLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/left-logos.png
-    rightLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/right-logos.png
-    topLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/top-logos.png
-    bottomLogos: >-
-      https://cdn.rareblocks.xyz/collection/clarity/images/integrations/3/bottom-logos.png
-  - _bookshop_name: home/aboutUs
-    title: About Us and References
-    subTitle: About Us
-    buttonText: Call to Action
-    buttonHref: '#'
-    image: >-
-      https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png
-    description: >-
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
-      est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum
-      viverra tempus.”
-    author: Grandon Jones
+    leftLogos: /desktop-left.webp
+    rightLogos: /desktop-right.webp
+    topLogos: /mobile-top.webp
+    bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/ourFounders
-    title: Your Personal Contact
-    subTitle: Our Founders
-    buttonText: Download the AI Implementation Guide
-    buttonHref: '#'
+    title: Ihr Ansprechpartner
+    subTitle:
+    buttonText: Demo anfragen
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     founders:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
-        description: >-
-          As an experienced AI Solution Engineer and Project Leader, Sebastian
-          brings a wealth of expertise in delivering advanced AI solutions. With
-          his deep industry knowledge Sebastian and his skilled team help your
-          business to succeed with AI. Sebastian has many years of innovation
-          experience across all major industrial domains such as Energy,
-          Automotive, Manufacturing and Aerospace.
+        description: >
+          Als erfahrener KI-Experte und Projektleiter bringt Sebastian eine
+          Fülle von Fachkenntnissen bei der Bereitstellung fortschrittlicher
+          KI-Lösungen mit. Mit seinem fundierten Branchenwissen helfen Sebastian
+          und sein qualifiziertes Team Ihrem Unternehmen, mit KI erfolgreich zu
+          sein. Sebastian verfügt über langjährige Innovationserfahrung in allen
+          wichtigen Industriezweigen wie Energie, Automobil, Fertigung und Luft-
+          und Raumfahrt. 
   - _bookshop_name: home/partnerLogos
-    heading: Companies we have successfully worked for
+    heading: Mit diesen Unternehmen haben wir gearbeitet
     logos:
       - name: Bosch
         image: /image-24.webp
       - name: Continental
         image: /image-25.webp
-      - name: Mtu
-        image: /image-27.webp
       - name: Simens
         image: /image-29.webp
-      - name: Senec
-        image: /image-28.webp
-      - name: Forbes
-        image: path-to-forbes-logo.png
   - _bookshop_name: home/contactUs
-    title: Contact Us
-    subTitle: Lorem Ipsum
-    buttonText: Send
+    title: Kontaktieren Sie uns
+    subTitle:
+    buttonText: Absenden
 ---

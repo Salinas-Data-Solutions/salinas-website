@@ -168,7 +168,7 @@ content_blocks:
     title: We build on
     subTitle: Our Tech Stack
     buttonText: Request a demo
-    buttonHref: '#'
+    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     text: >-
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
       consectetur, adipisci velit, sed quia. Quis autem vel eum iure
@@ -180,9 +180,9 @@ content_blocks:
     bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/ourFounders
     title: Your Personal Contact
-    subTitle: Our Founders
-    buttonText: Download the AI Implementation Guide
-    buttonHref: '#'
+    subTitle:
+    buttonText: Request a Demo
+    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9
     founders:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
@@ -198,16 +198,13 @@ content_blocks:
     logos:
       - name: Bosch
         image: /image-24.webp
-      - name: Endless
-        image: /asset-10-1x-1.webp
+ 
       - name: Continental
         image: /image-25.webp
-      - name: Mtu
-        image: /image-27-copy-2.webp
+
       - name: Simens
         image: /image-29-copy-2.webp
-      - name: Senec
-        image: /image-28.webp
+
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum
