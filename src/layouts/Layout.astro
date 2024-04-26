@@ -18,6 +18,7 @@ import { ViewTransitions } from 'astro:transitions';
 import type { MetaData as MetaDataType } from '~/types';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
+import { getLangFromUrl } from '~/utils/i18n';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -25,16 +26,21 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+
+console.log(Astro.url, 'Astro.url');
+const lang = getLangFromUrl(Astro.url);
+console.log(lang, 'lang');
+console.log(language, 'lang');
 ---
 
 <!doctype html>
-<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+<html lang={lang} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <CommonMeta />
     <Favicons />
     <CustomStyles />
     <ApplyColorMode />
-    <Metadata {...metadata} />
+    <Metadata {...metadata} lang={lang} />
     <SiteVerification />
     <Analytics />
 

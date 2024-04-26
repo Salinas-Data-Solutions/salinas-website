@@ -12,6 +12,7 @@ import { adaptOpenGraphImages } from '~/utils/images';
 
 export interface Props extends MetaData {
   dontUseTitleTemplate?: boolean;
+  lang: string;
 }
 
 const {
@@ -20,9 +21,22 @@ const {
   canonical = String(getCanonical(String(Astro.url.pathname))),
   robots = {},
   description,
-  openGraph = {},
+  // openGraph = {},
   twitter = {},
+  lang,
 } = Astro.props;
+
+// Change image according to language
+const openGraph = {
+  ...METADATA.openGraph,
+  images: [
+    {
+      url: lang === 'en' ? METADATA.openGraph.images[0].url : METADATA.openGraph.images[0].urlDe,
+      width: 1200,
+      height: 628,
+    },
+  ],
+};
 
 const seoProps: AstroSeoProps = merge(
   {
@@ -48,8 +62,8 @@ const seoProps: AstroSeoProps = merge(
     titleTemplate: METADATA?.title?.template,
     noindex: typeof METADATA?.robots?.index !== 'undefined' ? !METADATA.robots.index : undefined,
     nofollow: typeof METADATA?.robots?.follow !== 'undefined' ? !METADATA.robots.follow : undefined,
-    description: METADATA?.description,
-    openGraph: METADATA?.openGraph,
+    description: lang === 'en' ? METADATA?.description : METADATA?.descriptionDE,
+    openGraph: openGraph,
     twitter: METADATA?.twitter,
   },
   {
@@ -59,7 +73,7 @@ const seoProps: AstroSeoProps = merge(
     noindex: typeof robots?.index !== 'undefined' ? !robots.index : undefined,
     nofollow: typeof robots?.follow !== 'undefined' ? !robots.follow : undefined,
     description: description,
-    openGraph: { url: canonical, ...openGraph },
+    openGraph: openGraph,
     twitter: twitter,
   }
 );
