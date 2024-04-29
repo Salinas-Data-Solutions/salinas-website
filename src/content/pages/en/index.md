@@ -1,6 +1,5 @@
 ---
 title: Home Page English
-layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
     subTitle: Intelligent Solutions For Your Business
