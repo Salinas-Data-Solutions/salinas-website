@@ -148,27 +148,29 @@ content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Your Path To Successful Implementation
     subTitle: How we work
-    buttonText: Call To Action
-    buttonHref: '#'
+    buttonText: Request A Demo
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     items:
       - image: /light-bulb.svg
-        title: Use Case Ideation
+        title: Use Case Definition
         description: >-
           We work together on answering the following questions: “How might we
-          become more efficient with AI?” & “What kind of routines should be
-          automated?”.
+          become more efficient in our operation?” & “What kind of routines
+          should be automated further?” or "What insights do we need from our
+          production lines?".
       - image: /vector.svg
         title: Assessment
         description: >-
-          We identify your resources, data, and knowledge potential, teams and
-          stakeholders and define a joint product or service vision with a clear
-          “definition of done”.
+          We identify your resources, data, and knowledge potential, along with
+          your infrastructure, your teams and stakeholders and define a joint
+          vision with a clear “definition of done”.
       - image: /target-line-icon.svg
         title: Planning
         description: >-
-          We define a target solution architecture with relevant features and
-          optimized costs for development and operation together with an
-          implementation roadmap and potential alternative scenarios.
+          We define a target solution architecture that fits your industrial
+          environment with relevant features and optimized costs for development
+          and operation together with an implementation roadmap and potential
+          alternative scenarios.
       - image: /extension-icon-1.svg
         title: Application / Solution Development
         description: >-
@@ -179,8 +181,8 @@ content_blocks:
         title: Deployment to Production
         description: >-
           After successful trial and validated user acceptance, we deploy the
-          application into a production environment and if necessary, prepare
-          the data infrastructure and pipelines for the productive use of the AI
+          application into your environment and if necessary, prepare the data
+          infrastructure and pipelines for the productive use of the
           application.
       - image: /work-process-outline-icon.svg
         title: Monitoring and Maintenance
@@ -211,12 +213,11 @@ content_blocks:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
-          As an experienced AI Solution Engineer and Project Leader, Sebastian
-          brings a wealth of expertise in delivering advanced AI solutions. With
-          his deep industry knowledge Sebastian and his skilled team help your
-          business to succeed with AI. Sebastian has many years of innovation
-          experience across all major industrial domains such as Energy,
-          Automotive, Manufacturing and Aerospace.
+          As an experienced Industrial Automation Expert and AI Solution
+          Engineer , Sebastian brings a wealth of expertise in delivering
+          advanced solutions to manufacturing processes. With deep industry
+          knowledge and a skilled implementation team SALINAS Data Solutions
+          will help you master the efficiency of your operation.
   - _bookshop_name: home/partnerLogos
     heading: Companies we have successfully worked for
     logos:
