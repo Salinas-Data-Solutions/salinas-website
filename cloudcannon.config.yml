@@ -49,6 +49,7 @@ collections_config:
           empty_type: string
       image:
         options:
+          uploads_dir: src/assets/uploads
           empty_type: string
       image_alt:
         options:
