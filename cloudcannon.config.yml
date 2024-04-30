@@ -23,6 +23,46 @@ collections_config:
     disable_add_folder: true
     _enabled_editors:
       - visual
+  posts:
+    path: src/content/post
+    parser: front-matter
+    output: true
+    url: '/post/[full_slug]/'
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add New Post
+        schema: default
+        icon: post_add
+    schemas:
+      default:
+        name: New Post
+        path: schemas/post.mdx
+    create:
+      path: '[relative_base_path]/{title|slugify}.mdx'
+    _inputs:
+      title:
+        options:
+          empty_type: string
+      image:
+        options:
+          empty_type: string
+      image_alt:
+        options:
+          empty_type: string
+      author:
+        options:
+          empty_type: string
+      tags:
+        type: array
+        options:
+          allow_create: true
+          empty_type: array
+      tags[*]:
+        type: text
+        options:
+          empty_type: string
 collection_groups:
   - heading: Pages
     collections:
