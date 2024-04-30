@@ -25,6 +25,7 @@ collections_config:
       - content
       - visual
   posts:
+    uploads: src/assets/uploads
     path: src/content/post
     parser: front-matter
     output: true
