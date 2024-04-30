@@ -67,6 +67,9 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
+  - heading: Posts
+    collections:
+      - posts
   - heading: Site Settings
     collections:
       - data
