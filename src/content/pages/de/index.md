@@ -1,6 +1,5 @@
 ---
 title: Home Page Deutsch
-layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
     subTitle: Intelligente Lösungen für die Fertigung
