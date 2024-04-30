@@ -3,24 +3,25 @@ import { getCollection } from 'astro:content';
 import PageLayout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 
-// export interface Props {
-//   page: CollectionEntry<'pages'>;
-// }
-
 export async function getStaticPaths() {
-  const pages = await getCollection('pages', ({ data }) => !data.hidden);
-  return pages.map((page) => {
-    const slug = page.slug.replace(/index$/, '');
+  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug.startsWith('en'));
 
-    if (slug.length === 0) return { params: { slug: undefined }, props: { page } };
-    return { params: { slug }, props: { page } };
+  return pages.map((page) => {
+    // Normalize the slug by removing 'index' and 'en/' prefix correctly
+    let normalizedSlug = page.slug.replace('en/', '').replace(/index$/, '');
+
+    // Special handling for the home page ('en' or empty slug after normalization)
+    if (normalizedSlug === 'en' || normalizedSlug.length === 0) {
+      return { params: { slug: undefined }, props: { page } }; // Assign undefined for root English page
+    }
+    return { params: { slug: normalizedSlug }, props: { page } };
   });
 }
 
+// Accessing the page object from props correctly
 const page = Astro.props.page;
-// if (!page.data.content_blocks) {
-//   throw new Error(`Tried to output page with unsupported schema: ${page.data._schema}`);
-// }
+
+// Render the page based on the presence of content_blocks
 ---
 
 {page.data.content_blocks && <PageLayout frontmatter={page.data} />}

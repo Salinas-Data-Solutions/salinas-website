@@ -3,40 +3,30 @@ import { getCollection } from 'astro:content';
 import PageLayout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 
-// export async function getStaticPaths() {
-//   const pages = await getCollection('pages', (props) => {
-//     // console.log(props);
-//     return !props.data.hidden && props.slug.endsWith('-de');
-//   });
-//   return pages.map((page) => {
-//     // Extracting the slug and trimming 'index-de' and '-de' as needed for root and other pages.
-//     const slug = page.slug.replace(/index-de$/, '').replace(/-de$/, '');
-
-//     console.log(slug, page.slug);
-//     // We should keep the '-de' for the German pages in the URL
-//     return { params: { slug: slug || page.slug }, props: { page } };
-//   });
-// }
 export async function getStaticPaths() {
-  const pages = await getCollection('pages', (props) => !props.data.hidden && props.slug.endsWith('-de'));
-  return pages.map((page) => {
-    // Remove 'index-de' from slugs that serve as default pages for German locale.
-    // For other pages, replace '-de' suffix to expose cleaner URLs if necessary.
-    const slug = page.slug.replace(/index-de$/, '').replace(/-de$/, '');
+  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug.startsWith('de'));
 
-    // If after replacing 'index-de' the slug is empty, we treat it as the root of the German locale.
-    if (slug.length === 0) return { params: { slug: undefined }, props: { page } };
-    if (slug !== 'index') return { params: { slug: slug }, props: { page } };
-    return { params: { slug: slug + '-de' }, props: { page } }; // Append '-de' to make URLs clearly German.
+  return pages.map((page) => {
+    // Normalize the slug by removing 'index' and 'de/' prefix
+    let normalizedSlug = page.slug.replace('de/', '').replace(/index$/, '');
+
+    // Special handling for the home page ('de' or empty slug after normalization)
+    if (normalizedSlug === 'de' || normalizedSlug.length === 0) {
+      return { params: { slug: undefined }, props: { page } }; // Assign undefined for root German page
+    }
+    return { params: { slug: normalizedSlug }, props: { page } };
   });
 }
+
+// Accessing the page object from props correctly
 const page = Astro.props.page;
-console.log(page, 'page');
+
+// Render the page based on the presence of content_blocks
 ---
 
-{page?.data.content_blocks && <PageLayout frontmatter={page.data} />}
+{page.data.content_blocks && <PageLayout frontmatter={page.data} />}
 {
-  !page?.data.content_blocks && (
+  !page.data.content_blocks && (
     <>
       <MarkdownLayout frontmatter={{ title: page.data.title, markdown: page.body }} />
     </>
