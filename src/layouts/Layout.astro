@@ -27,10 +27,7 @@ export interface Props {
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
 
-console.log(Astro.url, 'Astro.url');
 const lang = getLangFromUrl(Astro.url);
-console.log(lang, 'lang');
-console.log(language, 'lang');
 ---
 
 <!doctype html>
