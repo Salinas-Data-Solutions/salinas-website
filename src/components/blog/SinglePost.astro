@@ -35,24 +35,13 @@ const { Content } = post;
               </>
             )
           }
-          {
-            post.category && (
-              <>
-                {' '}
-                ·{' '}
-                <a class="hover:underline inline-block" href={getPermalink(post.category.slug, 'category')}>
-                  {post.category.title}
-                </a>
-              </>
-            )
-          }
-          {
+          <!-- {
             post.readingTime && (
               <>
                 &nbsp;· <span>{post.readingTime}</span> min read
               </>
             )
-          }
+          } -->
         </p>
       </div>
 
