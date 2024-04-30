@@ -3,11 +3,11 @@ title: Home Page Deutsch
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: INTELLIGENTE LÖSUNGEN FÜR IHR UNTERNEHMEN
-    title: Wir machen aus Ihren Daten Intelligenz!
+    subTitle: Intelligente Lösungen für die Fertigung
+    title: Wir machen aus Ihren Daten den größten operativen Vorteil!
     description: >-
-      Wir entwickeln für Sie Lösungen, mit denen Sie Zeit und Kosten in Ihren
-      Prozessen sparen und so einen strategischen Vorteil gewinnen.
+      Wir entwickeln und integrieren smarte, datenbasierte Lösungen, welche die
+      Effizienz und Verfügbarkeit Ihrer industriellen Anlagen steigern.
     buttonText: Demo anfragen
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     secondButtonText: Learn more
@@ -15,56 +15,85 @@ content_blocks:
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
-    title: Passgenaue Intelligente Lösungen
-    subTitle: Beschleunigen Sie Ihre Geschäftsprozesse
+    title: Passgenaue Intelligente Lösungen für industrielle Anwender
+    subTitle: Beschleunigen Sie Ihre Abläufe mit industrieller KI
     buttonText: Demo anfragen
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
-      - title: Entwicklung von KI-Lösungen
-        description: >
-          Mit unserem erfahrenen Team von KI-Experten entwickeln wir
-          intelligente Anwendungen und Automatisierungslösungen vom Prototyp bis
-          zur Produktionsreife.
+      - title: Implementierung von industriellen KI-Lösungen
+        description: >-
+          Wir haben uns auf die Entwicklung von Lösungen spezialisiert, die die
+          betriebliche Effizienz unserer industriellen Kunden deutlich
+          verbessern. Dazu gehören Anwendungen, die mit künstlicher Intelligenz
+          entwickelt wurden und verwertbare Erkenntnisse für den Betrieb
+          liefern, wie z. B. vorausschauende Wartungssysteme und
+          fortschrittliche Analysen, MES-Systeme mit interoperablen digitalen
+          Zwillingen und Edge-basierte Anwendungen, die die Geschwindigkeit und
+          Qualität von Fertigungsprozessen verbessern.
+      - title: Systemintegration von industriellen Automatisierungsanlagen
+        description: >-
+          Unser Fachwissen im Bereich der Industrieautomation gewährleistet
+          nahtlose Konnektivität und Funktionalität. Wir programmieren die SPS
+          aller großen Automatisierungsanbieter, integrieren  SCADA-Systeme, um
+          die Betriebssteuerung und Datenerfassung zu optimieren. Unsere
+          Integrationen sind so konzipiert, dass sie die Systemeffizienz und
+          -zuverlässigkeit optimieren und den spezifischen Anforderungen
+          industrieller Umgebungen gerecht werden.
       - title: Integration von Dateninfrastrukturen
         description: >-
-          Mit unserer Cloud- und DevOps Expertise helfen wir Ihnen,
-          Dateninfrastrukturen zu integrieren, welche die Leistungsfähigkeit
-          Ihrer Lösungen gewährleisten.
-      - title: KI Lösungen im Betrieb halten
+          Wir unterstützen Betreiber dabei, ihre Infrastruktur mit industriellen
+          IoT-Diensten zu verbinden und effiziente Datenlösungen zu
+          implementieren, die auf Edge-Geräten laufen und sich nahtlos in
+          cloudbasierte Unternehmenssoftware integrieren lassen. Unsere Lösungen
+          sind so zugeschnitten, dass sie einen robusten Datenfluss und eine
+          robuste Datenspeicherung gewährleisten und Echtzeit-Analysen und
+          betriebliche Entscheidungen über verschiedene Plattformen hinweg
+          unterstützen.
+      - title: 'Planung intelligenter Fertigungsinnovationen:'
         description: >-
-          Wir warten und Überwachen KI Lösungen im Betrieb, so dass diese sicher
-          und zuverlässig die Ergebnisse liefern. Dabei wenden wir auf unsere
-          MLOps Erfahrung.
-      - title: KI- und Datenstrategie
-        description: >-
-          Mit unserer umfassenden Erfahrung in KI- und Datenprojekten helfen wir
-          Ihnen, Ihre Entwicklungsinitiativen mit Ihren Geschäftsanforderungen
-          in Einklang zu bringen, damit Ihre Lösungen einen Nutzen für die
-          Anwender schaffen.
+          Wir bieten umfassende Strategieberatung für intelligente Fertigung,
+          einschließlich technischer Bewertung und Architekturplanung, um die
+          Gesamtanlageneffektivität (OEE) zu verbessern. Unsere Dienstleistungen
+          zielen nicht nur auf die Entwicklung von Strategien ab, sondern auch
+          auf deren wirksame Umsetzung. So stellen wir sicher, dass die
+          Fertigungsanlagen auf zukünftige technologische Fortschritte und
+          betriebliche Herausforderungen gut vorbereitet sind.
   - _bookshop_name: home/competence
-    title: Kompetente Lösungen für Ihren Geschäftserfolg
-    subTitle: Unsere KI-Kompetenz
+    title: >-
+      Expertenlösunge für Industrie- Automatisierung und Ihre betriebliche
+      Effizienz
+    subTitle: Unsere Expertise in industrieller KI
     image: /image-4.webp
-    description: >
-      Unser Know-how im Bereich Künstliche Intelligenz hilft Ihnen, die
-      Effizienz Ihrer Geschäftsabläufe zu steigern. Wir von SALINAS Data
-      Solutions sind spezialisiert auf die Entwicklung und Integration
-      modernster KI-Anwendungen, die Verbesserung von Dateninfrastrukturen sowie
-      die laufende Wartung und strategische Erkenntnisse. Unsere
-      maßgeschneiderten Lösungen sind so konzipiert, dass sie sich an Ihren
-      individuellen Geschäftsanforderungen orientieren und sicherstellen, dass
-      Sie messbare Ergebnisse erzielen und einen Wettbewerbsvorteil erhalten.
-      Lassen Sie sich von uns durch die Komplexität der KI-Technologie führen,
-      um neue Möglichkeiten für Effizienz und Wachstum zu erschließen.
+    description: >-
+      Bei SALINAS Data Solutions kombinieren wir spezialisiertes technisches
+      Fachwissen mit praktischer Branchenerfahrung, um effektive Lösungen für
+      Herausforderungen in der Fertigung zu entwickeln. Unser Team konzentriert
+      sich darauf, präzise und zuverlässige Ergebnisse zu liefern, die
+      Ausfallzeiten reduzieren und die Verfügbarkeit erhöhen.
     items:
-      - title:
-        description: Entwicklungskompetenz für KI-Lösungen und Dateninfrastrukturen
-      - title:
-        description: Erfahrenes Entwicklerteam von Fullstack- und Cloud-Entwicklern
-      - title:
-        description: Erfahrung in Cloud Architekturen und DevOps
-      - title:
-        description: Strategische Expertise zu Daten, KI sowie Empathie für Ihr Business
+      - title: Fertigungsprozesse und Industrie-Automatisierung
+        description: >-
+          Unser tiefgreifendes Verständnis von Werkstattanwendungen und
+          Fertigungsprozessen in Verbindung mit umfassender Erfahrung in der
+          industriellen Automatisierung ermöglicht es uns, betriebliche Abläufe
+          und Systeme effektiv zu optimieren.
+      - title: Künstliche Intelligenz und Industrie 4.0
+        description: >-
+          Wir sind auf industrielle KI und IoT spezialisiert und nutzen unsere
+          Fähigkeiten in Unified-Namespace-Architekturen und interoperablen
+          Digital Twins, um fortschrittliche und integrierte Lösungen für
+          maximale betriebliche Effizienz zu schaffen.
+      - title: IT/OT-Integration mit Edge- und Cloud-Computing
+        description: >-
+          Unser Fachwissen bei der Integration von IT- und OT-Umgebungen und
+          unser Know-How im Bereich Edge- und Cloud-Computing ermöglicht unseren
+          Kunden eine robuste und zuverlässige Datenverfügbarkeit.
+      - title: Software-Entwicklung und agiles Programm-Management
+        description: >-
+          Mit einem erfahrenen Software-Entwicklungsteam und agilen Prozessen
+          sind wir in der Lage, industrielle Software-Architekturen zu entwerfen
+          und zu verwalten, die genau auf die Bedürfnisse unserer Kunden
+          zugeschnitten sind.
   - _bookshop_name: home/implementationGuide
     title: Laden Sie sich unseren umfassenden KI-Leitfaden!
     description: >
@@ -83,54 +112,54 @@ content_blocks:
     buttonHref: https://subscribepage.io/uqaWYN
   - _bookshop_name: home/applications
     title: Woran wir arbeiten
-    subTitle: Beispiele von unseren KI Anwendungen
+    subTitle: Beispiele unserer Industrie-KI Anwendungen
     buttonText: Demo anfragen
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
-    bottomBlockTitle: Fragen Sie sich, was Künstliche Intelligenz für Sie tun kann?
-    bottomBlockDescription: >
-      Wir bereiten eine kostenlose KI-Demo vor, die auf Ihren geschäftlichen
-      Bedürfnisse und Anforderungen zugeschnitten ist. Fragen Sie jetzt eine
-      Demo an und wir erstellen einen KI-Prototyp für Ihren Geschäftsprozess!
+    bottomBlockTitle: Sind Sie neugierig darauf, was Industrial AI für Ihren Betrieb tun kann?
+    bottomBlockDescription: >-
+      Wir bereiten eine kostenlose Demo-Session auf der Grundlage Ihrer
+      betrieblichen Anforderungen und Bedürfnisse vor. Fordern Sie noch heute
+      eine Demo an und wir erstellen einen Prototyp für Sie!
     items:
-      - title: Engineering Workflow Assistent
+      - title: Qualitätsverbesserung durch Machine Vision
         description: >-
-          Eine Chat-basierte Anwendung, die alles über das Engineering und die
-          Konfiguration von spezifischen technischen Lösungen weiß.
+          Wir haben ein Bildverarbeitungssystem implementiert, mit dem
+          fälschlicherweise zurückgewiesene Produktionsteile genau identifiziert
+          und zurückgegeben werden können.
         image: /318f2e6a2cee512aa5d360f38573d6e8.webp
         extended_description: >-
-          Dieser technische Assistent bietet Ingenieuren fachkundige
-          Unterstützung auf der Grundlage umfangreicher und komplexer
-          technischer Inhalte, die aus tausenden von Dokumenten und Handbüchern
-          zusammen mit Diagrammen, Bildern und sogar Videos stammen. Die
-          Anwendung basiert auf einer Retrieval Augmented Generation
-          (RAG)-Architektur, die es Large Language Models (LLMs) ermöglicht,
-          genaue, kontextbasierte Ratschläge zu geben.
-      - title: Customer  Service CoPilot
-        description: >
-          Ein digitaler Assistent, der Kundendienst- und Vertriebsteams bei der
-          Interaktion mit Kunden in verschiedenen Sprachen und Kulturen
-          unterstützt und dabei technisch korrekt bleibt.
-        image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
-        extended_description: >
-          Dieser digitale Assistent lässt sich nahtlos in
-          Kommunikationsplattformen integrieren und bietet Expertenwissen zu
-          technischen Produkt- und Serviceinformationen. Mit seinen
-          LLM-Funktionen bietet er fortschrittliche Übersetzungsfähigkeiten und
-          passt sich an kulturelle Kontexte an, um klare und präzise
-          Interaktionen auf globalen Märkten zu gewährleisten.
-      - title: AutomatisierteDateneingabe und -analyse
+          Durch die Verwendung trainierter Bilddaten unterscheidet dieses System
+          mit einer Genauigkeit von über 98 % ausgeschiedene Teile aus der
+          Produktion. Durch diesen Identifizierungsprozess wird nicht nur
+          wertvoller Ausstoß zurückgewonnen, sondern auch der Gesamtdurchsatz
+          der Produktionslinie erheblich gesteigert, der Materialabfall
+          reduziert und die Produktqualität verbessert.
+      - title: Produktionsüberwachung und -steuerung in Echtzeit
         description: >-
-          Ein Backend-Automatisierungssystem, das Datenanalysten und
-          Entscheidungsträgern dabei hilft, die Informationen jederzeit in genau
-          dem Format zur Verfügung zu haben, das sie benötigen.
+          Unsere intelligente MES-Lösung bietet einen ganzheitlichen Überblick
+          über die Fertigungsabläufe und ermöglicht eine Leistungsüberwachung in
+          Echtzeit sowie konkrete Schritte zur Effizienzverbesserungen.
+        image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
+        extended_description: >-
+          Dieses System wertet kontinuierlich aus, ob Maschinen und Anlagen
+          innerhalb der vorgesehenen Parameter arbeiten und ob die
+          Produktions-KPIs erfüllt werden. Durch proaktives Erkennen und
+          Beseitigen von Ineffizienzen gewährleistet die Lösung eine optimale
+          Maschinennutzung, reduziert Ausfallzeiten und verbessert die
+          Ressourcenzuweisung in der gesamten Produktion.
+      - title: Intelligenter Unterstützung in der Fabrikplanung
+        description: >-
+          Unser Chat-basierter CoPilot nutzt LLM und multimodale Modelle, um
+          umfassende technische Unterstützung zu bieten und so die Planungs- und
+          Rüstzeit erheblich zu verkürzen.
         image: /7ed59cbf2339e4ec523b96185248cdcd.webp
-        extended_description: >
-          Dieses System optimiert Daten-Workflows durch robuste Daten-Pipelines
-          und ETL-Prozesse und unterstützt die automatisierte Datenanalyse und
-          die Gewinnung von Erkenntnissen. Es ist mit verschiedenen Datentools
-          (Excel, PowerBI, Tableau) und Backend-Diensten/Datenbanken kompatibel
-          und verbessert so die Zugänglichkeit und den Nutzen für
-          Entscheidungsträger.
+        extended_description: >-
+          Das System integriert spezifische Dokumentation, Bilder und Videos von
+          Produktionsstandorten, um konkrete Vorschläge für Verbesserungen und
+          eine effiziente Fabrikplanung zu liefern. Dieses fortschrittliche
+          Support-Tool reduziert die Zeit, die Ingenieure für die Vorplanung und
+          Informationsbeschaffung aufwenden, was zu einem schnelleren
+          Projektabschluss und einer schnelleren Abläufen.
         content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Ihr Weg zur erfolgreichen Umsetzung
@@ -139,17 +168,19 @@ content_blocks:
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     items:
       - image: /light-bulb.svg
-        title: Use Case Ideation
+        title: Use Case Definition
         description: >
           Wir arbeiten gemeinsam an der Beantwortung der folgenden Fragen: „Wie
-          können wir mit KI effizienter werden?“ & „Welche Routinen sollten
-          automatisiert werden?“.
+          können wir mit Indutrieller KI effizienter werden?“ & „Welche Routinen
+          sollten automatisiert werden?" oder "Welche Einblicke brauchen wir in
+          unsere Prozesse?"
       - image: /vector.svg
         title: Assessment
         description: >
-          Wir ermitteln Ihr Ressourcen-, Daten- und Wissenspotenzial, Ihre Teams
-          und Beteiligten und definieren eine gemeinsame Produkt- oder
-          Dienstleistungsvision mit einer klaren „Definition of done“.
+          Wir ermitteln Ihr Ressourcen-, Daten- und Wissenspotenzial,
+          identifizieren Schwachstellen im Prozess und begleiten Ihre Teams und
+          Beteiligten und definieren so eine gemeinsame Vision mit einer klaren
+          „Definition of done“.
       - image: /target-line-icon.svg
         title: Planung
         description: >
@@ -167,9 +198,9 @@ content_blocks:
         title: Deployment
         description: >
           Nach erfolgreicher Erprobung und validierter Benutzerakzeptanz setzen
-          wir die Anwendung in einer Produktionsumgebung ein und bereiten bei
-          Bedarf die Dateninfrastruktur und Pipelines für den produktiven
-          Einsatz der KI-Anwendung vor
+          wir die Anwendung in Ihrer Umgebung ein und bereiten bei Bedarf die
+          Dateninfrastruktur und Pipelines für den produktiven Einsatz der
+          KI-Anwendung vor
       - image: /work-process-outline-icon.svg
         title: Überwachung und Wartung
         description: >-
@@ -197,16 +228,15 @@ content_blocks:
     buttonText: Demo anfragen
     buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
     founders:
-      - name: Sebastian Eumann, Founder & CEO
+      - name: Dipl.-Ing. Sebastian Eumann, Gründer & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
-        description: >
-          Als erfahrener KI-Experte und Projektleiter bringt Sebastian eine
-          Fülle von Fachkenntnissen bei der Bereitstellung fortschrittlicher
-          KI-Lösungen mit. Mit seinem fundierten Branchenwissen helfen Sebastian
-          und sein qualifiziertes Team Ihrem Unternehmen, mit KI erfolgreich zu
-          sein. Sebastian verfügt über langjährige Innovationserfahrung in allen
-          wichtigen Industriezweigen wie Energie, Automobil, Fertigung und Luft-
-          und Raumfahrt. 
+        description: >-
+          Als Experte für Industrie-Automatisierung und KI-Lösungen bringt
+          Sebastian eine Fülle von Fachkenntnissen bei der Bereitstellung von
+          fortschrittlichen Lösungen für Fertigungsprozesse mit. Mit fundierten
+          Branchenkenntnissen und einem kompetenten Implementierungsteam hilft
+          SALINAS Data Solutions Ihnen, die Effizienz Ihres Betriebs zu
+          steigern.
   - _bookshop_name: home/partnerLogos
     heading: Mit diesen Unternehmen haben wir gearbeitet
     logos:
