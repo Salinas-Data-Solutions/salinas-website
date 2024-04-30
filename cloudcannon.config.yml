@@ -22,6 +22,7 @@ collections_config:
     icon: wysiwyg
     disable_add_folder: true
     _enabled_editors:
+      - content
       - visual
   posts:
     path: src/content/post
