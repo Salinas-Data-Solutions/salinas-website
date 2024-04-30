@@ -3,62 +3,87 @@ title: Home Page English
 layout: ../../layouts/PageLayout.astro
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Your Business
-    title: Let’s Make Data Your Biggest Asset
+    subTitle: Intelligent Solutions For Manufacturing
+    title: Let’s Make Data Your Biggest Operational Asset
     description: >-
-      We transform your data into your strategic advantage by building
-      intelligent applications from prototype to production.
+      We plan, build, and integrate intelligent, data-driven solutions for
+      industrial operators to enhance their overall equipment effectiveness.
     buttonText: Request a demo
-    buttonHref: '#'
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
     title: Tailored AI Solutions
-    subTitle: Accelerating Your Business With AI
+    subTitle: Accelerating Your Operations With Data & Industrial AI
     buttonText: Request a demo
-    buttonHref: '#'
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     items:
-      - title: Building AI Applications
+      - title: Building and Implementing Industrial AI Solutions
         description: >-
-          With our experienced team of AI/ML developers and Data Scientists, we
-          build Machine Learning and Generative AI applications from prototype
-          up to production readiness.
-      - title: Integrating Data Infrastructures
-        description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
-      - title: Maintaining AI Solutions
+          We specialize in developing solutions that significantly improve the
+          operational efficiency of our industrial customers. This includes
+          applications that are driven by Artificial Intelligence and deliver
+          actionable insights for operations, such as predictive maintenance
+          systems and advanced analytics, MES systems with interoperable digital
+          twins, and edge-based applications that improve the speed and quality
+          of manufacturing processes.
+      - title: System Integration of Industrial Automation Equipment
         description: >-
-          With our capabilities to monitor and maintain AI/ML solutions in
-          production we establish MLOps and LLMOps practices so that AI
-          applications keep their promises and performance in production.
-      - title: AI & Data Strategy
+          Our expertise in industrial automation ensures seamless connectivity
+          and functionality. We work with and program PLCs from all major
+          automation vendors, integrating SCADA systems to enhance operational
+          control and data acquisition. Our integrations are designed to
+          optimize system efficiency and reliability, catering to the specific
+          needs of industrial environments.
+      - title: Integration of Data Infrastructures
         description: >-
-          With our extensive experience in AI & Data projects, we help you to
-          align your development initiatives with your business needs so that
-          your solutions will create user benefit and value.
+          We assist operators in connecting their operational technology with
+          Industrial IoT services, implementing efficient data solutions that
+          run on edge devices and integrate seamlessly with cloud-based
+          enterprise software. Our solutions are tailored to ensure robust data
+          flow and storage, supporting real-time analytics and operational
+          decision-making across various platforms.
+      - title: Planning Smart Manufacturing Innovation
+        description: >-
+          We provide comprehensive smart manufacturing strategy consulting,
+          including technical assessment and architecture planning, to enhance
+          Overall Equipment Effectiveness (OEE). Our services are designed to
+          not only develop strategies but also to implement them effectively,
+          ensuring that manufacturing facilities are well-prepared for future
+          technological advancements and operational challenges.
   - _bookshop_name: home/competence
-    title: Expert AI Solutions for Your Business Success
-    subTitle: Our Expertise in AI
+    title: Expert Industrial Automation Solutions for Your Operational Efficiency
+    subTitle: Our Expertise in Industrial AI
     image: /image-4.webp
     description: >-
-      Our expertise in AI helps you to transform the efficiency of your business
-      operations. At SALINAS Data Solutions, we specialize in developing and
-      integrating cutting-edge AI applications, enhancing data infrastructures,
-      and providing ongoing maintenance and strategic insights. Our tailored
-      solutions are designed to align with your unique business needs, ensuring
-      you achieve measurable outcomes and maintain a competitive edge. Let us
-      guide you through the complexities of AI technology to unlock new
-      opportunities for efficiency and growth.
+      At SALINAS Data Solutions, we combine specialized technical expertise with
+      practical industry experience to create effective solutions for
+      manufacturing challenges. Our team is focused on delivering precise and
+      reliable outcomes that reduce downtimes and enhance availability.
     items:
-      - title:
-        description: Strong AI engineering and data competence
-      - title:
-        description: Experienced full stack developer team
-      - title:
-        description: Cloud Computing and DevOps expertise
-      - title:
-        description: Strategic knowledge on AI and business empathy
+      - title: Manufacturing Operations & Industrial Automation
+        description: >-
+          Our deep understanding of shop-floor applications and manufacturing
+          processes combined with extensive experience in industrial automation
+          equips us to effectively optimize operational workflows and systems.
+      - title: Machine Learning Engineering & Industrial IoT Integration
+        description: >-
+          We specialize in Industrial AI and IoT, leveraging our skills in
+          Unified Namespace Architectures and interoperable Digital Twins to
+          create advanced and integrated integrated solutions for maximum
+          operational efficiency.
+      - title: IT/OT Integration with Edge & Cloud Computing
+        description: >-
+          Our expertise in integrating IT and OT environments is fueled by our
+          capabilities in edge and cloud computing, ensuring robust and seamless
+          data management across platforms.
+      - title: Software Development & Agile Program Management
+        description: >-
+          With a skilled software development teeam and agile processes, we are
+          adept at crafting and managing the deployment of industrial software
+          architectures to meet precise client needs.
   - _bookshop_name: home/implementationGuide
     title: Download Our AI Implementation Guide!
     description: >-
@@ -198,13 +223,10 @@ content_blocks:
     logos:
       - name: Bosch
         image: /image-24.webp
- 
       - name: Continental
         image: /image-25.webp
-
       - name: Simens
         image: /image-29-copy-2.webp
-
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum
