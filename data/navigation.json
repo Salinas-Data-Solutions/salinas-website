@@ -4,16 +4,17 @@
   
       {
         "text": "Features",
-        "href": "/features"
+        "href": "#"
       },
       {
         "text": "Pricing",
-        "href": "/pricing"
+        "href": "#"
       },
       {
         "text": "Support",
-        "href": "/support"
+        "href": "#"
       }
+      
     ],
     "action": 
       {
