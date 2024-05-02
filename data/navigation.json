@@ -1,7 +1,6 @@
 {
   "headerData": {
     "links": [
-  
       {
         "text": "Services",
         "href": "#services"
@@ -18,15 +17,12 @@
         "text": "Contact",
         "href": "#contact"
       }
-      
     ],
-    "action": 
-      {
-        "text": "Request A Demo",
-        "href": "#",
-        "target": "_blank"
-      }
-    
+    "action": {
+      "text": "Request A Demo",
+      "href": "#",
+      "target": "_blank"
+    }
   },
   "footerData": {
     "links": [
@@ -39,7 +35,6 @@
         "href": "/imprint"
       }
     ],
-
     "socialLinks": [
       {
         "ariaLabel": "X",
@@ -60,13 +55,12 @@
   },
   "headerDataDE": {
     "links": [
-  
       {
         "text": "Services",
         "href": "#services"
       },
       {
-        "text": "Approach",
+        "text": "Ansatz",
         "href": "#approach"
       },
       {
@@ -74,18 +68,15 @@
         "href": "/blog"
       },
       {
-        "text": "Contact",
+        "text": "Kontakt",
         "href": "#contact"
       }
-      
     ],
-    "action": 
-      {
-        "text": "Request A Demo",
-        "href": "#",
-        "target": "_blank"
-      }
-    
+    "action": {
+      "text": "Request A Demo",
+      "href": "#",
+      "target": "_blank"
+    }
   },
   "footerDataDE": {
     "links": [
@@ -98,7 +89,6 @@
         "href": "/imprint"
       }
     ],
-
     "socialLinks": [
       {
         "ariaLabel": "X",
