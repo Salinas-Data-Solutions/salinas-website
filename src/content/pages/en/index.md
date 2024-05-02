@@ -2,62 +2,87 @@
 title: Home Page English
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Your Business
-    title: Let’s Make Data Your Biggest Asset
+    subTitle: Intelligent Solutions For Manufacturing
+    title: Let’s Make Data Your Biggest Operational Asset
     description: >-
-      We transform your data into your strategic advantage by building
-      intelligent applications from prototype to production.
+      We plan, build, and integrate intelligent, data-driven solutions for
+      industrial operators to enhance their overall equipment effectiveness.
     buttonText: Request a demo
-    buttonHref: '#'
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
     title: Tailored AI Solutions
-    subTitle: Accelerating Your Business With AI
+    subTitle: Accelerating Your Operations With Data & Industrial AI
     buttonText: Request a demo
-    buttonHref: '#'
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     items:
-      - title: Building AI Applications
+      - title: Building and Implementing Industrial AI Solutions
         description: >-
-          With our experienced team of AI/ML developers and Data Scientists, we
-          build Machine Learning and Generative AI applications from prototype
-          up to production readiness.
-      - title: Integrating Data Infrastructures
-        description: "With our expertise in DevOps and state of the art cloud computing architectures, we\_ help you to integrate data infrastructures that enable your solutions to perform."
-      - title: Maintaining AI Solutions
+          We specialize in developing solutions that significantly improve the
+          operational efficiency of our industrial customers. This includes
+          applications that are driven by Artificial Intelligence and deliver
+          actionable insights for operations, such as predictive maintenance
+          systems and advanced analytics, MES systems with interoperable digital
+          twins, and edge-based applications that improve the speed and quality
+          of manufacturing processes.
+      - title: System Integration of Industrial Automation Equipment
         description: >-
-          With our capabilities to monitor and maintain AI/ML solutions in
-          production we establish MLOps and LLMOps practices so that AI
-          applications keep their promises and performance in production.
-      - title: AI & Data Strategy
+          Our expertise in industrial automation ensures seamless connectivity
+          and functionality. We work with and program PLCs from all major
+          automation vendors, integrating SCADA systems to enhance operational
+          control and data acquisition. Our integrations are designed to
+          optimize system efficiency and reliability, catering to the specific
+          needs of industrial environments.
+      - title: Integration of Data Infrastructures
         description: >-
-          With our extensive experience in AI & Data projects, we help you to
-          align your development initiatives with your business needs so that
-          your solutions will create user benefit and value.
+          We assist operators in connecting their operational technology with
+          Industrial IoT services, implementing efficient data solutions that
+          run on edge devices and integrate seamlessly with cloud-based
+          enterprise software. Our solutions are tailored to ensure robust data
+          flow and storage, supporting real-time analytics and operational
+          decision-making across various platforms.
+      - title: Planning Smart Manufacturing Innovation
+        description: >-
+          We provide comprehensive smart manufacturing strategy consulting,
+          including technical assessment and architecture planning, to enhance
+          Overall Equipment Effectiveness (OEE). Our services are designed to
+          not only develop strategies but also to implement them effectively,
+          ensuring that manufacturing facilities are well-prepared for future
+          technological advancements and operational challenges.
   - _bookshop_name: home/competence
-    title: Expert AI Solutions for Your Business Success
-    subTitle: Our Expertise in AI
+    title: Expert Industrial Automation Solutions for Your Operational Efficiency
+    subTitle: Our Expertise in Industrial AI
     image: /image-4.webp
     description: >-
-      Our expertise in AI helps you to transform the efficiency of your business
-      operations. At SALINAS Data Solutions, we specialize in developing and
-      integrating cutting-edge AI applications, enhancing data infrastructures,
-      and providing ongoing maintenance and strategic insights. Our tailored
-      solutions are designed to align with your unique business needs, ensuring
-      you achieve measurable outcomes and maintain a competitive edge. Let us
-      guide you through the complexities of AI technology to unlock new
-      opportunities for efficiency and growth.
+      At SALINAS Data Solutions, we combine specialized technical expertise with
+      practical industry experience to create effective solutions for
+      manufacturing challenges. Our team is focused on delivering precise and
+      reliable outcomes that reduce downtimes and enhance availability.
     items:
-      - title:
-        description: Strong AI engineering and data competence
-      - title:
-        description: Experienced full stack developer team
-      - title:
-        description: Cloud Computing and DevOps expertise
-      - title:
-        description: Strategic knowledge on AI and business empathy
+      - title: Manufacturing Operations & Industrial Automation
+        description: >-
+          Our deep understanding of shop-floor applications and manufacturing
+          processes combined with extensive experience in industrial automation
+          equips us to effectively optimize operational workflows and systems.
+      - title: Machine Learning Engineering & Industrial IoT Integration
+        description: >-
+          We specialize in Industrial AI and IoT, leveraging our skills in
+          Unified Namespace Architectures and interoperable Digital Twins to
+          create advanced and integrated integrated solutions for maximum
+          operational efficiency.
+      - title: IT/OT Integration with Edge & Cloud Computing
+        description: >-
+          Our expertise in integrating IT and OT environments is fueled by our
+          capabilities in edge and cloud computing, ensuring robust and seamless
+          data management across platforms.
+      - title: Software Development & Agile Program Management
+        description: >-
+          With a skilled software development teeam and agile processes, we are
+          adept at crafting and managing the deployment of industrial software
+          architectures to meet precise client needs.
   - _bookshop_name: home/implementationGuide
     title: Download Our AI Implementation Guide!
     description: >-
@@ -74,76 +99,77 @@ content_blocks:
     buttonHref: '#'
   - _bookshop_name: home/applications
     title: What We Have Worked On
-    subTitle: AI Application Examples
+    subTitle: Industrial AI Application Examples
     buttonText: Request a free demo!
-    buttonHref: '#'
-    bottomBlockTitle: Are you curious about what AI can do for you?
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
+    bottomBlockTitle: Are you curious about what Industrial AI can do for your operations?
     bottomBlockDescription: >-
-      We will prepare a free demo session based on your business needs and
-      requirements. Request a demo session today and we will build a free
-      Generative AI prototype for you!
+      We will prepare a free demo session based on your operational needs and
+      requirements. Request a demo session today and we will build a prototype
+      for you!
     items:
-      - title: Engineering Workflow Assistant
+      - title: Quality Improvement With Machine Vision
         description: >-
-          A chat based application that knows everything about engineering and
-          configuring specific technical solutions.
+          We implemented a machine vision system designed to accurately identify
+          and recover wrongfully rejected production parts.
         image: /318f2e6a2cee512aa5d360f38573d6e8.webp
         extended_description: >-
-          This engineering assistant provides expert advice to engineers based
-          on extensive content that comes from thousands of documents and
-          manuals along with diagrams, images and even videos. The application
-          is built with a Retrieval Augmented Generation (RAG) architecture that
-          enables Large Language models (LLMs) to provide accurate, context
-          based advice.
-      - title: Customer  Service CoPilot
+          By utilizing trained image data, this system distinguishes between
+          rightfully and wrongfully rejected parts with over 98% accuracy. This
+          critical identification process not only recovers valuable outputs but
+          also significantly increases the overall throughput of the production
+          line, reducing material waste and enhancing product quality.
+      - title: Real-time Production Monitoring and Control
         description: >-
-          A digital assistant that helps customer service and sales teams to
-          interact with customers across different languages and cultures while
-          staying technically accurate.
+          Our solution provides a holistic view of manufacturing operations,
+          enabling real-time performance monitoring and efficiency improvements.
         image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
         extended_description: >-
-          This digital assistant integrates seamlessly with communication
-          platforms, offering expert knowledge on technical product and service
-          information. With its LLM features, It offers advanced translation
-          abilities and adjusts to cultural contexts, ensuring clear and
-          accurate interactions across global markets.
-      - title: Data Entry and  Analysis Automation
+          This system continuously evaluates whether machines operate within
+          their designed parameters and whether production KPIs are met. By
+          proactively identifying and addressing inefficiencies, the solution
+          ensures optimal machine utilization, reduces downtime, and improves
+          resource allocation across the production floor.
+      - title: Intelligent Engineering Support System
         description: >-
-          A backend automation system that helps data analysts and decision
-          makers to have the information available at their fingertips in the
-          exact format that is needed at any time.
+          Our chat-based CoPilot leverages LLM and multimodal models to provide
+          comprehensive engineering support, significantly reducing design time
+          and enhancing accuracy.
         image: /7ed59cbf2339e4ec523b96185248cdcd.webp
         extended_description: >-
-          This system optimizes data workflows through robust data pipelines and
-          ETL processes, supporting automated data analysis and insight
-          generation. It is compatible with various data tools (Excel, PowerBI,
-          Tableau) and backend services/databases, enhancing accessibility and
-          utility for decision-makers.
+          The system integrates specific documentation, images, and videos from
+          production sites to deliver actionable steps for improvements and
+          efficient factory planning. This advanced support tool reduces the
+          time engineers spend on preliminary design and information retrieval
+          by 70%, leading to faster project completions and heightened customer
+          satisfaction.
         content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Your Path To Successful Implementation
     subTitle: How we work
-    buttonText: Call To Action
-    buttonHref: '#'
+    buttonText: Request A Demo
+    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
     items:
       - image: /light-bulb.svg
-        title: Use Case Ideation
+        title: Use Case Definition
         description: >-
           We work together on answering the following questions: “How might we
-          become more efficient with AI?” & “What kind of routines should be
-          automated?”.
+          become more efficient in our operation?” & “What kind of routines
+          should be automated further?” or "What insights do we need from our
+          production lines?".
       - image: /vector.svg
         title: Assessment
         description: >-
-          We identify your resources, data, and knowledge potential, teams and
-          stakeholders and define a joint product or service vision with a clear
-          “definition of done”.
+          We identify your resources, data, and knowledge potential, along with
+          your infrastructure, your teams and stakeholders and define a joint
+          vision with a clear “definition of done”.
       - image: /target-line-icon.svg
         title: Planning
         description: >-
-          We define a target solution architecture with relevant features and
-          optimized costs for development and operation together with an
-          implementation roadmap and potential alternative scenarios.
+          We define a target solution architecture that fits your industrial
+          environment with relevant features and optimized costs for development
+          and operation together with an implementation roadmap and potential
+          alternative scenarios.
       - image: /extension-icon-1.svg
         title: Application / Solution Development
         description: >-
@@ -154,8 +180,8 @@ content_blocks:
         title: Deployment to Production
         description: >-
           After successful trial and validated user acceptance, we deploy the
-          application into a production environment and if necessary, prepare
-          the data infrastructure and pipelines for the productive use of the AI
+          application into your environment and if necessary, prepare the data
+          infrastructure and pipelines for the productive use of the
           application.
       - image: /work-process-outline-icon.svg
         title: Monitoring and Maintenance
@@ -186,24 +212,20 @@ content_blocks:
       - name: Sebastian Eumann, Founder & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
-          As an experienced AI Solution Engineer and Project Leader, Sebastian
-          brings a wealth of expertise in delivering advanced AI solutions. With
-          his deep industry knowledge Sebastian and his skilled team help your
-          business to succeed with AI. Sebastian has many years of innovation
-          experience across all major industrial domains such as Energy,
-          Automotive, Manufacturing and Aerospace.
+          As an experienced Industrial Automation Expert and AI Solution
+          Engineer , Sebastian brings a wealth of expertise in delivering
+          advanced solutions to manufacturing processes. With deep industry
+          knowledge and a skilled implementation team SALINAS Data Solutions
+          will help you master the efficiency of your operation.
   - _bookshop_name: home/partnerLogos
     heading: Companies we have successfully worked for
     logos:
       - name: Bosch
         image: /image-24.webp
- 
       - name: Continental
         image: /image-25.webp
-
       - name: Simens
         image: /image-29-copy-2.webp
-
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum
