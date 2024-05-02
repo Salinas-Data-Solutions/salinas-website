@@ -3,8 +3,8 @@ import { getCollection } from 'astro:content';
 import PageLayout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 
-export async function getStaticPaths() {
-  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug.startsWith('de'));
+export async function getStaticPaths(currentLocale) {
+  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug?.startsWith('de'));
 
   return pages.map((page) => {
     // Normalize the slug by removing 'index' and 'de/' prefix

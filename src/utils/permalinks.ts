@@ -39,18 +39,18 @@ export const getCanonical = (path = ''): string | URL => {
 };
 
 /** */
-export const getPermalink = (slug = '', type = 'page'): string => {
+export const getPermalink = (slug = '', type = 'page', currentLocale = 'en'): string => {
   let permalink: string;
 
-  if (
-    slug.startsWith('https://') ||
-    slug.startsWith('http://') ||
-    slug.startsWith('://') ||
-    slug.startsWith('#') ||
-    slug.startsWith('javascript:')
-  ) {
-    return slug;
-  }
+  // if (
+  //   slug?.startsWith('https://') ||
+  //   slug?.startsWith('http://') ||
+  //   slug?.startsWith('://') ||
+  //   slug?.startsWith('#') ||
+  //   slug?.startsWith('javascript:')
+  // ) {
+  //   return slug;
+  // }
 
   switch (type) {
     case 'home':
@@ -70,11 +70,11 @@ export const getPermalink = (slug = '', type = 'page'): string => {
       break;
 
     case 'tag':
-      permalink = createPath(TAG_BASE, trimSlash(slug));
+      permalink = createPath(`${currentLocale}/blog/tags`, trimSlash(slug));
       break;
 
     case 'post':
-      permalink = createPath(`en/blog/posts/${trimSlash(slug)}`);
+      permalink = createPath(`${currentLocale}/blog/posts/${trimSlash(slug)}`);
       break;
 
     case 'page':
@@ -90,7 +90,7 @@ export const getPermalink = (slug = '', type = 'page'): string => {
 export const getHomePermalink = (): string => getPermalink('/');
 
 /** */
-export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);
+export const getBlogPermalink = (): string => getPermalink('blog');
 
 /** */
 export const getAsset = (path: string): string =>

@@ -12,15 +12,13 @@ import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
 export const prerender = true;
 
 export const getStaticPaths = (async ({ paginate }) => {
-  return await getStaticPathsBlogList({ paginate, locale: 'en' });
+  return await getStaticPathsBlogList({ paginate, locale: 'de' });
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { page } = Astro.props as Props;
 const currentPage = page.currentPage ?? 1;
-
-console.log(page);
 
 // const allCategories = await findCategories();
 // const allTags = await findTags();
