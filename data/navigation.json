@@ -1,28 +1,28 @@
 {
   "headerData": {
     "links": [
-  
       {
-        "text": "Features",
-        "href": "#"
+        "text": "Services",
+        "href": "#services"
       },
       {
-        "text": "Pricing",
-        "href": "#"
+        "text": "Approach",
+        "href": "#approach"
       },
       {
-        "text": "Support",
-        "href": "#"
+        "text": "Blog",
+        "href": "/blog"
+      },
+      {
+        "text": "Contact",
+        "href": "#contact"
       }
-      
     ],
-    "action": 
-      {
-        "text": "Free Implementation Guide",
-        "href": "#",
-        "target": "_blank"
-      }
-    
+    "action": {
+      "text": "Request A Demo",
+      "href": "#",
+      "target": "_blank"
+    }
   },
   "footerData": {
     "links": [
@@ -35,7 +35,60 @@
         "href": "/imprint"
       }
     ],
-
+    "socialLinks": [
+      {
+        "ariaLabel": "X",
+        "icon": "/brand-x.svg",
+        "href": "https://twitter.com/salinasdata"
+      },
+      {
+        "ariaLabel": "Facebook",
+        "icon": "/brand-linkedin.svg",
+        "href": "https://www.linkedin.com/company/salinasdata"
+      },
+      {
+        "ariaLabel": "Github",
+        "icon": "/brand-github.svg",
+        "href": "https://github.com/Salinas-Data-Solutions"
+      }
+    ]
+  },
+  "headerDataDE": {
+    "links": [
+      {
+        "text": "Services",
+        "href": "#services"
+      },
+      {
+        "text": "Ansatz",
+        "href": "#approach"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog"
+      },
+      {
+        "text": "Kontakt",
+        "href": "#contact"
+      }
+    ],
+    "action": {
+      "text": "Request A Demo",
+      "href": "#",
+      "target": "_blank"
+    }
+  },
+  "footerDataDE": {
+    "links": [
+      {
+        "text": "Data Privacy Disclaimer",
+        "href": "/data-privacy-disclaimer"
+      },
+      {
+        "text": "Imprint",
+        "href": "/imprint"
+      }
+    ],
     "socialLinks": [
       {
         "ariaLabel": "X",
