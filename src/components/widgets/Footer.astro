@@ -8,6 +8,11 @@ const { theme = 'light' } = Astro.props;
 
 import navigation from '@/data/navigation.json';
 import Logo from '../Logo.astro';
+
+let data = navigation.footerData;
+if (Astro.currentLocale === 'de') {
+  data = navigation.footerDataDE;
+}
 ---
 
 <footer
@@ -18,7 +23,7 @@ import Logo from '../Logo.astro';
 >
   <ul class="flex flex-col py-8 md:py-12 text-center md:text-left">
     {
-      navigation.footerData.links.map(({ text, href }) => (
+      data.links.map(({ text, href }) => (
         <li class="mb-2">
           <a class="  hover:underline  transition duration-150 ease-in-out" href={`/${Astro.currentLocale}${href}`}>
             <Fragment set:html={text} />
@@ -29,9 +34,9 @@ import Logo from '../Logo.astro';
   </ul>
   <div class="justify-self-center md:flex md:items-center md:justify-between py-6 md:py-8">
     {
-      navigation.footerData.socialLinks?.length ? (
+      data.socialLinks?.length ? (
         <ul class="flex gap-2 ">
-          {navigation.footerData.socialLinks.map(({ ariaLabel, href, icon }) => (
+          {data.socialLinks.map(({ ariaLabel, href, icon }) => (
             <li>
               <a
                 class=" focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"

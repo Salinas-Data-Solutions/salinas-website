@@ -3,7 +3,7 @@ import Button from '~/components/ui/Button.jsx';
 
 const ApplicationDescription = (block) => {
   return (
-    <section className="py-20 text-white bg-black-custom lg:py-32 flex flex-col items-center">
+    <section id="approach" className="py-20 text-white bg-black-custom lg:py-32 flex flex-col items-center">
       <div className="max-w-lg lg:max-w-none flex items-center flex-col">
         <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>
         <h2 className="text-center mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl !leading-relaxed">

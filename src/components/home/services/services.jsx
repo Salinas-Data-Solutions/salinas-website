@@ -3,7 +3,7 @@ import Button from '~/components/ui/Button.jsx';
 
 export default function Services(block) {
   return (
-    <section className="py-20 bg-page lg:py-32 flex flex-col items-center">
+    <section id="services" className="py-20 bg-page lg:py-32 flex flex-col items-center">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 ">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-grey uppercase tracking-widest">{block.subTitle}</p>

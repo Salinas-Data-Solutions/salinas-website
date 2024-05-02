@@ -45,6 +45,11 @@ const {
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
+
+let data = navigation.headerData;
+if (Astro.currentLocale === 'de') {
+  data = navigation.headerDataDE;
+}
 ---
 
 <header
@@ -88,10 +93,10 @@ import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
         class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center"
       >
         {
-          navigation.headerData.links.map(({ text, href }) => (
+          data.links.map(({ text, href }) => (
             <a
               class:list={[
-                'hover:text-link dark:hover:text-white px-4 py-3 flex items-center',
+                `hover:text-link dark:hover:text-white px-4 py-3 flex items-center ${text === 'Contact' || text === 'Kontakt' ? 'underline' : ''}`,
                 { 'aw-link-active': href === currentPath },
               ]}
               href={`/${Astro.currentLocale}${href}`}
@@ -104,10 +109,10 @@ import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
       <div class="md:hidden items-center flex justify-between w-full md:w-auto mt-10">
         {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />}
         {
-          navigation.headerData.action ? (
+          data.action ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               <Button
-                {...navigation.headerData.action}
+                {...data.action}
                 class="btn py-2.5 px-4 md:px-12 font-semibold shadow-none text-sm w-auto uppercase"
               />
             </span>
@@ -122,10 +127,10 @@ import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.jsx';
         <LanguageSwitcher client:load currentLocale={Astro.currentLocale || ''} />
         {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />}
         {
-          navigation.headerData.action ? (
+          data.action ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               <Button
-                {...navigation.headerData.action}
+                {...data.action}
                 class="btn py-2.5 px-4 md:px-12 font-semibold shadow-none text-sm w-auto uppercase"
               />
             </span>
