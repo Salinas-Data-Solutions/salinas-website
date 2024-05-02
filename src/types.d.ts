@@ -26,7 +26,7 @@ export interface Post {
   /**  */
   category?: Taxonomy
   /**  */
-  tags?:  string[];
+  tags?:  Taxonomy[];
   /**  */
   author?: string;
 

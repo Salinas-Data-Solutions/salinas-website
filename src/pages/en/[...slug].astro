@@ -4,7 +4,7 @@ import PageLayout from '~/layouts/PageLayout.astro';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 
 export async function getStaticPaths() {
-  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug.startsWith('en'));
+  const pages = await getCollection('pages', ({ data, slug }) => !data.hidden && slug?.startsWith('en'));
 
   return pages.map((page) => {
     // Normalize the slug by removing 'index' and 'en/' prefix correctly

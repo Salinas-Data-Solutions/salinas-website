@@ -14,20 +14,17 @@ const seoSchema = z
 
 const blogCollection = defineCollection({
   schema: z.object({
-    date: z.date(),
+    publishDate: z.date(),
     title: z.string(),
+    excerpt: z.string(),
     tags: z.array(z.string()),
     author: z.string(),
-    thumb_image: z.object({
-      image: z.string(),
-      image_alt: z.string(),
-    }),
-    featured_image: z.object({
-      image: z.string(),
-      image_alt: z.string(),
-    }),
+    
+    image: z.string(),
+    image_alt: z.string(),
+    
     seo: seoSchema,
-    draft: z.boolean()
+    // draft: z.boolean()
   }),
 });
 
@@ -103,24 +100,22 @@ const metadataDefinition = () =>
 
 const postCollection = defineCollection({
   schema: z.object({
-    publishDate: z.date().optional(),
-    updateDate: z.date().optional(),
-    draft: z.boolean().optional(),
-
+    publishDate: z.date(),
     title: z.string(),
-    excerpt: z.string().optional(),
-    image: z.string().optional(),
-
-    category: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    author: z.string().optional(),
-
-    metadata: metadataDefinition(),
+    excerpt: z.string(),
+    tags: z.array(z.string()),
+    author: z.string(),
+    
+    image: z.string(),
+    image_alt: z.string(),
+    
+    seo: seoSchema,
+    // draft: z.boolean()
   }),
 });
 
 export const collections = {
-  blog: blogCollection,
+  // blog: blogCollection,
   post: postCollection,
   pages: pagesCollection,
 };
