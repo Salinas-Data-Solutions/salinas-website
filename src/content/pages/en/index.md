@@ -217,15 +217,6 @@ content_blocks:
           advanced solutions to manufacturing processes. With deep industry
           knowledge and a skilled implementation team SALINAS Data Solutions
           will help you master the efficiency of your operation.
-  - _bookshop_name: home/partnerLogos
-    heading: Companies we have successfully worked for
-    logos:
-      - name: Bosch
-        image: /image-24.webp
-      - name: Continental
-        image: /image-25.webp
-      - name: Simens
-        image: /image-29-copy-2.webp
   - _bookshop_name: home/contactUs
     title: Contact Us
     subTitle: Lorem Ipsum

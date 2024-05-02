@@ -236,15 +236,6 @@ content_blocks:
           Branchenkenntnissen und einem kompetenten Implementierungsteam hilft
           SALINAS Data Solutions Ihnen, die Effizienz Ihres Betriebs zu
           steigern.
-  - _bookshop_name: home/partnerLogos
-    heading: Mit diesen Unternehmen haben wir gearbeitet
-    logos:
-      - name: Bosch
-        image: /image-24.webp
-      - name: Continental
-        image: /image-25.webp
-      - name: Simens
-        image: /image-29.webp
   - _bookshop_name: home/contactUs
     title: Kontaktieren Sie uns
     subTitle:
