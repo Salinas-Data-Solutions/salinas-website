@@ -42,7 +42,7 @@ export default function CompetenceSection( block ) {
                 ></path>
               </svg>
               <p className="ml-3 text-white">
-                {item.title && <span className="font-bold">{item.title}:</span>} {item.description}
+                {item.title && <span className="font-bold mr-1">{item.title}:</span>} {item.description}
               </p>
             </li>
           ))}
