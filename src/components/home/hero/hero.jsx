@@ -5,7 +5,7 @@ import Button from "~/components/ui/Button.jsx";
 const HeroSection = ( block ) => {
   return (
     <section className="relative sm:py-16 flex justify-center items-center">
-      <div className="absolute inset-0 overflow-hidden -z-10 opacity-50 flex justify-center items-center">
+      <div className="absolute inset-0 overflow-hidden -z-10  flex justify-center items-center">
         <img
           className="object-cover bg-center h-full w-full lg:h-auto lg:w-auto max-w-none origin-bottom-right"
           src={block.background_image}
@@ -21,7 +21,7 @@ const HeroSection = ( block ) => {
           <h1 className="mt-10 text-4xl leading-relaxed sm:text-5xl  lg:text-5xl "  data-i18n="hero_title">
             {block.title}
           </h1>
-          <p className="mt-2 text-lg sm:mt-6 font-inter">
+          <p className="mt-2 text-lg sm:mt-6">
             {block.description}
           </p>
           <Button href={block.buttonHref} className="mt-10 uppercase bg-primary !text-black px-12 border-none">
