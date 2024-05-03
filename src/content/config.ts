@@ -110,7 +110,7 @@ const postCollection = defineCollection({
     image_alt: z.string(),
     
     seo: seoSchema,
-    // draft: z.boolean()
+    draft: z.boolean()
   }),
 });
 
