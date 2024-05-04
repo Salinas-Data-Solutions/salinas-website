@@ -36,7 +36,11 @@ const block = Astro.props;
           purus ac amet pellentesque aliquam enim.
         </p>
 
-        <Button variant="primary" href={block.buttonHref} class:list="mt-10 !text-black uppercase">
+        <Button
+          variant="primary"
+          href={block.buttonHref}
+          class:list="mt-10 uppercase bg-primary !text-black px-12 border-none"
+        >
           {block.buttonText}
         </Button>
       </div>
