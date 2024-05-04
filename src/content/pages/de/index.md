@@ -221,6 +221,25 @@ content_blocks:
     rightLogos: /desktop-right.webp
     topLogos: /mobile-top.webp
     bottomLogos: /mobile-bottom.webp
+  - _bookshop_name: home/podcast
+    title: "Watch our Intelligent Industries Podcast"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    buttonText: "Request a demo"
+    buttonHref: "/contact"
+    image: "/podcast-de.webp"
+    icons:
+      - image: "/youtube.webp"
+        href: "#"
+      - image: "/spotify.webp"
+        href: "#"
+      - image: "/apple-podcasts.webp"
+        href: "#"
+  - _bookshop_name: home/featuredPosts
+    title: More insights from our Blog
+    subTitle: Lorem Ipsum
+    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+    buttonText: Request a Demo
+    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9    
   - _bookshop_name: home/ourFounders
     title: Ihr Ansprechpartner
     subTitle:

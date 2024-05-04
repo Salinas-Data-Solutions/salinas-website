@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content';
+import Button from '~/components/ui/Button.astro';
+import type { Post } from '~/types';
+import Image from '~/components/common/Image.astro';
+
+import { fetchPosts, generatePermalink } from '~/utils/blog';
+import { getPermalink } from '~/utils/permalinks';
+import { findImage } from '~/utils/images';
+import { getFormattedDate } from '~/utils/utils';
+
+const block = Astro.props;
+
+const data = await getCollection(
+  'post',
+  ({ data, slug }) => slug?.startsWith(Astro.currentLocale || 'en') && data.featured
+);
+
+const rawPosts = data.map(async (post) => {
+  console.log(post);
+  const { title, image, publishDate } = post.data;
+
+  const formatedImage = (await findImage(image)) || '';
+
+  return {
+    title,
+    image: formatedImage,
+    publishDate,
+    permalink: await generatePermalink({ id: post.id, slug: post.slug, publishDate: post.data.publishDate }),
+  };
+});
+
+const posts: {
+  title: string;
+  image: string | ImageMetadata;
+  publishDate: Date;
+  permalink: string;
+}[] = await Promise.all(rawPosts);
+
+// const link =  : '';
+---
+
+<section class="py-20 bg-page md:py-32">
+  <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-grey uppercase tracking-widest">{block.subTitle}</p>
+
+      <h2 class="mx-auto max-w-xl mt-10 text-3xl !leading-relaxed text-white sm:text-4xl lg:text-5xl">
+        {block.title}
+      </h2>
+      <p class="mt-4 leading-7 text-grey lg:mt-6 lg:leading-8">
+        {block.description}
+      </p>
+    </div>
+
+    <ul class="grid max-w-md grid-cols-1 gap-5 mx-auto mt-12 xl:gap-6 lg:grid-cols-3 lg:max-w-none sm:mt-16">
+      {
+        posts.slice(0, 3).map((post) => (
+          <li class="transition-all duration-200 group rounded-2xl hover:-translate-y-1">
+            {post.image && (
+              <a class="relative block group" href={getPermalink(post.permalink, 'post', Astro.currentLocale)}>
+                <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded-3xl shadow-lg">
+                  {post.image && (
+                    <Image
+                      src={post.image || ''}
+                      class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg"
+                      widths={[400, 900]}
+                      width={900}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={post.title}
+                      aspectRatio="16:9"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </div>
+              </a>
+            )}
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-sm font-medium text-grey">
+                {' '}
+                <time datetime={String(post.publishDate)} class="inline-block">
+                  {getFormattedDate(post.publishDate)}
+                </time>
+              </p>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold text-white xl:text-xl group-hover:text-gray-200">
+              <a href={getPermalink(post.permalink, 'post', Astro.currentLocale)} title="" class="">
+                {post.title}
+              </a>
+            </h3>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mt-12 text-center">
+      <Button
+        href={block.buttonHref}
+        title=""
+        class="btn py-2.5 px-4 md:px-12 font-semibold shadow-none text-sm w-auto uppercase"
+      >
+        {block.buttonText}
+      </Button>
+    </div>
+  </div>
+</section>
