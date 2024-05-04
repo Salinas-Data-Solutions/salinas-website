@@ -12,22 +12,6 @@ const seoSchema = z
   })
   .optional();
 
-const blogCollection = defineCollection({
-  schema: z.object({
-    publishDate: z.date(),
-    title: z.string(),
-    excerpt: z.string(),
-    tags: z.array(z.string()),
-    author: z.string(),
-    
-    image: z.string(),
-    image_alt: z.string(),
-    
-    seo: seoSchema,
-    // draft: z.boolean()
-  }),
-});
-
 const pageSchema = z.object({
   _schema: z.any().optional(),
   hidden: z.boolean().optional().default(false),
@@ -110,7 +94,8 @@ const postCollection = defineCollection({
     image_alt: z.string(),
     
     seo: seoSchema,
-    draft: z.boolean()
+    draft: z.boolean(),
+    featured: z.boolean(),
   }),
 });
 

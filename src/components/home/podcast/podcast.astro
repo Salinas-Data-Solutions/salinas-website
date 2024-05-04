@@ -1,0 +1,45 @@
+---
+import Button from '~/components/ui/Button.astro';
+
+import Image from '~/components/common/Image.astro';
+
+import { getPermalink } from '~/utils/permalinks';
+
+import { getFormattedDate } from '~/utils/utils';
+
+const block = Astro.props;
+---
+
+<section class="py-20 bg-black-custom md:py-32">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:items-start gap-y-8 md:grid-cols-[40%_1fr] gap-x-8">
+      <div class="max-w-[600px] h-auto mx-auto">
+        <img class="w-full rounded-lg" src={block.image} alt="" />
+
+        <ul class="flex items-center gap-4 justify-center mt-4 mx-auto">
+          {
+            block.icons.map((icon) => (
+              <li class="flex items-center justify-center">
+                <a href={icon.href}>
+                  <img src={icon.image} alt="" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl lg:text-4xl xl:text-5xl !leading-normal">{block.title}</h2>
+        <p class="mt-4 sm:mt-8">
+          Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia
+          purus ac amet pellentesque aliquam enim.
+        </p>
+
+        <Button variant="primary" href={block.buttonHref} class:list="mt-10 !text-black uppercase">
+          {block.buttonText}
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
