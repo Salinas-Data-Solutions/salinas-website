@@ -99,8 +99,19 @@ const postCollection = defineCollection({
   }),
 });
 
+const ebookCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.string(),
+    image_alt: z.string(),
+    bulletPoints: z.array(z.string()),
+    whatsInsideDescription: z.string(),
+  }),
+});
+
 export const collections = {
-  // blog: blogCollection,
+  ebook: ebookCollection,
   post: postCollection,
   pages: pagesCollection,
 };
