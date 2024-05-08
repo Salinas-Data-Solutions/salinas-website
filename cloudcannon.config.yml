@@ -107,7 +107,6 @@ collections_config:
         options:
           allow_create: true
           empty_type: array
-      
 collection_groups:
   - heading: Pages
     collections:
@@ -117,7 +116,7 @@ collection_groups:
       - posts
   - heading: Ebooks
     collections:
-      - ebook
+      - ebooks
   - heading: Site Settings
     collections:
       - data
