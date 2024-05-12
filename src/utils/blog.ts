@@ -5,13 +5,13 @@ import type { Post, Taxonomy } from '~/types';
 import { APP_BLOG } from 'astrowind:config';
 import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
-export const generatePermalink = async ({ id, slug, publishDate }: { id: string; slug: string; publishDate: Date }) => {
-  const year = String(publishDate.getFullYear()).padStart(4, '0');
-  const month = String(publishDate.getMonth() + 1).padStart(2, '0');
-  const day = String(publishDate.getDate()).padStart(2, '0');
-  const hour = String(publishDate.getHours()).padStart(2, '0');
-  const minute = String(publishDate.getMinutes()).padStart(2, '0');
-  const second = String(publishDate.getSeconds()).padStart(2, '0');
+export const generatePermalink = async ({ id, slug, publishDate }: { id: string; slug: string; publishDate?: Date }) => {
+  const year = String(publishDate?.getFullYear()).padStart(4, '0');
+  const month = String(publishDate?.getMonth() || 0 + 1).padStart(2, '0');
+  const day = String(publishDate?.getDate()).padStart(2, '0');
+  const hour = String(publishDate?.getHours()).padStart(2, '0');
+  const minute = String(publishDate?.getMinutes()).padStart(2, '0');
+  const second = String(publishDate?.getSeconds()).padStart(2, '0');
 
   const permalink = POST_PERMALINK_PATTERN.replace('%slug%', slug)
     .replace('%id%', id)
@@ -99,9 +99,35 @@ const load = async function ({ locale, featured = false}): Promise<Array<Post>> 
     .filter((post) => !post.draft);
 
   return results;
+
+};
+
+const loadEbooks = async function ({ locale, featured = false}) {
+  const ebooks = await getCollection('ebook', ({ data, slug }) => slug?.startsWith(locale))
+  
+  const normalizedEbooks = ebooks.map(async (ebook) => {
+    return {
+      permalink: await generatePermalink({ id: ebook.id, slug: ebook.slug }),
+      title: ebook.data.title,
+      description: ebook.data.description,
+      featured: ebook.data.featured,
+      image: ebook.data.image,
+      image_alt: ebook.data.image_alt,
+      bulletPoints: ebook.data.bulletPoints,
+      whatsInsideDescription: ebook.data.whatsInsideDescription,
+      whatsInsideImage: ebook.data.whatsInsideImage,
+      slug: cleanSlug(ebook.slug),
+
+    }
+  });
+
+  const results = ((await Promise.all(normalizedEbooks)))
+
+  return results;
 };
 
 let _posts: Array<Post>;
+let _ebooks;
 
 /** */
 export const isBlogEnabled = APP_BLOG.isEnabled;
@@ -128,6 +154,29 @@ export const fetchPosts = async ({ locale }): Promise<Array<Post>> => {
 
   return _posts;
 };
+
+export const fetchEbooks = async ({ locale }): Promise<Array<{
+  permalink: string;
+  title: string;
+  description: string;
+  featured: boolean;
+  image: string;
+  image_alt: string;
+  bulletPoints: Array<string>;
+  whatsInsideDescription: string;
+  whatsInsideImage: string;
+  slug: string;
+}>> => {
+  if (!_ebooks) {
+    _ebooks = await loadEbooks({ locale });
+    console.log(_ebooks, '_ebooks');
+  } else if (!_ebooks?.[0]?.slug?.startsWith(locale)) {
+    _ebooks = await loadEbooks({ locale });
+  }
+
+  return _ebooks;
+};
+
 
 /** */
 export const findPostsBySlugs = async (slugs: Array<string>, locale): Promise<Array<Post>> => {
@@ -183,6 +232,21 @@ export const getStaticPathsBlogPost = async ({ locale }) => {
       slug: post.permalink,
     },
     props: { post },
+  }));
+};
+
+export const getStaticPathsEbooks = async ({ locale }) => {
+  const ebooks = await fetchEbooks({ locale });
+  console.log(ebooks, 'ebooks');
+  // return [{
+  //   params: '',
+  //   props: { ebook:{ title: "Test"}}
+  // }]
+  return (await fetchEbooks({ locale })).flatMap((ebook) => ({
+    params: {
+      slug: ebook.permalink,
+    },
+    props: { ebook },
   }));
 };
 

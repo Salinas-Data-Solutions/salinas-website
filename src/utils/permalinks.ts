@@ -77,6 +77,9 @@ export const getPermalink = (slug = '', type = 'page', currentLocale = 'en'): st
       permalink = createPath(`${currentLocale}/blog/posts/${trimSlash(slug)}`);
       break;
 
+    case 'ebook':
+      permalink = createPath(`${currentLocale}/ebooks/${trimSlash(slug)}`);
+      break;
     case 'page':
     default:
       permalink = createPath(slug);

@@ -7,10 +7,6 @@ paths:
   layouts:
 timezone: Etc/UTC
 collections_config:
-  locales: 
-    path: _locales
-    disable_add: true
-    disable_add_folder: true
   data:
     path: data
     disable_add: true
@@ -107,7 +103,6 @@ collections_config:
         options:
           allow_create: true
           empty_type: array
-      
 collection_groups:
   - heading: Pages
     collections:
@@ -117,12 +112,9 @@ collection_groups:
       - posts
   - heading: Ebooks
     collections:
-      - ebook
+      - ebooks
   - heading: Site Settings
     collections:
       - data
       - site_navigation
       - theme_palette
-  - heading: Locales
-    collections:
-      - locales
