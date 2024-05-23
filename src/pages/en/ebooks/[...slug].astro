@@ -18,13 +18,10 @@ export const prerender = true;
 
 export const getStaticPaths = async () => {
   const data = await getStaticPathsEbooks({ locale: 'en' });
-
-  console.log(data, 'data');
   return data;
 };
 
 const { ebook } = Astro.props;
-console.log(ebook, 'ebook');
 
 const url = getCanonical(getPermalink(ebook.permalink, 'ebook'));
 const image = (await findImage(ebook.image)) as ImageMetadata | string | undefined;
@@ -33,8 +30,8 @@ const metadata = merge({
   title: ebook.title,
   description: ebook.description,
   robots: {
-    index: blogPostRobots?.index,
-    follow: blogPostRobots?.follow,
+    index: false,
+    follow: false,
   },
   openGraph: {
     type: 'article',
@@ -44,7 +41,6 @@ const metadata = merge({
   },
 }) as MetaData;
 
-console.log(ebook.whatsInsideImage);
 ---
 
 <Layout metadata={metadata}>
