@@ -1,16 +1,12 @@
 ---
 title: Home Page English
 content_blocks:
-  - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Manufacturing
-    title: Let’s Make Data Your Biggest Operational Asset
+  - _bookshop_name: ebook/hero
+    subTitle: 
+    title: Get the Ebooks
     description: >-
-      We plan, build, and integrate intelligent, data-driven solutions for
-      industrial operators to enhance their overall equipment effectiveness.
-    buttonText: Request a demo
+     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    buttonText: Click to learn more
     buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
-    secondButtonText: Learn more
-    secondButtonHref: '#'
     image:
-    background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
 ---

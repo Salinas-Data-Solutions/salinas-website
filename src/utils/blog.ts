@@ -1,21 +1,20 @@
 import type { PaginateFunction } from 'astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import type { Post, Taxonomy } from '~/types';
+import type { Post } from '~/types';
 import { APP_BLOG } from 'astrowind:config';
 import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
-export const generatePermalink = async ({ id, slug, publishDate }: { id: string; slug: string; publishDate: Date }) => {
-  const year = String(publishDate.getFullYear()).padStart(4, '0');
-  const month = String(publishDate.getMonth() + 1).padStart(2, '0');
-  const day = String(publishDate.getDate()).padStart(2, '0');
-  const hour = String(publishDate.getHours()).padStart(2, '0');
-  const minute = String(publishDate.getMinutes()).padStart(2, '0');
-  const second = String(publishDate.getSeconds()).padStart(2, '0');
+export const generatePermalink = async ({ id, slug, publishDate }: { id: string; slug: string; publishDate?: Date }) => {
+  const year = String(publishDate?.getFullYear()).padStart(4, '0');
+  const month = String(publishDate?.getMonth() || 0 + 1).padStart(2, '0');
+  const day = String(publishDate?.getDate()).padStart(2, '0');
+  const hour = String(publishDate?.getHours()).padStart(2, '0');
+  const minute = String(publishDate?.getMinutes()).padStart(2, '0');
+  const second = String(publishDate?.getSeconds()).padStart(2, '0');
 
   const permalink = POST_PERMALINK_PATTERN.replace('%slug%', slug)
     .replace('%id%', id)
-    // .replace('%category%', category || '')
     .replace('%year%', year)
     .replace('%month%', month)
     .replace('%day%', day)
@@ -36,28 +35,16 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
   const {
     publishDate: rawPublishDate = new Date(),
-    // updateDate: rawUpdateDate,
     title,
     excerpt,
     image,
     tags: rawTags = [],
-    // category: rawCategory,
     author,
     draft = false,
-    // metadata = {},
   } = data;
 
-  const slug = cleanSlug(rawSlug); // cleanSlug(rawSlug.split('/').pop());
+  const slug = cleanSlug(rawSlug);
   const publishDate = new Date(rawPublishDate);
-  // const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
-
-  // const category = rawCategory
-  //   ? {
-  //       slug: cleanSlug(rawCategory),
-  //       title: rawCategory,
-  //     }
-  //   : undefined;
-
   const tags = rawTags.map((tag: string) => ({
     slug: cleanSlug(tag),
     title: tag,
@@ -69,29 +56,24 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     permalink: await generatePermalink({ id, slug, publishDate }),
 
     publishDate: publishDate,
-    // updateDate: updateDate,
 
     title: title,
     excerpt: excerpt,
     image: image,
 
-    // category: category,
     tags: tags,
     author: author,
 
     draft: draft,
 
-    // metadata,
-
     Content: Content,
-    // or 'content' in case you consume from API
 
     readingTime: remarkPluginFrontmatter?.readingTime,
   };
 };
 
-const load = async function ({ locale, featured = false}): Promise<Array<Post>> {
-  const posts = await getCollection('post', ({ data, slug }) => slug?.startsWith(locale));
+const load = async function ({ locale, featured = false }): Promise<Array<Post>> {
+  const posts = await getCollection('post', ({ slug }) => slug?.startsWith(locale));
   const normalizedPosts = posts.map(async (post) => await getNormalizedPost(post));
 
   const results = (await Promise.all(normalizedPosts))
@@ -101,9 +83,32 @@ const load = async function ({ locale, featured = false}): Promise<Array<Post>> 
   return results;
 };
 
-let _posts: Array<Post>;
+const loadEbooks = async function ({ locale, featured = false }) {
+  const ebooks = await getCollection('ebook', ({ slug }) => slug?.startsWith(locale));
+  
+  const normalizedEbooks = ebooks.map(async (ebook) => {
+    return {
+      permalink: await generatePermalink({ id: ebook.id, slug: ebook.slug }),
+      title: ebook.data.title,
+      description: ebook.data.description,
+      featured: ebook.data.featured,
+      image: ebook.data.image,
+      image_alt: ebook.data.image_alt,
+      bulletPoints: ebook.data.bulletPoints,
+      whatsInsideDescription: ebook.data.whatsInsideDescription,
+      whatsInsideImage: ebook.data.whatsInsideImage,
+      formEmbedCode: ebook.data.formEmbedCode,
+      slug: cleanSlug(ebook.slug),
+    };
+  });
 
-/** */
+  const results = await Promise.all(normalizedEbooks);
+  return results;
+};
+
+let _posts: Array<Post>;
+let _ebooks;
+
 export const isBlogEnabled = APP_BLOG.isEnabled;
 export const isRelatedPostsEnabled = APP_BLOG.isRelatedPostsEnabled;
 export const isBlogListRouteEnabled = APP_BLOG.list.isEnabled;
@@ -118,7 +123,6 @@ export const blogTagRobots = APP_BLOG.tag.robots;
 
 export const blogPostsPerPage = APP_BLOG?.postsPerPage;
 
-/** */
 export const fetchPosts = async ({ locale }): Promise<Array<Post>> => {
   if (!_posts) {
     _posts = await load({ locale });
@@ -129,35 +133,50 @@ export const fetchPosts = async ({ locale }): Promise<Array<Post>> => {
   return _posts;
 };
 
-/** */
+export const fetchEbooks = async ({ locale }): Promise<Array<{
+  permalink: string;
+  title: string;
+  description: string;
+  featured: boolean;
+  image: string;
+  image_alt: string;
+  bulletPoints: Array<string>;
+  whatsInsideDescription: string;
+  whatsInsideImage: string;
+  formEmbedCode: string;
+  slug: string;
+}>> => {
+  if (!_ebooks) {
+    _ebooks = await loadEbooks({ locale });
+  } else if (!_ebooks?.[0]?.slug?.startsWith(locale)) {
+    _ebooks = await loadEbooks({ locale });
+  }
+
+  return _ebooks;
+};
+
 export const findPostsBySlugs = async (slugs: Array<string>, locale): Promise<Array<Post>> => {
   if (!Array.isArray(slugs)) return [];
 
   const posts = await fetchPosts({ locale });
 
-  return slugs.reduce(function (r: Array<Post>, slug: string) {
-    posts.some(function (post: Post) {
-      return slug === post.slug && r.push(post);
-    });
+  return slugs.reduce((r: Array<Post>, slug: string) => {
+    posts.some((post: Post) => slug === post.slug && r.push(post));
     return r;
   }, []);
 };
 
-/** */
 export const findPostsByIds = async (ids: Array<string>, locale): Promise<Array<Post>> => {
   if (!Array.isArray(ids)) return [];
 
   const posts = await fetchPosts({ locale });
 
-  return ids.reduce(function (r: Array<Post>, id: string) {
-    posts.some(function (post: Post) {
-      return id === post.id && r.push(post);
-    });
+  return ids.reduce((r: Array<Post>, id: string) => {
+    posts.some((post: Post) => id === post.id && r.push(post));
     return r;
   }, []);
 };
 
-/** */
 export const findLatestPosts = async ({ count }: { count?: number }, locale): Promise<Array<Post>> => {
   const _count = count || 4;
   const posts = await fetchPosts({ locale });
@@ -165,7 +184,6 @@ export const findLatestPosts = async ({ count }: { count?: number }, locale): Pr
   return posts ? posts.slice(0, _count) : [];
 };
 
-/** */
 export const getStaticPathsBlogList = async ({ paginate, locale }: { paginate: PaginateFunction; locale: string }) => {
   if (!isBlogEnabled || !isBlogListRouteEnabled) return [];
   
@@ -175,7 +193,6 @@ export const getStaticPathsBlogList = async ({ paginate, locale }: { paginate: P
   });
 };
 
-/** */
 export const getStaticPathsBlogPost = async ({ locale }) => {
   if (!isBlogEnabled || !isBlogPostRouteEnabled) return [];
   return (await fetchPosts({ locale })).flatMap((post) => ({
@@ -186,7 +203,15 @@ export const getStaticPathsBlogPost = async ({ locale }) => {
   }));
 };
 
-/** */
+export const getStaticPathsEbooks = async ({ locale }) => {
+  return (await fetchEbooks({ locale })).flatMap((ebook) => ({
+    params: {
+      slug: ebook.permalink,
+    },
+    props: { ebook },
+  }));
+};
+
 export const getStaticPathsBlogCategory = async ({
   paginate,
   locale,
@@ -214,10 +239,7 @@ export const getStaticPathsBlogCategory = async ({
   );
 };
 
-/** */
 export const getStaticPathsBlogTag = async ({ paginate, locale }: { paginate: PaginateFunction; locale: string }) => {
-  // if (!isBlogEnabled || !isBlogTagRouteEnabled) return [];
-
   const posts = await fetchPosts({ locale });
   const tags = {};
   posts.map((post) => {
@@ -239,11 +261,9 @@ export const getStaticPathsBlogTag = async ({ paginate, locale }: { paginate: Pa
   );
 };
 
-
-
 export async function getRelatedPosts(originalPost: Post, maxResults: number = 4, locale): Promise<Post[]> {
-  const allPosts = await fetchPosts({locale});
-  const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map(tag => tag.slug) : []);
+  const allPosts = await fetchPosts({ locale });
+  const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map((tag) => tag.slug) : []);
 
   const postsWithScores = allPosts.reduce((acc: { post: Post; score: number }[], iteratedPost: Post) => {
     if (iteratedPost.slug === originalPost.slug) return acc;
@@ -254,7 +274,7 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
     }
 
     if (iteratedPost.tags) {
-      iteratedPost.tags.forEach(tag => {
+      iteratedPost.tags.forEach((tag) => {
         if (originalTagsSet.has(tag.slug)) {
           score += 1;
         }
@@ -276,26 +296,3 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
 
   return selectedPosts;
 }
-
-/** */
-// export async function getRelatedPosts(originalPost: Post, locale): Promise<Post[]> {
-//   // Fetch all posts for the given locale
-//   const allPosts = await fetchPosts({ locale });
-
-//   // Create a Set from the slugs of the original post's tags for quick lookup
-//   const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map(tag => tag.slug) : []);
-
-//   // Filter all posts to find related ones
-//   const relatedPosts = allPosts.filter(iteratedPost => {
-//     // Skip the original post itself
-//     if (iteratedPost.slug === originalPost.slug) {
-//       return false;
-//     }
-
-//     // Check if any tag of the iterated post matches any tag of the original post
-//     return iteratedPost.tags?.some(tag => originalTagsSet.has(tag.slug));
-//   });
-
-//   console.log(relatedPosts, 'relatedPosts');
-//   return relatedPosts;
-// }

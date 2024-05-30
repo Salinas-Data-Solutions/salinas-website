@@ -1,0 +1,84 @@
+---
+import { getCollection } from 'astro:content';
+import Image from '~/components/common/Image.astro';
+
+import { generatePermalink } from '~/utils/blog';
+import { getPermalink } from '~/utils/permalinks';
+import { findImage } from '~/utils/images';
+
+const block = Astro.props;
+
+const data = await getCollection(
+  'ebook',
+  ({ data, slug }) => slug?.startsWith(Astro.currentLocale || 'en') && data.featured
+);
+
+const rawEbooks = data.map(async (ebook) => {
+  const { title, image } = ebook.data;
+  const formatedImage = (await findImage(image)) || '';
+
+  return {
+    title,
+    image: formatedImage,
+    permalink: await generatePermalink({ id: ebook.id, slug: ebook.slug }),
+    formEmbedCode: ebook.data.formEmbedCode,
+  };
+});
+
+const ebooks: {
+  title: string;
+  image: string | ImageMetadata;
+  permalink: string;
+  formEmbedCode: string;
+}[] = await Promise.all(rawEbooks);
+---
+
+<section class="py-20 bg-page md:py-10">
+  <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-grey uppercase tracking-widest">{block.subTitle}</p>
+
+      <h2 class="mx-auto max-w-xl mt-10 text-3xl !leading-relaxed text-white sm:text-4xl lg:text-5xl">
+        {block.title}
+      </h2>
+      <p class="mt-4 leading-7 text-grey lg:mt-6 lg:leading-8">
+        {block.description}
+      </p>
+    </div>
+
+    <ul class="grid max-w-md grid-cols-1 gap-5 mx-auto mt-12 xl:gap-x-24 lg:grid-cols-3 lg:max-w-none sm:mt-24">
+      {
+        ebooks.slice(0, 3).map((ebook) => (
+          <li class="transition-all duration-200 group rounded-2xl hover:-translate-y-1 ">
+            {ebook.image && (
+              <a class="relative block group" href={getPermalink(ebook.permalink, 'ebook', Astro.currentLocale)}>
+                <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[140%] overflow-hidden bg-gray-400 dark:bg-slate-700 shadow-lg">
+                  {ebook.image && (
+                    <Image
+                      src={ebook.image || ''}
+                      class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg"
+                      widths={[400, 900]}
+                      width={900}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={ebook.title}
+                      aspectRatio="16:9"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </div>
+              </a>
+            )}
+
+            <h3 class="mt-6 text-lg font-semibold text-white xl:text-xl group-hover:text-gray-200">
+              <a href={getPermalink(ebook.permalink, 'ebook', Astro.currentLocale)} title="" class="">
+                {ebook.title}
+              </a>
+            </h3>
+            <div set:html={ebook.formEmbedCode} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

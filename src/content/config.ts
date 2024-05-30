@@ -103,8 +103,11 @@ const ebookCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    featured: z.boolean(),
     image: z.string(),
     image_alt: z.string(),
+    whatsInsideImage: z.string(),
+    formEmbedCode: z.string(),
     bulletPoints: z.array(z.string()),
     whatsInsideDescription: z.string(),
   }),
