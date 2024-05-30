@@ -4,7 +4,7 @@ import Button from '~/components/ui/Button.jsx';
 
 const ContactUs = ( block ) => {
   return (
-    <section id="contact" className="relative bg-page">
+    <section id="contact" className="relative bg-black-custom">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-grey uppercase mb-10 tracking-widest">{block.subTitle}</p> */}

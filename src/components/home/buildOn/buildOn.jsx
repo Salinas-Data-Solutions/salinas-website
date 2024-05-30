@@ -3,7 +3,7 @@ import Button from '~/components/ui/Button.jsx';
 
 const BuildOn = (block) => {
   return (
-    <section className="py-20 bg-page lg:py-24 overflow-hidden">
+    <section className="py-20 lg:py-24 overflow-hidden">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-3">
           <div>
