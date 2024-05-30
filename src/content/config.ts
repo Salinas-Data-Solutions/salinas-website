@@ -107,6 +107,7 @@ const ebookCollection = defineCollection({
     image: z.string(),
     image_alt: z.string(),
     whatsInsideImage: z.string(),
+    formEmbedCode: z.string(),
     bulletPoints: z.array(z.string()),
     whatsInsideDescription: z.string(),
   }),

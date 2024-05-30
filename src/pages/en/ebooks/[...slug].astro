@@ -1,17 +1,11 @@
 ---
-import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
-
 import merge from 'lodash.merge';
 import type { ImageMetadata } from 'astro';
 import Layout from '~/layouts/Layout.astro';
-import SinglePost from '~/components/blog/SinglePost.astro';
-import ToBlogLink from '~/components/blog/ToBlogLink.astro';
 
-import { getCanonical, getPermalink } from '~/utils/permalinks';
-import { getStaticPathsBlogPost, blogPostRobots, getStaticPathsEbooks } from '~/utils/blog';
+import { getStaticPathsEbooks } from '~/utils/blog';
 import { findImage } from '~/utils/images';
 import type { MetaData } from '~/types';
-import RelatedPosts from '~/components/blog/RelatedPosts.astro';
 import Image from '~/components/common/Image.astro';
 
 export const prerender = true;
@@ -22,8 +16,6 @@ export const getStaticPaths = async () => {
 };
 
 const { ebook } = Astro.props;
-
-const url = getCanonical(getPermalink(ebook.permalink, 'ebook'));
 const image = (await findImage(ebook.image)) as ImageMetadata | string | undefined;
 
 const metadata = merge({
@@ -40,77 +32,65 @@ const metadata = merge({
       : {}),
   },
 }) as MetaData;
-
 ---
 
 <Layout metadata={metadata}>
-  <div class="container mx-auto py-64">
-    <div class="grid grid-cols-[25%_1fr] gap-24 max-w-5xl mx-auto min-h-[600px]">
-      <div class="block relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[140%] overflow-hidden shadow-lg">
+  <div class="container mx-auto py-32">
+    <div class="grid justify-items-center items-center lg:grid-cols-[25%_1fr] gap-24 max-w-5xl mx-auto min-h-[600px]">
+      <div
+        class="flex items-center justify-center w-full !px-0 lg:block relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[140%] overflow-hidden shadow-lg"
+      >
+        <div class="absolute inset-0 flex items-center justify-center">
+          <Image
+            src={ebook.image || ''}
+            class="object-cover w-full h-full mb-6 shadow-lg"
+            widths={[400, 400]}
+            width={400}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt={ebook.title}
+            aspectRatio="16:9"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <div class="text-center mt-6 lg:mt-0">
+        <h1 class="text-5xl">{ebook.title}</h1>
+        <p class="mt-10">{ebook.description}</p>
+
+        <div set:html={ebook.formEmbedCode} />
+      </div>
+    </div>
+    <div class="grid gap-10 lg:grid-cols-2 mt-20">
+      <div>
+        <h2 class="mt-6 text-3xl text-white sm:text-4xl lg:text-5xl lg:mt-8 !leading-relaxed">What's inside</h2>
+        <p class="mt-8 text-primary">
+          {ebook.whatsInsideDescription}
+        </p>
+
+        <ul class="list-disc ml-4 mt-8">
+          {ebook.bulletPoints.map((point, index) => <li class="mt-2">{point}</li>)}
+        </ul>
+
+        <div set:html={ebook.formEmbedCode} />
+      </div>
+      <div class="flex items-center justify-center mt-6 lg:mt-0">
         {
-          ebook.image && (
+          ebook.whatsInsideImage && (
             <Image
-              src={ebook.image || ''}
-              class="absolute inset-0 object-cover w-full h-full mb-6  shadow-lg"
-              widths={[400, 400]}
-              width={400}
+              src={ebook.whatsInsideImage || ''}
+              class="object-cover w-full h-full mb-6 shadow-lg"
+              widths={[400, 900]}
+              width={900}
               sizes="(max-width: 900px) 400px, 900px"
               alt={ebook.title}
-              aspectRatio="16:9"
+              aspectRatio="16:12"
               loading="lazy"
               decoding="async"
             />
           )
         }
       </div>
-      <div class="text-center">
-        <h1 class="text-5xl">{ebook.title}</h1>
-        <p class="mt-10">{ebook.description}</p>
-
-        <div
-          class="pipedriveWebForms flex items-start"
-          data-pd-webforms="https://webforms.pipedrive.com/f/cee5svNkl0HQWXKuKBlIEprpN83lKEJvZXA2x3gsq5vdFy8OyAPNqQ7u0MwhlxdAj1"
-        >
-          <script src="https://webforms.pipedrive.com/f/loader"></script>
-        </div>
-      </div>
     </div>
-    <div class="grid grid-cols-2 gap-10">
-      <div>
-        <h2 class="mt-6 text-3xl text-white lg:mt-8 sm:text-4xl lg:text-5xl !leading-relaxed">What's inside</h2>
-        <p class="mt-2 text-primary">
-          {ebook.whatsInsideDescription}
-        </p>
-
-        <ul class="list-disc ml-4 mt-4">
-          {ebook.bulletPoints.map((point) => <li class="mt-2 ">{point}</li>)}
-        </ul>
-        <div
-          class="pipedriveWebForms flex items-start mt-4"
-          data-pd-webforms="https://webforms.pipedrive.com/f/cee5svNkl0HQWXKuKBlIEprpN83lKEJvZXA2x3gsq5vdFy8OyAPNqQ7u0MwhlxdAj1"
-        >
-          <script src="https://webforms.pipedrive.com/f/loader"></script>
-        </div>
-      </div>
-      {
-        ebook.whatsInsideImage && (
-          <Image
-            src={ebook.whatsInsideImage || ''}
-            class="inset-0 object-cover w-full h-full mb-6  shadow-lg"
-            widths={[400, 900]}
-            width={900}
-            sizes="(max-width: 900px) 400px, 900px"
-            alt={ebook.title}
-            aspectRatio="16:12"
-            loading="lazy"
-            decoding="async"
-          />
-        )
-      }
-    </div>
-    <!-- <SinglePost post={{ ...post, image: image }} url={url}>
-    {post.Content ? <post.Content /> : <Fragment set:html={post.content || ''} />}
-  </SinglePost> -->
-    <!-- <RelatedPosts post={post} /> -->
   </div>
 </Layout>

@@ -4,9 +4,7 @@ import { ANALYTICS } from 'astrowind:config';
 import settings from '@/data/settings.json';
 ---
 
-<script
-  src={settings.CCM19}
-  referrerpolicy='origin'></script>
+<script src={settings.CCM19} referrerpolicy="origin"></script>
 
 {
   ANALYTICS?.vendors?.googleAnalytics?.id ? (
