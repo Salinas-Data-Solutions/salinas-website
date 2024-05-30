@@ -4,7 +4,7 @@ import Button from "~/components/ui/Button.jsx";
 
 const HeroSection = ( block ) => {
   return (
-    <section className="relative sm:py-16 flex justify-center items-center">
+    <section className="relative sm:py-16 flex justify-center items-center px-4">
       <div className="absolute inset-0 overflow-hidden -z-10  flex justify-center items-center">
         <img
           className="object-cover bg-center h-full w-full lg:h-auto lg:w-auto max-w-none origin-bottom-right"
