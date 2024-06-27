@@ -2,14 +2,14 @@
 title: Home Page Deutsch
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligente Lösungen für die Fertigung
-    title: Wir machen aus Ihren Daten den größten operativen Vorteil!
+    subTitle: Entfalten Sie das volle Potential von Prozessautomatisierung
+    title: Intelligente Automatisierungen für Ihre Geschäftsprozesse
     description: >-
-      Wir entwickeln und integrieren smarte, datenbasierte Lösungen, welche die
-      Effizienz und Verfügbarkeit Ihrer industriellen Anlagen steigern.
+      Mit unseren Fullstack  Web-Lösungen ermöglichen wir Produktivitätssprünge
+      für Ihr Unternehmen.
     buttonText: Demo anfragen
-    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
-    secondButtonText: Learn more
+    buttonHref:
+    secondButtonText: Mehr erfahren
     secondButtonHref: '#'
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
