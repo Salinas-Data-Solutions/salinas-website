@@ -14,49 +14,31 @@ content_blocks:
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
-    title: Passgenaue Intelligente Lösungen für industrielle Anwender
-    subTitle: Beschleunigen Sie Ihre Abläufe mit industrieller KI
+    title: Unsere Leistungen für die Produktivätssteigerung Ihrer Abläufe
+    subTitle: Reibungsloser digitaler Betrieb Ihrer Geschäftsanwendungen
     buttonText: Demo anfragen
-    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
+    buttonHref:
     items:
-      - title: Implementierung von industriellen KI-Lösungen
+      - title: Implementierung Intelligenter Web-Anwendungen
+        description: >
+          Ob KI-Chatbots oder dynamische Websites, wir implementieren Ihre
+          Anwendung unter Berücksichtigung Ihrer Datenbank- und Infrastruktur
+          .Anforderungen.
+      - title: Prozess-Automatisierung
         description: >-
-          Wir haben uns auf die Entwicklung von Lösungen spezialisiert, die die
-          betriebliche Effizienz unserer industriellen Kunden deutlich
-          verbessern. Dazu gehören Anwendungen, die mit künstlicher Intelligenz
-          entwickelt wurden und verwertbare Erkenntnisse für den Betrieb
-          liefern, wie z. B. vorausschauende Wartungssysteme und
-          fortschrittliche Analysen, MES-Systeme mit interoperablen digitalen
-          Zwillingen und Edge-basierte Anwendungen, die die Geschwindigkeit und
-          Qualität von Fertigungsprozessen verbessern.
-      - title: Systemintegration von industriellen Automatisierungsanlagen
-        description: >-
-          Unser Fachwissen im Bereich der Industrieautomation gewährleistet
-          nahtlose Konnektivität und Funktionalität. Wir programmieren die SPS
-          aller großen Automatisierungsanbieter, integrieren  SCADA-Systeme, um
-          die Betriebssteuerung und Datenerfassung zu optimieren. Unsere
-          Integrationen sind so konzipiert, dass sie die Systemeffizienz und
-          -zuverlässigkeit optimieren und den spezifischen Anforderungen
-          industrieller Umgebungen gerecht werden.
-      - title: Integration von Dateninfrastrukturen
-        description: >-
-          Wir unterstützen Betreiber dabei, ihre Infrastruktur mit industriellen
-          IoT-Diensten zu verbinden und effiziente Datenlösungen zu
-          implementieren, die auf Edge-Geräten laufen und sich nahtlos in
-          cloudbasierte Unternehmenssoftware integrieren lassen. Unsere Lösungen
-          sind so zugeschnitten, dass sie einen robusten Datenfluss und eine
-          robuste Datenspeicherung gewährleisten und Echtzeit-Analysen und
-          betriebliche Entscheidungen über verschiedene Plattformen hinweg
-          unterstützen.
-      - title: 'Planung intelligenter Fertigungsinnovationen:'
-        description: >-
-          Wir bieten umfassende Strategieberatung für intelligente Fertigung,
-          einschließlich technischer Bewertung und Architekturplanung, um die
-          Gesamtanlageneffektivität (OEE) zu verbessern. Unsere Dienstleistungen
-          zielen nicht nur auf die Entwicklung von Strategien ab, sondern auch
-          auf deren wirksame Umsetzung. So stellen wir sicher, dass die
-          Fertigungsanlagen auf zukünftige technologische Fortschritte und
-          betriebliche Herausforderungen gut vorbereitet sind.
+          Durch intelligente Verknüpfung Ihrer Anwendungen schaffen wir mit
+          Hilfe von RPA Tools und API-Lösungen Zeitersparnisse für routinemäßige
+          Abläufe.
+      - title: DevOps und CI/CD
+        description: >
+          Mit unseren Lösungen zu (cloudbasiertem) DevOps schaffen wir
+          kontinuierliche Verbesserung und Integration, z.B. bei Updates ihrer
+          Anwendungen im laufenden Betrieb.
+      - title: Infrastruktur Einrichtung und Betrieb
+        description: >
+          Ob die Verteilung von virtuiellen Systemen, cloudbasierte
+          Datenspeicher oder der Betrieb von Kubernetes-Clustern, wir sorgen
+          dafür, das Ihre Systeme laufen.
   - _bookshop_name: home/competence
     title: >-
       Expertenlösunge für Industrie- Automatisierung und Ihre betriebliche
