@@ -4,8 +4,8 @@ content_blocks:
   - _bookshop_name: home/hero
     subTitle:
     title: >-
-      Wir schaffen Prozessoptimierung mit intelligenten Datenlösungen und
-      Automatisierungenatisierungen für Ihre Geschäftsprozesse
+      Produktivitätssteigerung mit intelligenten Datenlösungen und
+      Automatisierungen
     description: >-
       Reduzieren Sie operative Kosten und steigern Sie die Produktivität Ihrer
       Abläufe mit maßgeschneiderten Daten- und Geschäftslösungen.
