@@ -200,11 +200,7 @@ content_blocks:
       - name: Dipl.-Ing. Sebastian Eumann, Gründer & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
-          "Mit unserer Expertise bei der Digitaisierung  von in
-          Industrie-Anwendungen und Geschäftsprozessen helfen wir Ihnen
-          Potentiale optimal zu Nutzen."
-  - _bookshop_name: home/contactUs
-    title: Kontaktieren Sie uns
-    subTitle:
-    buttonText: Absenden
+          Mit unserer Expertise in Daten-Analyse, Prozessautomatisierung sowie
+          cloudbasierten Infrastrukturen helfen wir Ihnen die Potentiale ihrer
+          Geschäftsprozesse optimal zu nutzen.
 ---
