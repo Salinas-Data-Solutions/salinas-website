@@ -189,15 +189,15 @@ content_blocks:
     title: Mehr Einblicke in unsere Arbeit
     subTitle: Der Salinas Data Solutions Blog
     description:
-    buttonText:
-    buttonHref:
+    buttonText: Beratungstermin anfragen
+    buttonHref: https://zeeg.me/salinasdata/prozessberatung
   - _bookshop_name: home/ourFounders
     title: Ihr Ansprechpartner
     subTitle:
     buttonText: Beratung anfragen
     buttonHref: https://zeeg.me/salinasdata/prozessberatung
     founders:
-      - name: Dipl.-Ing. Sebastian Eumann, Gründer & CEO
+      - name: Sebastian Eumann, Prozessberater und Daten-Experte
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
           Mit unserer Expertise in Daten-Analyse, Prozessautomatisierung sowie
