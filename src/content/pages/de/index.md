@@ -181,7 +181,7 @@ content_blocks:
     text: >-
       Mit diesem Technologien entwickeln wir maßgescheiderte Lösungen für
       Unternehmen
-    leftLogos: /desktop-left.webp
+    leftLogos: /desktop-left.png
     rightLogos: /desktop-right.webp
     topLogos: /mobile-top.webp
     bottomLogos: /mobile-bottom.webp
