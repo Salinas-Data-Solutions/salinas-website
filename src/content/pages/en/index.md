@@ -2,87 +2,65 @@
 title: Home Page English
 content_blocks:
   - _bookshop_name: home/hero
-    subTitle: Intelligent Solutions For Manufacturing
+    subTitle:
     title: Let’s Make Data Your Biggest Operational Asset
     description: >-
-      We plan, build, and integrate intelligent, data-driven solutions for
-      industrial operators to enhance their overall equipment effectiveness.
-    buttonText: Request a demo
-    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
+      We support businesses gain competitive edge by implementing intelligent
+      process-automation solutions
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
     secondButtonText: Learn more
     secondButtonHref: '#'
     image:
     background_image: /ac9752dd937415a11a2d5525c47dae1b.webp
   - _bookshop_name: home/services
-    title: Tailored AI Solutions
-    subTitle: Accelerating Your Operations With Data & Industrial AI
-    buttonText: Request a demo
-    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
+    title: Our Services for Optimizing Your Processes
+    subTitle: BOOST PRODUCTIVITY WITH CUSTOMIZED SOLUTIONS
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
     items:
-      - title: Building and Implementing Industrial AI Solutions
+      - title: 'Intelligent Process Solutions:'
         description: >-
-          We specialize in developing solutions that significantly improve the
-          operational efficiency of our industrial customers. This includes
-          applications that are driven by Artificial Intelligence and deliver
-          actionable insights for operations, such as predictive maintenance
-          systems and advanced analytics, MES systems with interoperable digital
-          twins, and edge-based applications that improve the speed and quality
-          of manufacturing processes.
-      - title: System Integration of Industrial Automation Equipment
+          Enhance cost efficiency and competitiveness with tailored solutions
+          that intelligently streamline your business processes.
+      - title: 'Automation Development: '
         description: >-
-          Our expertise in industrial automation ensures seamless connectivity
-          and functionality. We work with and program PLCs from all major
-          automation vendors, integrating SCADA systems to enhance operational
-          control and data acquisition. Our integrations are designed to
-          optimize system efficiency and reliability, catering to the specific
-          needs of industrial environments.
-      - title: Integration of Data Infrastructures
+          Reduce manual effort, increase productivity, and lower operational
+          costs with our cutting-edge automation solutions.
+      - title: 'Data Infrastructure Management: '
         description: >-
-          We assist operators in connecting their operational technology with
-          Industrial IoT services, implementing efficient data solutions that
-          run on edge devices and integrate seamlessly with cloud-based
-          enterprise software. Our solutions are tailored to ensure robust data
-          flow and storage, supporting real-time analytics and operational
-          decision-making across various platforms.
-      - title: Planning Smart Manufacturing Innovation
+          Ensure your data infrastructure operates efficiently and securely to
+          maximize availability and performance, allowing you to fully leverage
+          your data assets.
+      - title: 'Strategic Process Consulting & Agile Development: '
         description: >-
-          We provide comprehensive smart manufacturing strategy consulting,
-          including technical assessment and architecture planning, to enhance
-          Overall Equipment Effectiveness (OEE). Our services are designed to
-          not only develop strategies but also to implement them effectively,
-          ensuring that manufacturing facilities are well-prepared for future
-          technological advancements and operational challenges.
+          Quickly adapt to market demands and strengthen your competitive edge
+          with our strategic process consulting and agile development services.
   - _bookshop_name: home/competence
-    title: Expert Industrial Automation Solutions for Your Operational Efficiency
-    subTitle: Our Expertise in Industrial AI
+    title: Customized Solutions to Boost Your Efficiency
+    subTitle:
     image: /image-4.webp
     description: >-
-      At SALINAS Data Solutions, we combine specialized technical expertise with
-      practical industry experience to create effective solutions for
-      manufacturing challenges. Our team is focused on delivering precise and
-      reliable outcomes that reduce downtimes and enhance availability.
+      With our extensive experience in innovation development for industrial
+      companies, we help businesses quickly implement tailored solutions that
+      deliver value with a "Wow" factor.
     items:
-      - title: Manufacturing Operations & Industrial Automation
+      - title: 'Intelligent Process Automation: '
         description: >-
-          Our deep understanding of shop-floor applications and manufacturing
-          processes combined with extensive experience in industrial automation
-          equips us to effectively optimize operational workflows and systems.
-      - title: Machine Learning Engineering & Industrial IoT Integration
+          Develop and integrate automation solutions to increase efficiency and
+          reduce manual efforts.
+      - title: 'Data Infrastructure & Management: '
         description: >-
-          We specialize in Industrial AI and IoT, leveraging our skills in
-          Unified Namespace Architectures and interoperable Digital Twins to
-          create advanced and integrated integrated solutions for maximum
-          operational efficiency.
-      - title: IT/OT Integration with Edge & Cloud Computing
+          Efficiently operate, maintain, and optimize data infrastructures to
+          support reliable and scalable applications.
+      - title: 'Data Analysis & Engineering:'
         description: >-
-          Our expertise in integrating IT and OT environments is fueled by our
-          capabilities in edge and cloud computing, ensuring robust and seamless
-          data management across platforms.
-      - title: Software Development & Agile Program Management
+          Unlock the potential of your data to enable informed decision-making
+          and improve business processes.
+      - title: 'Strategic Process Consulting: '
         description: >-
-          With a skilled software development teeam and agile processes, we are
-          adept at crafting and managing the deployment of industrial software
-          architectures to meet precise client needs.
+          Provide agile methodology consulting and implementation to optimize
+          business processes and drive innovation.
   - _bookshop_name: home/implementationGuide
     title: Download Our AI Implementation Guide!
     description: >-
@@ -99,59 +77,60 @@ content_blocks:
     buttonHref: '#'
   - _bookshop_name: home/applications
     title: What We Have Worked On
-    subTitle: Industrial AI Application Examples
-    buttonText: Request a free demo!
-    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
-    bottomBlockTitle: Are you curious about what Industrial AI can do for your operations?
+    subTitle: Examples Off Intelligent Process Implementation
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
+    bottomBlockTitle: >-
+      Would You Like to Learn How We Can Drive Your Productivity With
+      Intelligent Processes?
     bottomBlockDescription: >-
-      We will prepare a free demo session based on your operational needs and
-      requirements. Request a demo session today and we will build a prototype
-      for you!
+      In free consultation call, we will work together to develop a roadmap
+      tailored to your specific use case and provide you with an initial demo to
+      get you started.
     items:
-      - title: Quality Improvement With Machine Vision
+      - title: Engineering Co-Pilot for Optimizing Technical Development Processes
         description: >-
-          We implemented a machine vision system designed to accurately identify
-          and recover wrongfully rejected production parts.
+          Our AI-based Engineering Co-Pilot solution significantly accelerated
+          the workflows of technical development and plant design.
         image: /318f2e6a2cee512aa5d360f38573d6e8.webp
         extended_description: >-
-          By utilizing trained image data, this system distinguishes between
-          rightfully and wrongfully rejected parts with over 98% accuracy. This
-          critical identification process not only recovers valuable outputs but
-          also significantly increases the overall throughput of the production
-          line, reducing material waste and enhancing product quality.
-      - title: Real-time Production Monitoring and Control
+          By developing and implementing this intelligent Co-Pilot solution,
+          engineers were able to handle technical documentation and complex
+          calculations more efficiently. The Co-Pilot provided real-time
+          suggestions and corrections, leading to faster and more accurate
+          decisions, ultimately reducing the overall duration of development
+          projects.
+      - title: Efficient Data Management for Reliable Supply Chains
         description: >-
-          Our solution provides a holistic view of manufacturing operations,
-          enabling real-time performance monitoring and efficiency improvements.
+          With our customized data infrastructure solutions, we significantly
+          increased the reliability and efficiency of supply chains.
         image: /1a07d66b6ea5fec3b4d9139f554bbcc5.webp
         extended_description: >-
-          This system continuously evaluates whether machines operate within
-          their designed parameters and whether production KPIs are met. By
-          proactively identifying and addressing inefficiencies, the solution
-          ensures optimal machine utilization, reduces downtime, and improves
-          resource allocation across the production floor.
-      - title: Intelligent Engineering Support System
+          By implementing a robust and scalable data infrastructure, we enabled
+          real-time monitoring and analysis of supply chain processes. This
+          improvement helped minimize downtime and maximize delivery
+          reliability, resulting in a noticeable increase in customer
+          satisfaction.
+      - title: Agile Process Consulting for Rapid Market Adaptation
         description: >-
-          Our chat-based CoPilot leverages LLM and multimodal models to provide
-          comprehensive engineering support, significantly reducing design time
-          and enhancing accuracy.
+          Our strategic process consulting helped a leading packaging company
+          quickly and effectively adapt to changing market conditions.
         image: /7ed59cbf2339e4ec523b96185248cdcd.webp
         extended_description: >-
-          The system integrates specific documentation, images, and videos from
-          production sites to deliver actionable steps for improvements and
-          efficient factory planning. This advanced support tool reduces the
-          time engineers spend on preliminary design and information retrieval
-          by 70%, leading to faster project completions and heightened customer
-          satisfaction.
+          Using an agile approach to process optimization, we shortened the
+          company's innovation cycles and accelerated the implementation of new
+          technologies. This not only increased efficiency but also
+          significantly enhanced the company's ability to respond to new market
+          demands.
         content_blocks:
   - _bookshop_name: home/applicationDescription
     title: Your Path To Successful Implementation
     subTitle: How we work
-    buttonText: Request A Demo
-    buttonHref: https://forms.gle/kzGJJcgiFUTiA63w6
+    buttonText: Schedule A Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
     items:
       - image: /light-bulb.svg
-        title: Use Case Definition
+        title: Process Analysis
         description: >-
           We work together on answering the following questions: “How might we
           become more efficient in our operation?” & “What kind of routines
@@ -192,42 +171,31 @@ content_blocks:
   - _bookshop_name: home/buildOn
     title: We build on
     subTitle: Our Tech Stack
-    buttonText: Request a demo
-    buttonHref: https://forms.gle/2ApMLBfbMtZrkx1G8
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
     text: >-
-      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-      consectetur, adipisci velit, sed quia. Quis autem vel eum iure
-      reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-      consequatur.
-    leftLogos: /desktop-left.webp
-    rightLogos: /desktop-right.webp
-    topLogos: /mobile-top.webp
-    bottomLogos: /mobile-bottom.webp
+      With these technologies we build customized and optimized solutions for
+      any business process
+    leftLogos: /desktop-left.png
+    rightLogos: /desktop-right.png
+    topLogos: /mobile-top.png
+    bottomLogos: /mobile-bottom.png
   - _bookshop_name: home/featuredPosts
-    title: More insights from our Blog
-    subTitle: Lorem Ipsum
-    description: >-
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-      praesentium voluptatum deleniti atque corrupti quos dolores et quas
-      molestias excepturi sint occaecati cupiditate non provident.
-    buttonText: Request a Demo
-    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9
+    title: 'More Insights '
+    subTitle: The Salinas Data Solutions Blog
+    description:
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
   - _bookshop_name: home/ourFounders
     title: Your Personal Contact
     subTitle:
-    buttonText: Request a Demo
-    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9
+    buttonText: Schedule a Call
+    buttonHref: https://zeeg.me/salinasdata/process-consulting
     founders:
-      - name: Sebastian Eumann, Founder & CEO
+      - name: Sebastian Eumann, Data Expert and Solution Consultant
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
         description: >-
-          As an experienced Industrial Automation Expert and AI Solution
-          Engineer , Sebastian brings a wealth of expertise in delivering
-          advanced solutions to manufacturing processes. With deep industry
-          knowledge and a skilled implementation team SALINAS Data Solutions
-          will help you master the efficiency of your operation.
-  - _bookshop_name: home/contactUs
-    title: Contact Us
-    subTitle: Lorem Ipsum
-    buttonText: Send
+          With our expertise in data analysis, process automation, and
+          cloud-based infrastructures, we help you fully realize the potential
+          of your business processes.
 ---
