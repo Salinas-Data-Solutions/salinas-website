@@ -19,8 +19,8 @@
       }
     ],
     "action": {
-      "text": "Request A Demo",
-      "href": "#",
+      "text": "Schedule a Call",
+      "href": "https://zeeg.me/salinasdata/process-consulting",
       "target": "_blank"
     }
   },
@@ -73,8 +73,8 @@
       }
     ],
     "action": {
-      "text": "Request A Demo",
-      "href": "#",
+      "text": "Beratungstermin",
+      "href": "https://zeeg.me/salinasdata/prozessberatung",
       "target": "_blank"
     }
   },
