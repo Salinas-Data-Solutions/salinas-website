@@ -3,14 +3,12 @@ title: Home Page Deutsch
 content_blocks:
   - _bookshop_name: home/hero
     subTitle:
-    title: >-
-      Produktivitätssteigerung mit intelligenten Datenlösungen und
-      Automatisierungen
+    title: Daten- und Prozesslösungen für Unternehmen
     description: >-
-      Reduzieren Sie operative Kosten und steigern Sie die Produktivität Ihrer
-      Abläufe mit maßgeschneiderten Daten- und Geschäftslösungen.
+      Wir helfen Unternehmen mit intelligenter Prozessautomatisierung
+      wettbewerbsfähiger zu werden
     buttonText: Beratungtermin anfragen
-    buttonHref:
+    buttonHref: https://zeeg.me/salinasdata/prozessberatung
     secondButtonText: Mehr erfahren
     secondButtonHref: '#'
     image:
@@ -19,13 +17,13 @@ content_blocks:
     title: Unsere Leistungen für Ihre Prozessoptimierung
     subTitle: Produktivitätssteigerung durch individuelle Lösungen
     buttonText: Beratung anfragen
-    buttonHref:
+    buttonHref: https://zeeg.me/salinasdata/prozessberatung
     items:
-      - title: Implementierung von KI-Anwendungen
+      - title: Implementierung von intelligeten Prozesslösungen
         description: >-
           Wir steigern Ihre Kosteneffizienz und Wettbewerbsfähigkeit durch
-          maßgeschneiderte KI-Lösungen, die Ihre Geschäftsprozesse intelligent
-          und effizient gestalten.
+          maßgeschneiderte, die Ihre Geschäftsprozesse intelligent produktiver
+          machen.
       - title: Entwicklung von Automatisierungslösungen
         description: >-
           Unsere Automatisierungslösungen reduzieren manuelle Aufwände, erhöhen
@@ -49,24 +47,23 @@ content_blocks:
       Industrie-Unternehmen helfen wir Unternehmen passgenaue Lösungen mit
       "Wow-Effekt" schnell umzusetzen.
     items:
-      - title: Künstliche Intelligenz und Automatisierung
+      - title: Intelligente Prozessautomatisierung
         description: >-
-          Entwicklung und Integration von KI-Lösungen und automatisierten
-          Prozessen zur Steigerung der Effizienz und Reduzierung manueller
-          Aufwände.
+          Entwicklung und Integration von Automatisierungslsöungen zur
+          Steigerung der Effizienz und Reduzierung manueller Aufwände.
       - title: Dateninfrastruktur und Management
         description: >-
           Effizienter Betrieb, Wartung und Optimierung von Dateninfrastrukturen,
-          um zuverlässige und skalierbare Systeme sicherzustellen.
+          um den Betrieb zuverlässiger und skalierbarer Anwendungen zu
+          ermöglichen.
+      - title: Daten-Analyse und Engineering
+        description: >-
+          Wir machen Ihre Datenpotenziale nutzbar, um fundierte Entscheidungen
+          zu ermöglichen und Geschäftsprozesse zu verbessern.
       - title: Strategische Prozessberatung
         description: >-
           Beratung und Umsetzung agiler Methoden zur Optimierung von
           Geschäftsprozessen und zur Förderung der Innovationskraft.
-      - title: Data Engineering
-        description: >-
-          Nutzung unerschlossener Datenpotenziale durch fortschrittliche
-          Analysemethoden, um fundierte Entscheidungen zu ermöglichen und
-          Geschäftsprozesse zu verbessern.
   - _bookshop_name: home/implementationGuide
     title: Laden Sie sich unseren umfassenden KI-Leitfaden!
     description: >
@@ -82,12 +79,12 @@ content_blocks:
           Welche Risiken und Herausforderungen zum Einsatz von KI bestehen und
           wie man diesen begegnet
     buttonText: Zum Download
-    buttonHref: https://subscribepage.io/uqaWYN
+    buttonHref:
   - _bookshop_name: home/applications
     title: Woran wir erfolgreich gearbeitet haben
     subTitle: Beispiele intelligenter Prozessoptimierung mit unseren Lösungen
     buttonText: Beratung anfragen
-    buttonHref:
+    buttonHref: https://zeeg.me/salinasdata/prozessberatung
     bottomBlockTitle: Möchten Sie gerne wissen, wie wir Ihre Prozesse optimieren können
     bottomBlockDescription: >-
       In einem unverbindlichen Beratungsgespräch erarbeiten wir gemeinsam eine
@@ -138,7 +135,7 @@ content_blocks:
     buttonHref:
     items:
       - image: /light-bulb.svg
-        title: Use Case Definition
+        title: Prozess-Analyse
         description: >-
           Wir arbeiten gemeinsam an der Beantwortung der folgenden Fragen: „Was
           sind Bottlenecks für Effizienz und wie können wir sie überwinden?"
@@ -189,19 +186,16 @@ content_blocks:
     topLogos: /mobile-top.webp
     bottomLogos: /mobile-bottom.webp
   - _bookshop_name: home/featuredPosts
-    title: More insights from our Blog
-    subTitle: Lorem Ipsum
-    description: >-
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-      praesentium voluptatum deleniti atque corrupti quos dolores et quas
-      molestias excepturi sint occaecati cupiditate non provident.
-    buttonText: Request a Demo
-    buttonHref: https://forms.gle/CS4cTwhNXWfnQ2pi9
+    title: Mehr Einblicke in unsere Arbeit
+    subTitle: Der Salinas Data Solutions Blog
+    description:
+    buttonText:
+    buttonHref:
   - _bookshop_name: home/ourFounders
     title: Ihr Ansprechpartner
     subTitle:
     buttonText: Beratung anfragen
-    buttonHref:
+    buttonHref: https://zeeg.me/salinasdata/prozessberatung
     founders:
       - name: Dipl.-Ing. Sebastian Eumann, Gründer & CEO
         image: /0c24d488266dc300ec76b36b29a2c5b7.webp
