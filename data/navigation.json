@@ -6,6 +6,10 @@
         "href": "#services"
       },
       {
+        "text": "Download Whitepaper",
+        "href": "#whitepaper"
+      },
+      {
         "text": "Blog",
         "href": "/blog"
       }
@@ -48,8 +52,12 @@
   "headerDataDE": {
     "links": [
       {
-        "text": "Services",
+        "text": "Dienstleistungen",
         "href": "#services"
+      },
+      {
+        "text": "Download Leitfaden",
+        "href": "#whitepaper"
       },
       {
         "text": "Blog",
