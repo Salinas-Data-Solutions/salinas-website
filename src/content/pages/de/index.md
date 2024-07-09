@@ -182,9 +182,9 @@ content_blocks:
       Mit diesem Technologien entwickeln wir maßgescheiderte Lösungen für
       Unternehmen
     leftLogos: /desktop-left.png
-    rightLogos: /desktop-right.webp
-    topLogos: /mobile-top.webp
-    bottomLogos: /mobile-bottom.webp
+    rightLogos: /desktop-right.png
+    topLogos: /mobile-top.png
+    bottomLogos: /mobile-bottom.png
   - _bookshop_name: home/featuredPosts
     title: Mehr Einblicke in unsere Arbeit
     subTitle: Der Salinas Data Solutions Blog
