@@ -99,7 +99,7 @@ if (Astro.currentLocale === 'de') {
                 `hover:text-link dark:hover:text-white px-4 py-3 flex items-center ${text === 'Contact' || text === 'Kontakt' ? 'underline' : ''}`,
                 { 'aw-link-active': href === currentPath },
               ]}
-              href={`/${Astro.currentLocale}${href}`}
+              href={`${href}`}
             >
               {text}
             </a>
