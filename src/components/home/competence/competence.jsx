@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CompetenceSection( block ) {
   return (
-    <section className="py-20 bg-black-custom lg:pt-32">
+    <section id="whitepaper" className="py-20 bg-black-custom lg:pt-32">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
           <div className="flex flex-col justify-between lg:col-span-5 xl:pr-24">
